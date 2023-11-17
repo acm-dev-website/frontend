@@ -47,3 +47,20 @@
 .eventDescription {
   font-size: 20px;
 }
+
+/* rotates acm logo on hover*/
+.imgbody {
+  display:flex;
+  justify-content: center;
+  gap:2rem;
+}
+
+.spin2 {
+    transition-duration: 2s;
+    transition-property: transform;
+    width:5rem;
+    height:5rem;
+}
+.spin2:hover {
+    transform: rotate(360deg);
+}

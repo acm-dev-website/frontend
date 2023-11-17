@@ -1,6 +1,6 @@
 .mainHeader {
   text-align: center;
-  font-style: ;
+  /*font-style: */
   color: #dedede;
 }
 
@@ -52,6 +52,23 @@
   max-height:10%;
   float: left;   Positions image on the left 
   margin-right: 10px; Creates whitespace between image and workshop details
+}
+
+/* rotates acm logo on hover*/
+.imgbody {
+  display:flex;
+  justify-content: center;
+  gap:2rem;
+}
+
+.spin2 {
+    transition-duration: 2s;
+    transition-property: transform;
+    width:5rem;
+    height:5rem;
+}
+.spin2:hover {
+    transform: rotate(360deg);
 }
 
 

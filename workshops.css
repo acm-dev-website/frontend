@@ -30,7 +30,7 @@
   width: auto;
 
   float: left; /* Positions image on the left */
-  margin-right: 10px; /* Creates whitespace between image and workshop details */)
+  margin-right: 10px; /* Creates whitespace between image and workshop details */
 }
 
 .workshopListElement {
@@ -54,4 +54,21 @@
 
 .workshopDescription {
   font-size: 20px;
+}
+
+/* rotates acm logo on hover*/
+.imgbody {
+  display:flex;
+  justify-content: center;
+  gap:2rem;
+}
+
+.spin2 {
+    transition-duration: 2s;
+    transition-property: transform;
+    width:5rem;
+    height:5rem;
+}
+.spin2:hover {
+    transform: rotate(360deg);
 }
