@@ -2,7 +2,7 @@
   text-align: center;
   color: #dedede;
 }
-
+/*hi*/
 .subHeading {
   text-align: center;
   font-size: 25px;
@@ -22,7 +22,7 @@
   width: auto;
 
   float: left; /* Positions image on the left */
-  margin-right: 10px; /* Creates whitespace between image and workshop details */)
+  margin-right: 10px; /* Creates whitespace between image and workshop details */
 }
 
 .eventListElement {
