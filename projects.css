@@ -1,0 +1,49 @@
+.mainHeader {
+  text-align: center;
+  color: #dedede;
+}
+
+.subHeading {
+  text-align: center;
+  font-size: 25px;
+  border: 3.5px solid #000000;
+  border-width: auto;
+}
+
+.projectHeader {
+  text-align: center;
+  font-size: 35px;
+}
+
+.projectImg {
+  border: 5px solid #000000;
+  height: 150px;
+  display: block;
+  width: auto;
+
+  float: left; /* Positions image on the left */
+  margin-right: 10px; /* Creates whitespace between image and workshop details */)
+}
+
+.projectListElement {
+  margin-bottom: 5%;
+
+  list-style-type: none; /* Gets rid of the bullet point that is normally present in a list element */
+}
+
+.projectDetails {
+    margin-left: 10px;  /* Adds whitespace to the left of the details for spacing */
+}
+
+.projectName {
+  font-size: 25px;
+}
+
+.projectDate {
+  display: block;
+  font-size: 20px;
+}
+
+.projectDescription {
+  font-size: 20px;
+}

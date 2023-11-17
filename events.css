@@ -1,0 +1,49 @@
+.mainHeader {
+  text-align: center;
+  color: #dedede;
+}
+
+.subHeading {
+  text-align: center;
+  font-size: 25px;
+  border: 3.5px solid #000000;
+  border-width: auto;
+}
+
+.eventHeader {
+  text-align: center;
+  font-size: 35px;
+}
+
+.eventImg {
+  border: 5px solid #000000;
+  height: 150px;
+  display: block;
+  width: auto;
+
+  float: left; /* Positions image on the left */
+  margin-right: 10px; /* Creates whitespace between image and workshop details */)
+}
+
+.eventListElement {
+  margin-bottom: 5%;
+
+  list-style-type: none; /* Gets rid of the bullet point that is normally present in a list element */
+}
+
+.eventDetails {
+    margin-left: 10px;  /* Adds whitespace to the left of the details for spacing */
+}
+
+.eventName {
+  font-size: 25px;
+}
+
+.eventDate {
+  display: block;
+  font-size: 20px;
+}
+
+.eventDescription {
+  font-size: 20px;
+}

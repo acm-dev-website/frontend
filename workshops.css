@@ -1,0 +1,57 @@
+.mainHeader {
+  text-align: center;
+  color: #dedede;
+}
+
+.subHeading {
+  text-align: center;
+  font-size: 25px;
+  border: 3.5px solid #000000;
+  border-width: auto;
+}
+
+.hammerImg {
+  height: auto;
+  display: block;
+  width: 300px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.workshopHeader {
+  text-align: center;
+  font-size: 35px;
+}
+
+.workshopImg {
+  border: 5px solid #000000;
+  height: 150px;
+  display: block;
+  width: auto;
+
+  float: left; /* Positions image on the left */
+  margin-right: 10px; /* Creates whitespace between image and workshop details */)
+}
+
+.workshopListElement {
+  margin-bottom: 5%;
+
+  list-style-type: none; /* Gets rid of the bullet point that is normally present in a list element */
+}
+
+.workshopDetails {
+    margin-left: 10px;  /* Adds whitespace to the left of the details for spacing */
+}
+
+.workshopName {
+  font-size: 25px;
+}
+
+.workshopDate {
+  display: block;
+  font-size: 20px;
+}
+
+.workshopDescription {
+  font-size: 20px;
+}
