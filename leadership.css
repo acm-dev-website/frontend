@@ -1,7 +1,7 @@
 .mainHeader {
   text-align: center;
   /*font-style: */
-  color: #dedede;
+  color: black;
 }
 
 .Roles_IMG{
@@ -55,20 +55,15 @@
 }
 
 /* rotates acm logo on hover*/
-.imgbody {
-  display:flex;
-  justify-content: center;
-  gap:2rem;
+.spin2 {
+  animation:spin 1s linear infinite;
+  transition-property: transform;
+   
 }
 
-.spin2 {
-    transition-duration: 2s;
-    transition-property: transform;
-    width:5rem;
-    height:5rem;
-}
-.spin2:hover {
-    transform: rotate(360deg);
+@keyframes spin{
+	from{transform:rotate(0deg)}
+	to{transform:rotate(360deg)}	
 }
 
 
