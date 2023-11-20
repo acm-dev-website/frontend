@@ -234,7 +234,7 @@ body {
 
 /* rotates acm logo on hover*/
 .spin2 {
-  animation:spin 1s linear infinite;
+  animation:spin 2.5s linear infinite;
   transition-property: transform;
    
 }
