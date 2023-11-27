@@ -191,7 +191,8 @@ body {
 /* Show the dropdown menu on hover */
 .dropdown:hover .dropdown-button{background-color:lightgrey}
 
-.dropdown:hover .dropdown-content {display: block;}
+/* .dropdown:hover .dropdown-content {display: block;} */
+.dropdown-button:hover + .dropdown-content {display: block;}
 
 
 
