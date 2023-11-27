@@ -1,11 +1,13 @@
 body {
   margin: 0;
   padding: 0;
+  min-height: 100vh;
   background-color: lightgray;
   background-repeat: no-repeat;
   background-attachment: fixed;
   border: 0px;
   text-align: center;
+  position: relative;
 }
 
 .main {
@@ -209,29 +211,6 @@ body {
   font-size: 20px;
   text-decoration-color:black ;
 }
-.btn_insta {
-  position: relative;
-  top: 500px;
-  left: 47%;
-  display: inline-block;
-  height: 40px;
-  width: 40px;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-.btn_discord {
-  position: relative;
-  top: 500px;
-  left: 48%;
-  display: inline-block;
-  height: 40px;
-  width: 50px;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-
 
 /* rotates acm logo on hover*/
 .spin2 {
