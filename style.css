@@ -65,7 +65,9 @@ body {
 .btn:hover {
   transform: scale(1.12);
 }
-
+.dropdown {
+  position: relative;
+}
 .dropdown-button{
   display:block;
   width:150px;
@@ -147,11 +149,11 @@ body {
 
 .dropdown-content {
   display: none;
-  position: relative;
+  position: absolute;
   align-content: column;
   justify-content: space-between;
   width: 100px;
-
+  top: 3.35rem;
 
 }
 
