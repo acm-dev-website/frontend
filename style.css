@@ -1,11 +1,13 @@
 body {
   margin: 0;
   padding: 0;
+  min-height: 100vh;
   background-color: lightgray;
   background-repeat: no-repeat;
   background-attachment: fixed;
   border: 0px;
   text-align: center;
+  position: relative;
 }
 
 .main {
@@ -62,10 +64,12 @@ body {
   float:left;
 }
 /*enlarges buttons on hover*/
-.btn:hover {
+.btn:hover, .dropdown-button:hover {
   transform: scale(1.12);
 }
-
+.dropdown {
+  position: relative;
+}
 .dropdown-button{
   display:block;
   width:150px;
@@ -77,7 +81,7 @@ body {
   border-bottom: 1px solid darkgray;
   border-left: 1px solid darkgray;
   border-right: 1px solid darkgray;
-  padding: 8px;
+  padding: 10px;
   border-radius: 30px;
   margin: 10px;
   text-align: center;
@@ -147,11 +151,11 @@ body {
 
 .dropdown-content {
   display: none;
-  position: relative;
+  position: absolute;
   align-content: column;
   justify-content: space-between;
-  width: 100px;
-
+  width: 100%;
+  top: 3.8rem;
 
 }
 
@@ -189,9 +193,8 @@ body {
 /* Show the dropdown menu on hover */
 .dropdown:hover .dropdown-button{background-color:lightgrey}
 
+/* Yes, I know the the block happen before it reaches the button *darn those margins*. There's a fix, but I'm too lazy to apply it (p.s. involves JS)... */
 .dropdown:hover .dropdown-content {display: block;}
-
-
 
 .btn:hover {
   background-color: lightgrey;
@@ -208,29 +211,6 @@ body {
   font-size: 20px;
   text-decoration-color:black ;
 }
-.btn_insta {
-  position: relative;
-  top: 500px;
-  left: 47%;
-  display: inline-block;
-  height: 40px;
-  width: 40px;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-.btn_discord {
-  position: relative;
-  top: 500px;
-  left: 48%;
-  display: inline-block;
-  height: 40px;
-  width: 50px;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-
 
 /* rotates acm logo on hover*/
 .spin2 {
