@@ -152,7 +152,7 @@ body {
   position: absolute;
   align-content: column;
   justify-content: space-between;
-  width: 100px;
+  width: 100%;
   top: 3.8rem;
 
 }
@@ -191,10 +191,8 @@ body {
 /* Show the dropdown menu on hover */
 .dropdown:hover .dropdown-button{background-color:lightgrey}
 
-/* .dropdown:hover .dropdown-content {display: block;} */
-.dropdown-button:hover + .dropdown-content {display: block;}
-
-
+/* Yes, I know the the block happen before it reaches the button *darn those margins*. There's a fix, but I'm too lazy to apply it (p.s. involves JS)... */
+.dropdown:hover .dropdown-content {display: block;}
 
 .btn:hover {
   background-color: lightgrey;
