@@ -62,7 +62,7 @@ body {
   float:left;
 }
 /*enlarges buttons on hover*/
-.btn:hover {
+.btn:hover, .dropdown-button:hover {
   transform: scale(1.12);
 }
 .dropdown {
@@ -79,7 +79,7 @@ body {
   border-bottom: 1px solid darkgray;
   border-left: 1px solid darkgray;
   border-right: 1px solid darkgray;
-  padding: 8px;
+  padding: 10px;
   border-radius: 30px;
   margin: 10px;
   text-align: center;
@@ -153,7 +153,7 @@ body {
   align-content: column;
   justify-content: space-between;
   width: 100px;
-  top: 3.35rem;
+  top: 3.8rem;
 
 }
 
