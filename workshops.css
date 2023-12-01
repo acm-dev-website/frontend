@@ -57,13 +57,9 @@
 }
 
 /* rotates acm logo on hover*/
-.spin2 {
-  animation:spin 1s linear infinite;
-  transition-property: transform;
-   
-}
-
-@keyframes spin{
-	from{transform:rotate(0deg)}
-	to{transform:rotate(360deg)}	
+.Acm_Logo:hover
+{
+    cursor: default;
+    transform: rotate(360deg);
+    transition: transform 1.0s ease-in-out;
 }

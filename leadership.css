@@ -6,8 +6,8 @@
 
 .Roles_IMG{
   display: block;
-  height: 200px;
-  width: 20%;
+  height: 50px;
+  width: auto;
   margin-left: auto;
   margin-right: auto;
   border-top: 5px solid darkgrey;
@@ -35,9 +35,9 @@
   display: inline;
 }
 .individual_Roles_IMG{
-  height: 125px;
+  height: 10px;
   display: block;
-  width: auto;
+  width: 10px;
 
   /*float:inline-end; /* Positions image on the left */
   margin-left: 10px; /* Creates whitespace between image and workshop details*/
@@ -55,17 +55,12 @@
 }
 
 /* rotates acm logo on hover*/
-.spin2 {
-  animation:spin 1s linear infinite;
-  transition-property: transform;
-   
+.Acm_Logo:hover
+{
+    cursor: default;
+    transform: rotate(360deg);
+    transition: transform 0.9s ease-in-out;
 }
-
-@keyframes spin{
-	from{transform:rotate(0deg)}
-	to{transform:rotate(360deg)}	
-}
-
 
 
 
