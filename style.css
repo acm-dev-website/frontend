@@ -7,11 +7,13 @@ body {
   border: 0px;
 }
 
+/* Main function for header of the website*/
 .main {
   text-align: center;
   background-color: lightgray;
 }
 
+/* Css for the top part which includes the logo and gif */
 .background_n_logo {
   background-image: url("coder.gif");
   padding-bottom: 20px;
@@ -19,15 +21,19 @@ body {
 
 }
 
+/* css for the logo image itself */
 .Acm_Logo {
   display: block;
   height: 80px;
   width: auto;
   margin-left: auto;
   margin-right: auto;
+  
+  
 
 }
 
+/* Code for the buttons intial placement - Doesnt really involve the background*/
 .btn_n_background {
   padding-bottom: 10px;
   display: flex;
@@ -38,7 +44,7 @@ body {
 }
 
 
-
+/* css code for buttons */
 .btn {
   display:block;
   width:150px;
@@ -60,6 +66,7 @@ body {
   float:left;
 }
 
+/* css code for the dropdown button itself */
 .dropdown-button{
   display:block;
   width:150px;
@@ -83,6 +90,7 @@ body {
   z-index: 1;
 }
 
+/* Code for the colorgradients used for the buttons */
 .homebtn {
   background-image: linear-gradient(to right,#8AD4EF,#979EF5);
 }
@@ -124,31 +132,73 @@ body {
 }
 
 
-/* Dropdown Button */
 
-.dropbtn {
-  padding: 16px;
-  font-size: 16px;
-  border: none;
+
+/* Code for the buttons when hovered over */
+.btn:hover {
+  transform: scale(1.05);
+  opacity: 0.9;
+}
+
+/* Code for when the button is pressed */
+.btn:active {
+  transform: scale(0.98);
+  opacity: 0.9;
+}
+
+/* Refers to the text directly under the buttons */
+.bottom {
+  font-family: Helvetica, sans-serif;
+  text-align: center;
+  font-size: 20px;
+  text-decoration-color:black ;
+}
+
+/* Code for the instagram link at the bottom of the page */
+.btn_insta {
+  position: relative;
+  top: 500px;
+  left: 47%;
+  display: inline-block;
+  height: 40px;
+  width: 40px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Code for the Discord link at the bottom of the page */
+.btn_discord {
+  position: relative;
+  top: 500px;
+  left: 48%;
+  display: inline-block;
+  height: 40px;
+  width: 50px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 
 
-/* Dropdown Content (Hidden by Default) */
+/* Dropdown Button Section */
 
+/* When the cursor hovers over the dropdown menu or dropdown buttons the dropdown menu button stays upscaled */
+.dropdown:hover .dropdown-button {
+  transform: scale(1.05);
+  opacity: 0.9;
+}
+
+/* Dropdown Content (Hidden until the user hovers over the more button) */
 .dropdown-content {
   display: none;
   position: relative;
   align-content: column;
   justify-content: space-between;
   width: 100px;
-
-
 }
 
+
 /* Links inside the dropdown */
-
-
 .dropdown-content a {
   display:block;
   width:100px;
@@ -173,51 +223,35 @@ body {
 }
 
 
-/* Change color of dropdown links on hover */
 
-.dropdown-content a:hover {background-color: #ddd;}
 
 /* Show the dropdown menu on hover */
-.dropdown:hover .dropdown-button{background-color:lightgrey}
+.dropdown:hover .dropdown-button{transform: scale (1.2)}
 
 .dropdown:hover .dropdown-content {display: block;}
 
-
-
-.btn:hover {
-  background-color: lightgrey;
-}
-
-.btn:active {
-  transform: scale(0.98);
+.dropdown-content a:hover {
+  transform: scale(1.05);
   opacity: 0.9;
 }
-
-.bottom {
-  font-family: Helvetica, sans-serif;
-  text-align: center;
-  font-size: 20px;
-  text-decoration-color:black ;
+.dropdown:hover .dropdown-button {
+  transform: scale(1.05);
+  opacity: 0.9;
 }
-.btn_insta {
-  position: relative;
-  top: 500px;
-  left: 47%;
-  display: inline-block;
-  height: 40px;
-  width: 40px;
-  margin-left: auto;
-  margin-right: auto;
+/* End of Dropdown Button Section */
+
+.imgbody {
+  display:flex;
+  justify-content: center;
+  gap:2rem;
 }
 
-.btn_discord {
-  position: relative;
-  top: 500px;
-  left: 48%;
-  display: inline-block;
-  height: 40px;
-  width: 50px;
-  margin-left: auto;
-  margin-right: auto;
+.spin2 {
+    transition-duration: 2s;
+    transition-property: transform;
+    width:5rem;
+    height:5rem;
 }
-
+.spin2:hover {
+    transform: rotate(360deg);
+}
