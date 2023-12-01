@@ -2,3 +2,15 @@ body{
   margin: 100;
   text-align: center;
 }
+
+/* rotates acm logo on hover*/
+.spin2 {
+  animation:spin 1s linear infinite;
+  transition-property: transform;
+   
+}
+
+@keyframes spin{
+	from{transform:rotate(0deg)}
+	to{transform:rotate(360deg)}	
+}

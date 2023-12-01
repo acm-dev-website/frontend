@@ -1,6 +1,6 @@
 .mainHeader {
   text-align: center;
-  color: #dedede;
+  color: black;
 }
 
 .subHeading {
@@ -22,7 +22,7 @@
   width: auto;
 
   float: left; /* Positions image on the left */
-  margin-right: 10px; /* Creates whitespace between image and workshop details */)
+  margin-right: 10px; /* Creates whitespace between image and workshop details */
 }
 
 .projectListElement {
@@ -46,4 +46,16 @@
 
 .projectDescription {
   font-size: 20px;
+}
+
+/* rotates acm logo on hover*/
+.spin2 {
+  animation:spin 1s linear infinite;
+  transition-property: transform;
+   
+}
+
+@keyframes spin{
+	from{transform:rotate(0deg)}
+	to{transform:rotate(360deg)}	
 }

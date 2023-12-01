@@ -1,41 +1,38 @@
 body {
   margin: 0;
   padding: 0;
-  background-color: white;
+  min-height: 100vh;
+  background-color: lightgray;
   background-repeat: no-repeat;
   background-attachment: fixed;
   border: 0px;
+  text-align: center;
+  position: relative;
 }
 
-/* Main function for header of the website*/
 .main {
   text-align: center;
-  background-color: lightgray;
+  background-color: grey;
 }
 
-/* Css for the top part which includes the logo and gif */
 .background_n_logo {
   background-image: url("coder.gif");
-  padding-bottom: 20px;
-  padding-top: 20px;
-
+  padding-bottom: 30px;
+  padding-top: 30px;
+  overflow: hidden;
 }
 
-/* css for the logo image itself */
 .Acm_Logo {
   display: block;
-  height: 80px;
-  width: auto;
+  height: auto;
+  width: 92px;
   margin-left: auto;
   margin-right: auto;
-  
-  
 
 }
 
-/* Code for the buttons intial placement - Doesnt really involve the background*/
 .btn_n_background {
-  padding-bottom: 10px;
+  padding: 8px;
   display: flex;
   align-content: row;
   justify-content:space-evenly;
@@ -44,17 +41,18 @@ body {
 }
 
 
-/* css code for buttons */
+
 .btn {
   display:block;
   width:150px;
   font-family: Roboto, sans-serif;
+  font-size: 16px;
   color: #000000;
-  padding: 8px;
-  border-top: 1px solid black;
-  border-bottom: 1px solid black;
-  border-left: 1px solid black;
-  border-right: 1px solid black;
+  padding: 10px;
+  border-top: 1px solid darkgray;
+  border-bottom: 1px solid darkgray;
+  border-left: 1px solid darkgray;
+  border-right: 1px solid darkgray;
   border-radius: 30px;
   margin: 10px;
   text-align: center;
@@ -65,19 +63,25 @@ body {
     color 0.15s;
   float:left;
 }
-
-/* css code for the dropdown button itself */
+/*enlarges buttons on hover*/
+.btn:hover, .dropdown-button:hover {
+  transform: scale(1.12);
+}
+.dropdown {
+  position: relative;
+}
 .dropdown-button{
   display:block;
   width:150px;
   max-width: 100%;
   font-family: Roboto, sans-serif;
+  font-size:15px;
   color: #000000;
-  border-top: 1px solid black;
-  border-bottom: 1px solid black;
-  border-left: 1px solid black;
-  border-right: 1px solid black;
-  padding: 8px;
+  border-top: 1px solid darkgray;
+  border-bottom: 1px solid darkgray;
+  border-left: 1px solid darkgray;
+  border-right: 1px solid darkgray;
+  padding: 10px;
   border-radius: 30px;
   margin: 10px;
   text-align: center;
@@ -90,7 +94,6 @@ body {
   z-index: 1;
 }
 
-/* Code for the colorgradients used for the buttons */
 .homebtn {
   background-image: linear-gradient(to right,#8AD4EF,#979EF5);
 }
@@ -132,84 +135,44 @@ body {
 }
 
 
+/* Dropdown Button */
 
-
-/* Code for the buttons when hovered over */
-.btn:hover {
-  transform: scale(1.05);
-  opacity: 0.9;
-}
-
-/* Code for when the button is pressed */
-.btn:active {
-  transform: scale(0.98);
-  opacity: 0.9;
-}
-
-/* Refers to the text directly under the buttons */
-.bottom {
-  font-family: Helvetica, sans-serif;
-  text-align: center;
-  font-size: 20px;
-  text-decoration-color:black ;
-}
-
-/* Code for the instagram link at the bottom of the page */
-.btn_insta {
-  position: relative;
-  top: 500px;
-  left: 47%;
-  display: inline-block;
-  height: 40px;
-  width: 40px;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-/* Code for the Discord link at the bottom of the page */
-.btn_discord {
-  position: relative;
-  top: 500px;
-  left: 48%;
-  display: inline-block;
-  height: 40px;
-  width: 50px;
-  margin-left: auto;
-  margin-right: auto;
+.dropbtn {
+  padding: 10px;
+  font-size: 16px;
+  border: none;
+  display:block;
+  margin: 10px;
 }
 
 
 
-/* Dropdown Button Section */
+/* Dropdown Content (Hidden by Default) */
 
-/* When the cursor hovers over the dropdown menu or dropdown buttons the dropdown menu button stays upscaled */
-.dropdown:hover .dropdown-button {
-  transform: scale(1.05);
-  opacity: 0.9;
-}
-
-/* Dropdown Content (Hidden until the user hovers over the more button) */
 .dropdown-content {
   display: none;
-  position: relative;
+  position: absolute;
   align-content: column;
   justify-content: space-between;
-  width: 100px;
+  width: 100%;
+  top: 3.8rem;
+
 }
 
-
 /* Links inside the dropdown */
+
+
 .dropdown-content a {
   display:block;
   width:100px;
-  border-top: 1px solid black;
-  border-bottom: 1px solid black;
-  border-left: 1px solid black;
-  border-right: 1px solid black;
+  border-top: 1px solid darkgray;
+  border-bottom: 1px solid darkgray;
+  border-left: 1px solid darkgray;
+  border-right: 1px solid darkgray;
   font-family: Roboto, sans-serif;
   color: #000000;
-  font-size: 11px;
-  padding: 8px;
+  font-size: 14px;
+  padding: 10px;
   border-radius: 30px;
   margin-left: 26px;
   margin-bottom: 10px;
@@ -223,35 +186,43 @@ body {
 }
 
 
+/* Change color of dropdown links on hover */
 
+.dropdown-content a:hover {background-color: #ddd;}
 
 /* Show the dropdown menu on hover */
-.dropdown:hover .dropdown-button{transform: scale (1.2)}
+.dropdown:hover .dropdown-button{background-color:lightgrey}
 
+/* Yes, I know the the block happen before it reaches the button *darn those margins*. There's a fix, but I'm too lazy to apply it (p.s. involves JS)... */
 .dropdown:hover .dropdown-content {display: block;}
 
-.dropdown-content a:hover {
-  transform: scale(1.05);
-  opacity: 0.9;
-}
-.dropdown:hover .dropdown-button {
-  transform: scale(1.05);
-  opacity: 0.9;
-}
-/* End of Dropdown Button Section */
-
-.imgbody {
-  display:flex;
-  justify-content: center;
-  gap:2rem;
+.btn:hover {
+  background-color: lightgrey;
 }
 
+.btn:active {
+  transform: scale(0.98);
+  opacity: 0.9;
+}
+
+.bottom {
+  font-family: Helvetica, sans-serif;
+  text-align: center;
+  font-size: 20px;
+  text-decoration-color:black ;
+}
+
+/* rotates acm logo on hover*/
 .spin2 {
-    transition-duration: 2s;
-    transition-property: transform;
-    width:5rem;
-    height:5rem;
+  animation:spin 2.5s linear infinite;
+  transition-property: transform;
+   
 }
-.spin2:hover {
-    transform: rotate(360deg);
+
+@keyframes spin{
+	from{transform:rotate(0deg)}
+	to{transform:rotate(360deg)}	
 }
+
+
+
