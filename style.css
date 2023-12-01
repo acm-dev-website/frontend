@@ -62,6 +62,7 @@ body {
   transition: background-color 0.15s,
     color 0.15s;
   float:left;
+  background-color: whitesmoke;
 }
 /*enlarges buttons on hover*/
 .btn:hover, .dropdown-button:hover {
@@ -92,46 +93,6 @@ body {
     color 0.15s;
   float:left;
   z-index: 1;
-}
-
-.homebtn {
-  background-image: linear-gradient(to right,#8AD4EF,#979EF5);
-}
-
-.leadershipbtn {
-  background-image: linear-gradient(to right,#979EF5,#DA66AE);
-}
-
-.projectsbtn {
-  background-image: linear-gradient(to right,#DA66AE,#F36396);
-}
-
-.workshopsbtn {
-  background-image: linear-gradient(to right,#F36396,#F75B55);
-}
-
-.eventsbtn {
-  background-image: linear-gradient(to right,#F75B55,#FB7A3A);
-}
-
-.morebtn {
-  background-image: linear-gradient(to right,#FB7A3A,#FD9E4D);
-}
-
-.sponsorshipsbtn {
-  background-image: linear-gradient(to bottom,#FD9E4D,#E5CD40);
-}
-
-.merchandisebtn {
-  background-image: linear-gradient(to bottom,#E5CD40,#9EDF5E);
-}
-
-.calendarbtn {
-  background-image: linear-gradient(to bottom,#9EDF5E,#9CD998);
-}
-
-.importantlinksbtn {
-  background-image: linear-gradient(to bottom,#9EDF5E,#9CD998);
 }
 
 
