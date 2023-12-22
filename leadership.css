@@ -1,57 +1,190 @@
-.mainHeader {
-  text-align: center;
-  /*font-style: */
-  color: black;
-}
 
-.Roles_IMG{
-  display: block;
-  height: 200px;
-  width: 20%;
-  margin-left: auto;
-  margin-right: auto;
-  border-top: 5px solid darkgrey;
-  border-bottom: 5px solid darkgrey;
-  border-left: 5px solid darkgrey;
-  border-right: 5px solid darkgrey;
-}
+/* Responisve checkpoints : <600px, 601px, 768px, 992px, 1200px */
 
-.Roles_List{
-  list-style-type: none;
-}
+/* container is meant to be the entire screen below nav bar */
+  .container
+  {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    /* background-color: blue; */
+    height: 100%; /* Take up full viewport height */
+    /* Take up full viewport width */
+  }
 
-.text{
-  float: left;
-  width: 10%;
-  margin-top: 10px;
-  margin-right: 10px;
-}
+  @media (max-width: 600px) 
+  {
+    .container
+    {
+      height: 100%;
+      width: 100%;
+    }
+  }
 
-.name{
-  font-size: 20px;
-  display: block;
-}
-.text_Group{
-  display: inline;
-}
-.individual_Roles_IMG{
-  height: 125px;
-  display: block;
-  width: auto;
+  .sides
+  {
+    width: 17.5%; /* Set a height or adjust as needed */
+    /* border: 1px solid #000; Optional: Add borders for visualization */
+    box-sizing: border-box;
+    /* background-color: lightblue; Side divs background color */
+  }
 
-  /*float:inline-end; /* Positions image on the left */
-  margin-left: 10px; /* Creates whitespace between image and workshop details*/
-}
+  .large 
+  {
+    width: 65%;
+    background-color: white;
+  }
 
-.PositionName{
-  display: block
-}
-/*
-.leadership_IMG{
-  max-width: 10%;
-  max-height:10%;
-  float: left;   Positions image on the left 
-  margin-right: 10px; Creates whitespace between image and workshop details
+/*Title for the leadership page*/
+  .mainHeader 
+  {
+    text-align: center;
+    font-family: "Segoe UI", "Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-size: 5vw;
+    font-weight: 100;
+    color: rgb(47, 46, 46);
+    border-bottom: 2px solid rgb(47, 46, 46);
+    display: inline-block;
+    margin-bottom: 5%
+  }
+
+  @media(max-width: 600px)
+  {
+    .mainHeader
+    {
+      font-size: 50px;
+    }
+  }
+
+  
+
+/*Leadership roles*/
+  .leadershipRolesRow1
+  {
+     position: relative;
+    height: auto;
+    /* background-color: grey; */
+    margin-bottom: 5%;
+    display: flex;
+    justify-content: space-evenly;
+  }
+
+  @media(max-width: 600px)
+  {
+    .leadershipRolesRow1
+    {
+      flex-direction: column;
+      align-items: center;
+      margin-bottom: 0%;
+    }
+  }
+
+  .leadershipRolesRow2
+  {
+    position: relative;
+    height: auto;
+    /* background-color: grey; */
+    margin-bottom: 5%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+  }
+
+  @media(max-width: 600px)
+  {
+    .leadershipRolesRow2
+    {
+      flex-direction: column;
+      align-items: center;
+      margin-bottom: 0%;
+    }
+  }
+
+  .leaderProfile
+  {
+    position: relative;
+    height: 50%;
+    width: 30%;
+    /* background-color: blanchedalmond; */
+    /* border: 1px solid black; */
+  }
+
+  @media(max-width: 600px)
+  {
+    .leaderProfile
+    {
+      margin-bottom: 5%;
+      width: 100%
+    }
+  }
+
+  /* 13vw for height*/
+  .leaderPicture
+  {
+    width: 70%;
+    border-radius: 100%;
+  
+  }
+
+  @media(max-width: 600px)
+  {
+    .leaderPicture
+    {
+      width: 60%;
+    }
+  }
+
+  .leaderName
+  {
+    font-size: 2vw;
+    font-family: "Segoe UI", "Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-weight: 1;
+    color: black;
+    /* border: 1px solid; */
+  }
+ 
+  @media(max-width: 850px)
+  {
+    .leaderName
+    {
+      font-size: 22px;
+      /* border: 1px solid; */
+    }
+  }
+
+
+  @media(max-width: 600px)
+  {
+    .leaderName
+    {
+      font-size: 5vw;
+      /* border: 1px solid red; */
+    }
+  }
+
+  .leaderRole
+  {
+    font-size: 1vw;
+    font-family: "Segoe UI", "Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-weight: 300;
+    color: rgb(71, 70, 70);
+    /* border: 1px solid;   */
+  }
+
+  @media(max-width: 600px)
+  {
+    .leaderRole
+    {
+      font-size: 3vw;
+    }
+  }
+
+@media(min-width: 601px)
+{
+  .leaderRole
+  {
+    font-size: 2vw;
+  }
 }
 
 /* rotates acm logo on hover*/
