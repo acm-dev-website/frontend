@@ -1,5 +1,15 @@
 
-/* Responisve checkpoints : <600px, 601px, 768px, 992px, 1200px */
+.Roles_IMG{
+  display: block;
+  height: 50px;
+  width: auto;
+  margin-left: auto;
+  margin-right: auto;
+  border-top: 5px solid darkgrey;
+  border-bottom: 5px solid darkgrey;
+  border-left: 5px solid darkgrey;
+  border-right: 5px solid darkgrey;
+}
 
 /* container is meant to be the entire screen below nav bar */
   .container
@@ -21,13 +31,17 @@
     }
   }
 
-  .sides
-  {
-    width: 17.5%; /* Set a height or adjust as needed */
-    /* border: 1px solid #000; Optional: Add borders for visualization */
-    box-sizing: border-box;
-    /* background-color: lightblue; Side divs background color */
-  }
+.name{
+  font-size: 20px;
+  display: block;
+}
+.text_Group{
+  display: inline;
+}
+.individual_Roles_IMG{
+  height: 10px;
+  display: block;
+  width: 10px;
 
   .large 
   {
@@ -188,17 +202,12 @@
 }
 
 /* rotates acm logo on hover*/
-.spin2 {
-  animation:spin 1s linear infinite;
-  transition-property: transform;
-   
+.Acm_Logo:hover
+{
+    cursor: default;
+    transform: rotate(360deg);
+    transition: transform 0.9s ease-in-out;
 }
-
-@keyframes spin{
-	from{transform:rotate(0deg)}
-	to{transform:rotate(360deg)}	
-}
-
 
 
 
