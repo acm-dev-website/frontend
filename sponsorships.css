@@ -3,10 +3,54 @@ body{
   text-align: center;
 }
 
-/* rotates acm logo on hover*/
+.mainHeader 
+  {
+    text-align: center;
+    font-family: "Segoe UI", "Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-size: 35px;
+    font-weight: 100;
+    color: rgb(47, 46, 46);
+    border-bottom: 2px solid rgb(47, 46, 46);
+    display: inline-block;
+    margin-bottom: 5%
+  }
+
+  @media(max-width: 600px)
+  {
+    .mainHeader
+    {
+      font-size: 50px;
+    }
+  }
+
+.text {
+  font-family:Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 26px;
+  line-height: 40px;
+
+}
+
+
 .Acm_Logo:hover
 {
     cursor: default;
     transform: rotate(360deg);
     transition: transform 0.9s ease-in-out;
 }
+
+.column_left {
+float: left;
+width: 55%
+}
+
+.column_right {
+float: left;
+ width: 45%
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+  }
+
