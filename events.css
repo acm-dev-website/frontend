@@ -6,7 +6,7 @@
 
 .subHeading {
   text-align: center;
-  font-size: 25px;
+  font-size: 60px;
 }
 
 .eventHeader {
@@ -25,9 +25,14 @@
 }
 
 .eventListElement {
-  margin-bottom: 5%;
+  .eventListElement {
+    margin-bottom: 5%;
+    list-style-type: none; /* Gets rid of the bullet point that is normally present in a list element */
+    
+    display: flex;
+    align-items: center; /* Aligns items vertically in the center */
+}
 
-  list-style-type: none; /* Gets rid of the bullet point that is normally present in a list element */
 }
 
 .eventDetails {
