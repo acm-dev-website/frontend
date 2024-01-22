@@ -27,7 +27,7 @@
 .eventListElement {
     margin-bottom: 5%;
     list-style-type: none; /* Gets rid of the bullet point that is normally present in a list element */
-    
+    margin-left: 36%;
     display: flex;
     align-items: center; /* Aligns items vertically in the center */
 }
