@@ -1,3 +1,7 @@
+.projects {
+  background: #282828;
+}
+
 .mainHeader {
   color: rgba(255, 255, 255, 0.80);
   text-align: center;
@@ -10,10 +14,11 @@
 }
 
 .projectElement {
-  list-style-type: none;
-  margin: auto;
-  display: flex; /* Use flexbox to align items horizontally */
-  justify-content: center; /* Center horizontally */
+  margin-bottom: auto;
+  list-style-type: none; /* Gets rid of the bullet point that is normally present in a list element */
+  display: flex;
+  justify-content: center;
+  color: white;
   margin-right: 137px;
   /* This margin is (width of info box + img + space btwn them)/8 */
 } 

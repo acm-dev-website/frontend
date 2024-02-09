@@ -1,47 +1,69 @@
+.events {
+  background: #282828;
+}
+
 .mainHeader {
+  color: rgba(255, 255, 255, 0.80);
   text-align: center;
-  color: black;
-  font-size: 80px;
+  font-family: Inter;
+  font-size: 55px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 66px; /* 120% */
+  text-transform: uppercase;
 }
 
-.subHeading {
-  text-align: center;
-  font-size: 60px;
+.eventElement {
+  margin-bottom: auto;
+  list-style-type: none; /* Gets rid of the bullet point that is normally present in a list element */
+  display: flex;
+  justify-content: center;
+  color: white;
+  margin-right: 137px;
+  /* This margin is (width of info box + img + space btwn them)/8 */
+} 
+
+/* Additional rule to remove default left-padding on <ul> */
+ul {
+  padding-left: 0;
 }
 
-.eventHeader {
-  text-align: center;
-  font-size: 35px;
+.eventInfoBox {
+  margin-left: auto;
+  margin-bottom: 5%;
+  width: 686px;
+  height: 360px;
+  flex-shrink: 0;
+  border-radius: 15px;
+  border: 2px solid rgba(255, 255, 255, 0.20);
+  background: rgba(51, 51, 51, 0.70);
 }
 
 .eventImg {
-  border: 5px solid #000000;
-  height: 150px;
+  margin-left: 10px;
+  border-radius: 15px;
+  border: 2px solid rgba(0, 0, 0, 1);
+  height: 360px;
   display: block;
-  width: auto;
-
-  float: left; /* Positions image on the left */
-  margin-right: 10px; /* Creates whitespace between image and workshop details */
-}
-
-.eventListElement {
-    margin-bottom: 5%;
-    list-style-type: none; /* Gets rid of the bullet point that is normally present in a list element */
-    margin-left: 36%;
-    display: flex;
-    align-items: center; /* Aligns items vertically in the center */
+  width: 400px;
+  background: url(<path-to-image>), lightgray 0px -335.426px / 100% 391.622% no-repeat;
 }
 
 .eventDetails {
+    text-align: left;
     margin-left: 10px;  /* Adds whitespace to the left of the details for spacing */
+    display: block;
 }
 
 .eventName {
   font-size: 25px;
 }
 
+.eventHosts {
+  font-size: 20px;
+}
+
 .eventDate {
-  display: block;
   font-size: 20px;
 }
 
@@ -54,5 +76,12 @@
 {
     cursor: default;
     transform: rotate(360deg);
-    transition: transform 1.0s ease-in-out;
+    transition: transform 0.9s ease-in-out;
+}
+
+/* Scroll fade effect made by Chat-GPT */
+.fade-in {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.8s ease-in-out, transform 0.8s ease-in-out;
 }
