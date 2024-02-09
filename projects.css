@@ -14,7 +14,8 @@
   margin: auto;
   display: flex; /* Use flexbox to align items horizontally */
   justify-content: center; /* Center horizontally */
-  margin-right: 137px; /* This margin is the total width of info box + img + space btwn them */
+  margin-right: 137px;
+  /* This margin is (width of info box + img + space btwn them)/8 */
 } 
 
 /* Additional rule to remove default left-padding on <ul> */
