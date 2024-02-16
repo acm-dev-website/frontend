@@ -2,9 +2,8 @@ body {
   margin: 0;
   padding: 0;
   min-height: 100vh;
-  background-color: lightgray;
+  background-color: #282828;
   background-repeat: no-repeat;
-  background-attachment: fixed;
   border: 0px;
   text-align: center;
   position: relative;
@@ -169,12 +168,7 @@ body {
   opacity: 0.9;
 }
 
-.bottom {
-  font-family: Helvetica, sans-serif;
-  text-align: center;
-  font-size: 20px;
-  text-decoration-color:black ;
-}
+
 
 
 .Acm_Logo:hover
