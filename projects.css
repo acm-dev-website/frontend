@@ -1,5 +1,5 @@
 .projects {
-  align-content: center;
+  background: #282828;
 }
 
 .mainHeader {
@@ -13,29 +13,40 @@
   text-transform: uppercase;
 }
 
-.projectListElement {
-  margin-bottom: 5%;
+.projectElement {
+  margin-bottom: auto;
   list-style-type: none; /* Gets rid of the bullet point that is normally present in a list element */
-  align-content: center;
+  display: flex;
+  justify-content: center;
+  color: white;
+  margin-right: 137px;
+  /* This margin is (width of info box + img + space btwn them)/8 */
+} 
 
-  width: 685px;
+/* Additional rule to remove default left-padding on <ul> */
+ul {
+  padding-left: 0;
+}
+
+.projectInfoBox {
+  margin-left: auto;
+  margin-bottom: 5%;
+  width: 686px;
   height: 360px;
   flex-shrink: 0;
-  
   border-radius: 15px;
   border: 2px solid rgba(255, 255, 255, 0.20);
   background: rgba(51, 51, 51, 0.70);
 }
 
 .projectImg {
-  border: 5px solid #000000;
-  height: 150px;
+  margin-left: 10px;
+  border-radius: 15px;
+  border: 2px solid rgba(0, 0, 0, 1);
+  height: 360px;
   display: block;
-  width: auto;
-
-  float: right; /* Positions image on the right */
-  margin-right: 10px; /* Creates whitespace between image and workshop details */
-
+  width: 400px;
+  background: url(<path-to-image>), lightgray 0px -335.426px / 100% 391.622% no-repeat;
 }
 
 .projectDetails {
