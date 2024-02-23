@@ -19,8 +19,6 @@
   display: flex;
   justify-content: center;
   color: white;
-  margin-right: 137px;
-  /* This margin is (width of info box + img + space btwn them)/8 */
 } 
 
 /* Additional rule to remove default left-padding on <ul> */
@@ -29,7 +27,6 @@ ul {
 }
 
 .workshopInfoBox {
-  margin-left: auto;
   margin-bottom: 5%;
   width: 686px;
   height: 360px;

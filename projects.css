@@ -19,8 +19,6 @@
   display: flex;
   justify-content: center;
   color: white;
-  
-  /* This margin is (width of info box + img + space btwn them)/8 */
 } 
 
 /* Additional rule to remove default left-padding on <ul> */
@@ -29,7 +27,6 @@ ul {
 }
 
 .projectInfoBox {
-  
   margin-bottom: 5%;
   width: 686px;
   height: 360px;
