@@ -5,6 +5,7 @@
 .mainHeader {
   color: rgba(255, 255, 255, 0.80);
   text-align: center;
+  font-family: Inter;
   font-size: 55px;
   font-style: normal;
   font-weight: 700;
@@ -12,43 +13,25 @@
   text-transform: uppercase;
 }
 
-.subHeading {
-  display: flex;
-  margin-left: 33%;
-  width: 655px;
-  height: 55px;
-  flex-direction: column;
-  justify-content: center;
-  flex-shrink: 0;
-  color: rgba(255, 255, 255, 0.80);
-  text-align: center;
-  font-size: 36px;
-  font-style: normal;
-  font-weight: 500;
-  line-height: 43.2px; /* 120% */
-}
-
-.workshopHeader {
-  text-align: center;
-  font-size: 35px;
-}
-
-.workshopImg {
-  margin-left: 10px;
-  border-radius: 15px;
-  background: url(<path-to-image>), lightgray 0px -335.426px / 100% 391.622% no-repeat;
-}
-
-.workshopListElement {
+.workshopElement {
   margin-bottom: auto;
   list-style-type: none; /* Gets rid of the bullet point that is normally present in a list element */
   display: flex;
   justify-content: center;
+  color: white;
+  margin-right: 137px;
+  /* This margin is (width of info box + img + space btwn them)/8 */
+} 
+
+/* Additional rule to remove default left-padding on <ul> */
+ul {
+  padding-left: 0;
 }
 
-.workshopDetails {
-  display: inline-block;
-  width: 685px;
+.workshopInfoBox {
+  margin-left: auto;
+  margin-bottom: 5%;
+  width: 686px;
   height: 360px;
   flex-shrink: 0;
   border-radius: 15px;
@@ -56,19 +39,36 @@
   background: rgba(51, 51, 51, 0.70);
 }
 
-.workshopName {
-  font-size: 25px;
-  color: white;
+.workshopImg {
+  margin-left: 10px;
+  border-radius: 15px;
+  border: 2px solid rgba(0, 0, 0, 1);
+  height: 360px;
+  display: block;
+  width: 400px;
+  background: url(<path-to-image>), lightgray 0px -335.426px / 100% 391.622% no-repeat;
 }
 
-.workshopDate {
-  display: block;
+.workshopDetails {
+    text-align: left;
+    margin-left: 10px;  /* Adds whitespace to the left of the details for spacing */
+    display: block;
+}
+
+.workshopName {
+  font-size: 25px;
+}
+
+.workshopLeaderNames {
+  font-size: 20px;
+}
+
+.workshopMeetingSchedule {
   font-size: 20px;
 }
 
 .workshopDescription {
   font-size: 20px;
-  color:white;
 }
 
 /* rotates acm logo on hover*/
@@ -76,5 +76,12 @@
 {
     cursor: default;
     transform: rotate(360deg);
-    transition: transform 1.0s ease-in-out;
+    transition: transform 0.9s ease-in-out;
+}
+
+/* Scroll fade effect made by Chat-GPT */
+.fade-in {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.8s ease-in-out, transform 0.8s ease-in-out;
 }
