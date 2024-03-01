@@ -1,16 +1,13 @@
 .events {
   background: #282828;
+  font-family: inter, sans-serif;
 }
 
 .mainHeader {
   color: rgba(255, 255, 255, 0.80);
   text-align: center;
-  font-family: Inter;
+  font-weight: 600;
   font-size: 55px;
-  font-style: normal;
-  font-weight: 700;
-  line-height: 66px; /* 120% */
-  text-transform: uppercase;
 }
 
 .eventElement {
@@ -47,12 +44,19 @@ ul {
 }
 
 .eventDetails {
-    text-align: left;
-    margin-left: 10px;  /* Adds whitespace to the left of the details for spacing */
-    display: block;
+  text-align: left;
+  margin-left: 10px;  /* Adds whitespace to the left of the details for spacing */
+  display: block;
 }
 
 .eventName {
+  display: inline-block;
+  font-size: 25px;
+}
+
+.eventHeaderDate {
+  display: inline-block;
+  margin-left: 50px;
   font-size: 25px;
 }
 
