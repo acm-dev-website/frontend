@@ -6,15 +6,12 @@
     width:fit-content;
 }
 .logoContainer {
-<<<<<<< HEAD
     position: relative;
     display:inline-flex;
     justify-content:center;
     bottom: 0;
-=======
-
->>>>>>> 92975fec987dd652bb098cf129965e96808ebff6
 }
+
 .logoContainer a .insta {
     display:inline-flex;
     width: 40px;
@@ -373,7 +370,7 @@
 
 .MerchandiseSection{
     padding-top:15px;
-    height: 600px;
+    height: 700px;
     border-color:blueviolet;
 }
 .MerchandiseSection .sectionTitle{
@@ -385,6 +382,13 @@
     font-style: normal;
     font-weight: 600;
     line-height: 48px;
+}
+.MerchandiseSection .merch{
+    padding-top:10px;
+    height:65%;
+}
+.MerchandiseSection .titlefont{
+    margin-top:0%;
 }
 
 .MerchandiseSection .boxes{
@@ -422,31 +426,32 @@
     flex-shrink: 0;
 }
 
-.MerchandiseSection .box1 .titlefont{
-    margin-top:20px;
+.MerchandiseSection .titlefont{
+    margin-top:0px;
     margin-bottom:10px;
     color: #FFF;
     text-align: center;
     font-family: Inter;
-    font-size: 30px;
+    font-size: 25px;
     font-style: normal;
     font-weight: 700;
     line-height: normal;
 }
-.MerchandiseSection .box1 .greyline{
+.MerchandiseSection .greyline{
     margin-top:0px;
     width:90%;
 }
-.MerchandiseSection .box1 .subtitlefont{
+.MerchandiseSection .subtitlefont{
+    padding-left:35px;
     color: #FFC904;
-    text-align: center;
+    text-align: left;
     font-family: Inter;
-    font-size: 20px;
+    font-size: 35px;
     font-style: normal;
     font-weight: 700;
     line-height: normal;
 }
-.MerchandiseSection .box1 .subtextfont{
+.MerchandiseSection .subtextfont{
     padding-right:15px;
     padding-left:15px;
     height:fit-content;
@@ -462,84 +467,7 @@
 }
 
 
-.MerchandiseSection .box2 .titlefont{
-    margin-top:20px;
-    margin-bottom:10px;
-    color: #FFF;
-    text-align: center;
-    font-family: Inter;
-    font-size: 30px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: normal;
-}
-.MerchandiseSection .box2 .greyline{
-    margin-top:0px;
-    width:90%;
-}
-.MerchandiseSection .box2 .subtitlefont{
-    color: #FFC904;
-    text-align: center;
-    font-family: Inter;
-    font-size: 20px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: normal;
-}
-.MerchandiseSection .box2 .subtextfont{
-    padding-right:15px;
-    padding-left:15px;
-    height:fit-content;
-    width: fit-content;
-    flex-shrink: 0;
-    color: #FFF;
-    text-align: center;
-    font-family: Inter;
-    font-size: 16px;
-    font-style: normal;
-    font-weight: 300;
-    line-height: 23px;
-}
 
-
-.MerchandiseSection .box3 .titlefont{
-    margin-top:20px;
-    margin-bottom:10px;
-    color: #FFF;
-    text-align: center;
-    font-family: Inter;
-    font-size: 30px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: normal;
-}
-.MerchandiseSection .box3 .greyline{
-    margin-top:0px;
-    width:90%;
-}
-.MerchandiseSection .box3 .subtitlefont{
-    color: #FFC904;
-    text-align: center;
-    font-family: Inter;
-    font-size: 20px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: normal;
-}
-.MerchandiseSection .box3 .subtextfont{
-    padding-right:15px;
-    padding-left:15px;
-    height:fit-content;
-    width: fit-content;
-    flex-shrink: 0;
-    color: #FFF;
-    text-align: center;
-    font-family: Inter;
-    font-size: 16px;
-    font-style: normal;
-    font-weight: 300;
-    line-height: 23px;
-}
 /*About UCF ACM with rainbow line under and picture to the right */
 /* Description under*/
 
