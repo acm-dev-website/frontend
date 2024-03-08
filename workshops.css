@@ -101,3 +101,13 @@ ul {
    width: 50px;
    height: 40px;
 }
+
+.footer {
+  padding-top: 300px;
+  background-color: rgb(100, 100, 100);
+}
+
+.footer_buttons { 
+  text-align: left;
+  color: white;
+}
