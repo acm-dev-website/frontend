@@ -1,17 +1,23 @@
 /* Don't ask me why I name it like this... */
 
 
-
+.body{
+    height:max-content;
+    width:fit-content;
+}
 .logoContainer {
-    position: absolute;
-    right: 2px;
+    position: relative;
+    display:inline-flex;
+    justify-content:center;
     bottom: 0;
 }
 .logoContainer a .insta {
+    display:inline-flex;
     width: 40px;
     height: 40px;
 }
 .logoContainer a .discord {
+    display:inline-flex;
     width: 50px;
     height: 40px;
 }
@@ -19,8 +25,8 @@
 .titleSection{
     height: 500px;
     width: auto;
-    padding-top: 100px;
-    padding-bottom:100px;
+    margin-top: 100px;
+    margin-bottom:100px;
     margin-right:0px;
     margin-left:0px;
     background: url(Graphics/backGrad.svg);
@@ -47,7 +53,7 @@
 
 }
 
-.titleSection .subtitlefont{
+.titleSection .subtextfont{
     position: relative;
     font-family: inter, sans-serif;
     font-size: 36px;
@@ -59,9 +65,8 @@
     margin-top:25px;
     display:inline-block;
     vertical-align: top;
-    width:30%;
-    border-radius: 150px;
     width:20%;
+    border-radius: 150px;
     height:auto;
     max-height: 100%;
 }
@@ -71,8 +76,8 @@
 .aboutSection{
     height: 400px;
     width: auto;
-    padding-top: 100px;
-    padding-bottom:0px;
+    margin-top: 100px;
+    margin-bottom:10px;
     
 }
 
@@ -83,7 +88,7 @@
     color: #FFFFFF;
     margin: auto;
     width: 40%;
-    padding-right: 90px;
+    margin-right: 90px;
 
 }
 
@@ -97,12 +102,12 @@
 
 }
 
-.aboutSection .subtitlefont{
+.aboutSection .subtextfont{
     position: relative;
     font-family: inter, sans-serif;
     font-size: 15px;
     font-weight: 200;
-    padding-top: 5px;
+    margin-top: 5px;
     line-height: 35px;
 }
 
@@ -112,7 +117,8 @@
     vertical-align: top;
     width:35%;
     height:auto;
-    padding-left: 90px;
+    max-height:100%;
+    margin-left: 90px;
 
 }
 
@@ -124,9 +130,8 @@
 .anotherSection{
     height: 450px;
     width: auto;
-    padding-top: 25px;
-    padding-bottom: 0px;
-    margin-bottom: 0px;
+    margin-top: 50px;
+    margin-bottom: 10px;
     
 }
 
@@ -137,7 +142,7 @@
     color: #FFFFFF;
     margin: auto;
     width: 40%;
-    padding-left: 90px;
+    margin-left: 90px;
 
 }
 
@@ -151,7 +156,7 @@
 
 }
 
-.anotherSection .subtitlefont{
+.anotherSection .subtextfont{
     position: relative;
     font-family: inter, sans-serif;
     font-size: 15px;
@@ -167,7 +172,8 @@
     vertical-align: top;
     width:35%;
     height:auto;
-    padding-right: 90px;
+    margin-right: 90px;
+    max-height:100%;
 
 }
 .anotherSection .orangeLine{
@@ -175,11 +181,361 @@
     height:100%;
 
 }
+
+.space{
+    height: 50px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+.space .divideLine{
+    height:auto;
+    width: 95%;
+    margin-top:auto;
+}
+
 .divideLine{
-    padding-top:100px;
+    margin-top:5%;
     width: 95%;
 }
 
+
+
+
+
+
+.UpcomingSection{
+    margin-top:35px;
+    height: 600px;
+    border-color:blueviolet;
+}
+
+.UpcomingSection .boxes{
+    display:inline-flex;
+    width:75%;
+    height:500px;
+    align-self: center;
+    justify-content:center;
+}
+.UpcomingSection .box1{
+    border-radius: 15px;
+    border: 2px solid rgba(255, 255, 255, 0.20);
+    background: rgba(51, 51, 51, 0.70);
+    height:80%;
+    width:35%;
+    flex-shrink: 0;
+}
+
+.UpcomingSection .box2{
+    border-radius: 15px;
+    border: 2px solid rgba(255, 255, 255, 0.20);
+    background: rgba(51, 51, 51, 0.70);
+    height:80%;
+    width:35%;
+    margin-left:30px;
+    margin-right:30px;
+    flex-shrink: 0;
+}
+.UpcomingSection .box3{
+    border-radius: 15px;
+    border: 2px solid rgba(255, 255, 255, 0.20);
+    background: rgba(51, 51, 51, 0.70);
+    height:80%;
+    width:35%;
+    flex-shrink: 0;
+}
+
+.UpcomingSection .box1 .titlefont{
+    margin-top:20px;
+    margin-bottom:10px;
+    color: #FFF;
+    text-align: center;
+    font-family: Inter;
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+.UpcomingSection .box1 .greyline{
+    margin-top:0px;
+    width:90%;
+}
+.UpcomingSection .box1 .subtitlefont{
+    color: #FFC904;
+    text-align: center;
+    font-family: Inter;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+.UpcomingSection .box1 .subtextfont{
+    padding-right:15px;
+    padding-left:15px;
+    height:fit-content;
+    width: fit-content;
+    flex-shrink: 0;
+    color: #FFF;
+    text-align: center;
+    font-family: Inter;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 23px;
+}
+
+
+.UpcomingSection .box2 .titlefont{
+    margin-top:20px;
+    margin-bottom:10px;
+    color: #FFF;
+    text-align: center;
+    font-family: Inter;
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+.UpcomingSection .box2 .greyline{
+    margin-top:0px;
+    width:90%;
+}
+.UpcomingSection .box2 .subtitlefont{
+    color: #FFC904;
+    text-align: center;
+    font-family: Inter;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+.UpcomingSection .box2 .subtextfont{
+    padding-right:15px;
+    padding-left:15px;
+    height:fit-content;
+    width: fit-content;
+    flex-shrink: 0;
+    color: #FFF;
+    text-align: center;
+    font-family: Inter;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 23px;
+}
+
+
+.UpcomingSection .box3 .titlefont{
+    margin-top:20px;
+    margin-bottom:10px;
+    color: #FFF;
+    text-align: center;
+    font-family: Inter;
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+.UpcomingSection .box3 .greyline{
+    margin-top:0px;
+    width:90%;
+}
+.UpcomingSection .box3 .subtitlefont{
+    color: #FFC904;
+    text-align: center;
+    font-family: Inter;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+.UpcomingSection .box3 .subtextfont{
+    padding-right:15px;
+    padding-left:15px;
+    height:fit-content;
+    width: fit-content;
+    flex-shrink: 0;
+    color: #FFF;
+    text-align: center;
+    font-family: Inter;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 23px;
+}
+
+
+
+
+
+.MerchandiseSection{
+    padding-top:15px;
+    height: 600px;
+    border-color:blueviolet;
+}
+.MerchandiseSection .sectionTitle{
+    margin-bottom:100px ;
+    color: #FFF;
+    text-align: center;
+    font-family: Inter;
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 48px;
+}
+
+.MerchandiseSection .boxes{
+    display:inline-flex;
+    width:75%;
+    height:500px;
+    align-self: center;
+    justify-content:center;
+}
+.MerchandiseSection .box1{
+    border-radius: 15px;
+    border: 2px solid rgba(255, 255, 255, 0.20);
+    background: rgba(51, 51, 51, 0.70);
+    height:80%;
+    width:35%;
+    flex-shrink: 0;
+}
+
+.MerchandiseSection .box2{
+    border-radius: 15px;
+    border: 2px solid rgba(255, 255, 255, 0.20);
+    background: rgba(51, 51, 51, 0.70);
+    height:80%;
+    width:35%;
+    margin-left:30px;
+    margin-right:30px;
+    flex-shrink: 0;
+}
+.MerchandiseSection .box3{
+    border-radius: 15px;
+    border: 2px solid rgba(255, 255, 255, 0.20);
+    background: rgba(51, 51, 51, 0.70);
+    height:80%;
+    width:35%;
+    flex-shrink: 0;
+}
+
+.MerchandiseSection .box1 .titlefont{
+    margin-top:20px;
+    margin-bottom:10px;
+    color: #FFF;
+    text-align: center;
+    font-family: Inter;
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+.MerchandiseSection .box1 .greyline{
+    margin-top:0px;
+    width:90%;
+}
+.MerchandiseSection .box1 .subtitlefont{
+    color: #FFC904;
+    text-align: center;
+    font-family: Inter;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+.MerchandiseSection .box1 .subtextfont{
+    padding-right:15px;
+    padding-left:15px;
+    height:fit-content;
+    width: fit-content;
+    flex-shrink: 0;
+    color: #FFF;
+    text-align: center;
+    font-family: Inter;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 23px;
+}
+
+
+.MerchandiseSection .box2 .titlefont{
+    margin-top:20px;
+    margin-bottom:10px;
+    color: #FFF;
+    text-align: center;
+    font-family: Inter;
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+.MerchandiseSection .box2 .greyline{
+    margin-top:0px;
+    width:90%;
+}
+.MerchandiseSection .box2 .subtitlefont{
+    color: #FFC904;
+    text-align: center;
+    font-family: Inter;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+.MerchandiseSection .box2 .subtextfont{
+    padding-right:15px;
+    padding-left:15px;
+    height:fit-content;
+    width: fit-content;
+    flex-shrink: 0;
+    color: #FFF;
+    text-align: center;
+    font-family: Inter;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 23px;
+}
+
+
+.MerchandiseSection .box3 .titlefont{
+    margin-top:20px;
+    margin-bottom:10px;
+    color: #FFF;
+    text-align: center;
+    font-family: Inter;
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+.MerchandiseSection .box3 .greyline{
+    margin-top:0px;
+    width:90%;
+}
+.MerchandiseSection .box3 .subtitlefont{
+    color: #FFC904;
+    text-align: center;
+    font-family: Inter;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+.MerchandiseSection .box3 .subtextfont{
+    padding-right:15px;
+    padding-left:15px;
+    height:fit-content;
+    width: fit-content;
+    flex-shrink: 0;
+    color: #FFF;
+    text-align: center;
+    font-family: Inter;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 23px;
+}
 /*About UCF ACM with rainbow line under and picture to the right */
 /* Description under*/
 
