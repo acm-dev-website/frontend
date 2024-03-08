@@ -1,16 +1,13 @@
 .events {
   background: #282828;
+  font-family: inter, sans-serif;
 }
 
 .mainHeader {
-  color: rgba(255, 255, 255, 0.80);
+  color: rgba(255, 255, 255);
   text-align: center;
-  font-family: Inter;
+  font-weight: 600;
   font-size: 55px;
-  font-style: normal;
-  font-weight: 700;
-  line-height: 66px; /* 120% */
-  text-transform: uppercase;
 }
 
 .eventElement {
@@ -19,8 +16,6 @@
   display: flex;
   justify-content: center;
   color: white;
-  margin-right: 137px;
-  /* This margin is (width of info box + img + space btwn them)/8 */
 } 
 
 /* Additional rule to remove default left-padding on <ul> */
@@ -29,7 +24,6 @@ ul {
 }
 
 .eventInfoBox {
-  margin-left: auto;
   margin-bottom: 5%;
   width: 686px;
   height: 360px;
@@ -50,12 +44,19 @@ ul {
 }
 
 .eventDetails {
-    text-align: left;
-    margin-left: 10px;  /* Adds whitespace to the left of the details for spacing */
-    display: block;
+  text-align: left;
+  margin-left: 10px;  /* Adds whitespace to the left of the details for spacing */
+  display: block;
 }
 
 .eventName {
+  display: inline-block;
+  font-size: 25px;
+}
+
+.eventHeaderDate {
+  display: inline-block;
+  margin-left: 50px;
   font-size: 25px;
 }
 
@@ -84,4 +85,19 @@ ul {
   opacity: 0;
   transform: translateY(20px);
   transition: opacity 0.8s ease-in-out, transform 0.8s ease-in-out;
+}
+
+.logoContainer {
+  display: inline-flex;
+  justify-content: center;
+  position: relative;
+  bottom: 0;
+}
+.logoContainer a .insta {
+   width: 40px;
+   height: 40px;
+}
+.logoContainer a .discord {
+   width: 50px;
+   height: 40px;
 }

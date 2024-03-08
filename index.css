@@ -6,10 +6,14 @@
     width:fit-content;
 }
 .logoContainer {
+<<<<<<< HEAD
     position: relative;
     display:inline-flex;
     justify-content:center;
     bottom: 0;
+=======
+
+>>>>>>> 92975fec987dd652bb098cf129965e96808ebff6
 }
 .logoContainer a .insta {
     display:inline-flex;

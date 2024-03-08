@@ -1,16 +1,28 @@
 .projects {
   background: #282828;
+  font-family: inter, sans-serif;
+}
+
+.logoContainer {
+  display: inline-flex;
+  justify-content: center;
+  position: relative;
+  bottom: 0;
+}
+.logoContainer a .insta {
+   width: 40px;
+   height: 40px;
+}
+.logoContainer a .discord {
+   width: 50px;
+   height: 40px;
 }
 
 .mainHeader {
-  color: rgba(255, 255, 255, 0.80);
+  color: rgba(255, 255, 255);
   text-align: center;
-  font-family: Inter;
+  font-weight: 600;
   font-size: 55px;
-  font-style: normal;
-  font-weight: 700;
-  line-height: 66px; /* 120% */
-  text-transform: uppercase;
 }
 
 .projectElement {
@@ -19,8 +31,6 @@
   display: flex;
   justify-content: center;
   color: white;
-  margin-right: 137px;
-  /* This margin is (width of info box + img + space btwn them)/8 */
 } 
 
 /* Additional rule to remove default left-padding on <ul> */
@@ -29,7 +39,6 @@ ul {
 }
 
 .projectInfoBox {
-  margin-left: auto;
   margin-bottom: 5%;
   width: 686px;
   height: 360px;
@@ -50,12 +59,19 @@ ul {
 }
 
 .projectDetails {
-    text-align: left;
-    margin-left: 10px;  /* Adds whitespace to the left of the details for spacing */
-    display: block;
+  text-align: left;
+  margin-left: 10px;  /* Adds whitespace to the left of the details for spacing */
+  display: block;
 }
 
 .projectName {
+  display: inline-block;
+  font-size: 25px;
+}
+
+.projectHeaderDate {
+  display: inline-block;
+  margin-left: 50px;
   font-size: 25px;
 }
 
