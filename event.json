@@ -1,0 +1,42 @@
+{
+    "message": [
+        {
+            "name": "123",
+            "date": "2123-12-03",
+            "description": "1231234",
+            "imageName": null
+        },
+        {
+            "name": "video test",
+            "date": "2341-12-31",
+            "description": "1asdfsdf",
+            "imageName": null
+        },
+        {
+            "name": "Test Event",
+            "date": "2024-02-09",
+            "description": "It has an event type!",
+            "type": "gbm",
+            "imageName": "adele.webp"
+        },
+        {
+            "name": "asdasd",
+            "date": "3423-12-03",
+            "description": "sdfsdf",
+            "imageName": null
+        },
+        {
+            "name": "test",
+            "date": "2024-02-13",
+            "description": "Peubeubebufuefub",
+            "imageName": null
+        },
+        {
+            "name": "First Test",
+            "date": "2024-12-01",
+            "description": "lol",
+            "type": "project",
+            "imageName": null
+        } 
+    ]
+}
