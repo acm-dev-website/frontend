@@ -69,7 +69,7 @@
                     p.classList.add(`event${prop.charAt(0).toUpperCase() + prop.slice(1)}`);
                     if (className === "eventName" || className === "eventDate") {
                       p.innerHTML = `<strong>${event[prop]}</strong>`;
-                    } else {
+                    } else if (className === "eventHosts" || className === "eventDescription" || className === "eventType") {
                       p.innerHTML = `<strong>${propName}:</strong> ${event[prop]}`;
                     }
                     divDetails.appendChild(p);

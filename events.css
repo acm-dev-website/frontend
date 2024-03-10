@@ -68,6 +68,10 @@ ul {
   font-size: 20px;
 }
 
+.eventType {
+  font-size: 20px;
+}
+
 /* rotates acm logo on hover*/
 .Acm_Logo:hover
 {
