@@ -79,10 +79,10 @@
             divInfoBox.appendChild(divDetails);
             li.appendChild(divInfoBox);
 
-            if (event.imageName) {
+            if (event.img) {
                 const img = document.createElement("img");
-                img.classList.add("eventImg");
-                img.src = `Graphics/${event.imageName}`;
+                img.classList.add("eventImage");
+                img.src = `Graphics/${event.img}`;
                 li.appendChild(img);
             }
 
@@ -116,7 +116,7 @@
             <p class="eventDescription"><strong>Description:</strong> A Description</p>
           </div>
         </div>
-        <img class="eventImg" src="Graphics/acmlogo.png">
+        <img class="eventImage" src="Graphics/acmlogo.png">
       </li>
       <li class="eventElement">
         <div class="eventInfoBox">
@@ -127,7 +127,7 @@
             <p class="eventDescription"><strong>Description:</strong> A Description</p>
           </div>
         </div>
-        <img class="eventImg" src="Graphics/acmlogo.png">
+        <img class="eventImage" src="Graphics/acmlogo.png">
       </li>
       <li class="eventElement">
         <div class="eventInfoBox">
@@ -138,7 +138,7 @@
             <p class="eventDescription"><strong>Description:</strong> A Description</p>
           </div>
         </div>
-        <img class="eventImg" src="Graphics/acmlogo.png">
+        <img class="eventImage" src="Graphics/acmlogo.png">
       </li>
     </ul>
   </div>

@@ -5,14 +5,14 @@
             "date": "2123-12-03",
             "hosts": "Person, Person, and Person",
             "description": "1231234",
-            "imageName": "acmlogo.png"
+            "img": "acmlogo.png"
         },
         {
             "name": "video test",
             "date": "2341-12-31",
             "hosts": "Person, Person, Person, and Person",
             "description": "1asdfsdf",
-            "imageName": null
+            "img": null
         },
         {
             "name": "Test Event",
@@ -20,21 +20,21 @@
             "hosts": "Person and Person",
             "description": "It has an event type!",
             "type": "gbm",
-            "imageName": "acmlogo.png"
+            "img": "acmlogo.png"
         },
         {
             "name": "asdasd",
             "date": "3423-12-03",
             "hosts": "Person, Person, Person, Person, and Person",
             "description": "sdfsdf",
-            "imageName": null
+            "img": null
         },
         {
             "name": "test",
             "date": "2024-02-13",
             "hosts": "Person",
             "description": "Peubeubebufuefub",
-            "imageName": null
+            "img": null
         },
         {
             "name": "First Test",
@@ -42,7 +42,7 @@
             "hosts": "Person and Person",
             "description": "lol",
             "type": "project",
-            "imageName": null
+            "img": null
         } 
     ]
 }
