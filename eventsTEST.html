@@ -42,44 +42,60 @@
   </div>
   <div class="events">
     <h1 class="mainHeader">Events</h1>
-    <ul>
-      <li class="eventElement">
-        <div class="eventInfoBox">
-          <div class="eventDetails">
-            <p class="eventName"><strong>An Upcoming Event</strong></p>
-            <p class="eventHeaderDate"><strong>MM/DD/YYYY</strong></p>
-            <p class="eventHosts"><strong>Hosted by:</strong> Host 1 and Host 2</p>
-            <p class="eventDate"><strong>Date:</strong> Some Day, Some Time</p>
-            <p class="eventDescription"><strong>Description:</strong> A Description</p>
-          </div>
-        </div>
-        <img class="eventImg" src="Graphics/acmlogo.png">
-      </li>
-      <li class="eventElement">
-        <div class="eventInfoBox">
-          <div class="eventDetails">
-            <p class="eventName"><strong>An Upcoming Event</strong></p>
-            <p class="eventHeaderDate"><strong>MM/DD/YYYY</strong></p>
-            <p class="eventHosts"><strong>Hosted by:</strong> Host 1 and Host 2</p>
-            <p class="eventDate"><strong>Date:</strong> Some Day, Some Time</p>
-            <p class="eventDescription"><strong>Description:</strong> A Description</p>
-          </div>
-        </div>
-        <img class="eventImg" src="Graphics/acmlogo.png">
-      </li>
-      <li class="eventElement">
-        <div class="eventInfoBox">
-          <div class="eventDetails">
-            <p class="eventName"><strong>An Upcoming Event</strong></p>
-            <p class="eventHeaderDate"><strong>MM/DD/YYYY</strong></p>
-            <p class="eventHosts"><strong>Hosted by:</strong> Host 1 and Host 2</p>
-            <p class="eventDate"><strong>Date:</strong> Some Day, Some Time</p>
-            <p class="eventDescription"><strong>Description:</strong> A Description</p>
-          </div>
-        </div>
-        <img class="eventImg" src="Graphics/acmlogo.png">
-      </li>
-    </ul>
+    
+    <ul id="eventList"></ul>
+
+    <script>
+        // Function to create HTML elements for each event
+        function createEventElement(event) {
+            const li = document.createElement("li");
+            li.classList.add("eventElement");
+
+            const divInfoBox = document.createElement("div");
+            divInfoBox.classList.add("eventInfoBox");
+
+            const divDetails = document.createElement("div");
+            divDetails.classList.add("eventDetails");
+
+            // Iterate through event properties and create <p> elements
+            for (const prop in event) {
+                if (event[prop]) {
+                    const p = document.createElement("p");
+                    p.classList.add(`event${prop.charAt(0).toUpperCase() + prop.slice(1)}`);
+                    p.innerHTML = `<strong>${prop.charAt(0).toUpperCase() + prop.slice(1)}:</strong> ${event[prop]}`;
+                    divDetails.appendChild(p);
+                }
+            }
+
+            divInfoBox.appendChild(divDetails);
+
+            if (event.imageName) {
+                const img = document.createElement("img");
+                img.classList.add("eventImg");
+                img.src = `Graphics/${event.imageName}`;
+                divInfoBox.appendChild(img);
+            }
+
+            li.appendChild(divInfoBox);
+
+            return li;
+        }
+
+        // Get the ul element to append event elements
+        const eventList = document.getElementById("eventList");
+
+        // Fetch JSON data from the external file
+        fetch('event.json')
+            .then(response => response.json())
+            .then(jsonData => {
+                // Loop through each event in the JSON data and append to the ul element
+                jsonData.message.forEach(event => {
+                    const eventElement = createEventElement(event);
+                    eventList.appendChild(eventElement);
+                });
+            })
+            .catch(error => console.error('Error fetching JSON:', error));
+    </script>
     
     <h1 class="mainHeader">Past Events</h1>
     <ul>
