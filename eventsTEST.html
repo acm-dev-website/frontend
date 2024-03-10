@@ -61,8 +61,17 @@
             for (const prop in event) {
                 if (event[prop]) {
                     const p = document.createElement("p");
+                    const propName = prop.charAt(0).toUpperCase() + prop.slice(1);
+                    const className = `event${propName}`;
+                    p.classList.add(className);
+
+                    // Check the class name and adjust inner HTML accordingly
                     p.classList.add(`event${prop.charAt(0).toUpperCase() + prop.slice(1)}`);
-                    p.innerHTML = `<strong>${prop.charAt(0).toUpperCase() + prop.slice(1)}:</strong> ${event[prop]}`;
+                    if (className === "eventName" || className === "eventDate") {
+                      p.innerHTML = `<strong>${event[prop]}</strong>`;
+                    } else {
+                      p.innerHTML = `<strong>${propName}:</strong> ${event[prop]}`;
+                    }
                     divDetails.appendChild(p);
                 }
             }
@@ -103,9 +112,8 @@
         <div class="eventInfoBox">
           <div class="eventDetails">
             <p class="eventName"><strong>A Past Event</strong></p>
-            <p class="eventHeaderDate"><strong>MM/DD/YYYY</strong></p>
+            <p class="eventDate"><strong>MM/DD/YYYY</strong></p>
             <p class="eventHosts"><strong>Hosted by:</strong> Leader 1 and Host 2</p>
-            <p class="eventDate"><strong>Date:</strong> A Date</p>
             <p class="eventDescription"><strong>Description:</strong> A Description</p>
           </div>
         </div>
@@ -115,9 +123,8 @@
         <div class="eventInfoBox">
           <div class="eventDetails">
             <p class="eventName"><strong>A Past Event</strong></p>
-            <p class="eventHeaderDate"><strong>MM/DD/YYYY</strong></p>
+            <p class="eventDate"><strong>MM/DD/YYYY</strong></p>
             <p class="eventHosts"><strong>Hosted by:</strong> Leader 1 and Host 2</p>
-            <p class="eventDate"><strong>Date:</strong> A Date</p>
             <p class="eventDescription"><strong>Description:</strong> A Description</p>
           </div>
         </div>
@@ -127,9 +134,8 @@
         <div class="eventInfoBox">
           <div class="eventDetails">
             <p class="eventName"><strong>A Past Event</strong></p>
-            <p class="eventHeaderDate"><strong>MM/DD/YYYY</strong></p>
+            <p class="eventDate"><strong>MM/DD/YYYY</strong></p>
             <p class="eventHosts"><strong>Hosted by:</strong> Leader 1 and Host 2</p>
-            <p class="eventDate"><strong>Date:</strong> A Date</p>
             <p class="eventDescription"><strong>Description:</strong> A Description</p>
           </div>
         </div>

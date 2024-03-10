@@ -54,17 +54,13 @@ ul {
   font-size: 25px;
 }
 
-.workshopHeaderDate {
+.workshopDate {
   display: inline-block;
   margin-left: 50px;
   font-size: 25px;
 }
 
 .workshopLeaderNames {
-  font-size: 20px;
-}
-
-.workshopDate {
   font-size: 20px;
 }
 
