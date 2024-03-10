@@ -3,18 +3,21 @@
         {
             "name": "173837782882",
             "date": "2123-12-03",
+            "hosts": "Person, Person, and Person",
             "description": "1231234",
             "imageName": "acmlogo.png"
         },
         {
             "name": "video test",
             "date": "2341-12-31",
+            "hosts": "Person, Person, Person, and Person",
             "description": "1asdfsdf",
             "imageName": null
         },
         {
             "name": "Test Event",
             "date": "2024-02-09",
+            "hosts": "Person and Person",
             "description": "It has an event type!",
             "type": "gbm",
             "imageName": "acmlogo.png"
@@ -22,18 +25,21 @@
         {
             "name": "asdasd",
             "date": "3423-12-03",
+            "hosts": "Person, Person, Person, Person, and Person",
             "description": "sdfsdf",
             "imageName": null
         },
         {
             "name": "test",
             "date": "2024-02-13",
+            "hosts": "Person",
             "description": "Peubeubebufuefub",
             "imageName": null
         },
         {
             "name": "First Test",
             "date": "2024-12-01",
+            "hosts": "Person and Person",
             "description": "lol",
             "type": "project",
             "imageName": null

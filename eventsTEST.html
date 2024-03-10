@@ -41,7 +41,7 @@
               </div>
   </div>
   <div class="events">
-    <h1 class="mainHeader">Events</h1>
+    <h1 class="mainHeader">Upcoming Events</h1>
     
     <ul id="eventList"></ul>
 
@@ -77,15 +77,14 @@
             }
 
             divInfoBox.appendChild(divDetails);
+            li.appendChild(divInfoBox);
 
             if (event.imageName) {
                 const img = document.createElement("img");
                 img.classList.add("eventImg");
                 img.src = `Graphics/${event.imageName}`;
-                divInfoBox.appendChild(img);
+                li.appendChild(img);
             }
-
-            li.appendChild(divInfoBox);
 
             return li;
         }
@@ -94,7 +93,7 @@
         const eventList = document.getElementById("eventList");
 
         // Fetch JSON data from the external file
-        fetch('event.json')
+        fetch('testEventList.json')
             .then(response => response.json())
             .then(jsonData => {
                 // Loop through each event in the JSON data and append to the ul element
