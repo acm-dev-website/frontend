@@ -50,7 +50,7 @@
         function createEventElement(event) {
             const li = document.createElement("li");
             li.classList.add("eventElement");
-
+            
             const divInfoBox = document.createElement("div");
             divInfoBox.classList.add("eventInfoBox");
 
@@ -63,13 +63,13 @@
                     const p = document.createElement("p");
                     const propName = prop.charAt(0).toUpperCase() + prop.slice(1);
                     const className = `event${propName}`;
-                    p.classList.add(className);
 
                     // Check the class name and adjust inner HTML accordingly
-                    p.classList.add(`event${prop.charAt(0).toUpperCase() + prop.slice(1)}`);
                     if (className === "eventName" || className === "eventDate") {
+                      p.classList.add(className);
                       p.innerHTML = `<strong>${event[prop]}</strong>`;
                     } else if (className === "eventHosts" || className === "eventDescription" || className === "eventType") {
+                      p.classList.add(className);
                       p.innerHTML = `<strong>${propName}:</strong> ${event[prop]}`;
                     }
                     divDetails.appendChild(p);
