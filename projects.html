@@ -2,9 +2,9 @@
 <html>
 <head>
   <link rel="styleSheet" href="projects.css"/>
-  <link rel="styleSheet" href="style.css"/>       
+  <link rel="styleSheet" href="style.css"/>
   <link rel="preconnect" href="https://rsms.me/">
-  <link rel="stylesheet" href="https://rsms.me/inter/inter.css">
+  <link rel="stylesheet" href="https://rsms.me/inter/inter.css">     
 </head>
 <body>
   <div class="main" >
@@ -21,7 +21,7 @@
                      <button class = "btn leadershipbtn">Leadership</button>
                   </a>
                   <a href="projects.html" >
-                     <button class = "btn projectsbtn">Projects</button>
+                     <button class = "btn projectssbtn">Projects</button>
                   </a>
                   <a href="workshops.html" >
                      <button class = "btn workshopsbtn">Workshops</button>
@@ -41,85 +41,15 @@
               </div>
   </div>
   <div class="projects">
-    <h1 class="mainHeader">Current & Upcoming Projects</h1>
-    <ul>
-      <li class="projectElement">
-        <div class="projectInfoBox">
-          <div class="projectDetails">
-            <p class="projectName"><strong>A Current Project</strong></p>
-            <p class="projectHeaderDate"><strong>MM/DD/YYYY</strong></p>
-            <p class="projectLeaderNames"><strong>Led by:</strong> Leader 1 and Leader 2</p>
-            <p class="projectMeetingSchedule"><strong>Meeting Schedule:</strong> Some Days, Some Times</p>
-            <p class="projectDescription"><strong>Description:</strong> A Description</p>
-          </div>
-        </div>
-        <img class="projectImage" src="Graphics/acmlogo.png">
-      </li>
-      <li class="projectElement">
-        <div class="projectInfoBox">
-          <div class="projectDetails">
-            <p class="projectName"><strong>A Current Project</strong></p>
-            <p class="projectHeaderDate"><strong>MM/DD/YYYY</strong></p>
-            <p class="projectLeaderNames"><strong>Led by:</strong> Leader 1 and Leader 2</p>
-            <p class="projectMeetingSchedule"><strong>Meeting Schedule:</strong> Some Days, Some Times</p>
-            <p class="projectDescription"><strong>Description:</strong> A Description</p>
-          </div>
-        </div>
-        <img class="projectImage" src="Graphics/acmlogo.png">
-      </li>
-      <li class="projectElement">
-        <div class="projectInfoBox">
-          <div class="projectDetails">
-            <p class="projectName"><strong>A Current Project</strong></p>
-            <p class="projectHeaderDate"><strong>MM/DD/YYYY</strong></p>
-            <p class="projectLeaderNames"><strong>Led by:</strong> Leader 1 and Leader 2</p>
-            <p class="projectMeetingSchedule"><strong>Meeting Schedule:</strong> Some Days, Some Times</p>
-            <p class="projectDescription"><strong>Description:</strong> A Description</p>
-          </div>
-        </div>
-        <img class="projectImage" src="Graphics/acmlogo.png">
-      </li>
-    </ul>
+
+    <h1 class="mainHeader">Current and Upcoming Projects</h1>
+    <ul id="curProjectList"></ul>
     
     <h1 class="mainHeader">Past Projects</h1>
-    <ul>
-      <li class="projectElement">
-        <div class="projectInfoBox">
-          <div class="projectDetails">
-            <p class="projectName"><strong>A Past Project</strong></p>
-            <p class="projectHeaderDate"><strong>MM/DD/YYYY</strong></p>
-            <p class="projectLeaderNames"><strong>Led by:</strong> Leader 1 and Leader 2</p>
-            <p class="projectMeetingSchedule"><strong>Completed:</strong> A Range of Dates</p>
-            <p class="projectDescription"><strong>Description:</strong> A Description</p>
-          </div>
-        </div>
-        <img class="projectImage" src="Graphics/acmlogo.png">
-      </li>
-      <li class="projectElement">
-        <div class="projectInfoBox">
-          <div class="projectDetails">
-            <p class="projectName"><strong>A Past Project</strong></p>
-            <p class="projectHeaderDate"><strong>MM/DD/YYYY</strong></p>
-            <p class="projectLeaderNames"><strong>Led by:</strong> Leader 1 and Leader 2</p>
-            <p class="projectMeetingSchedule"><strong>Completed:</strong> A Range of Dates</p>
-            <p class="projectDescription"><strong>Description:</strong> A Description</p>
-          </div>
-        </div>
-        <img class="projectImage" src="Graphics/acmlogo.png">
-      </li>
-      <li class="projectElement">
-        <div class="projectInfoBox">
-          <div class="projectDetails">
-            <p class="projectName"><strong>A Past Project</strong></p>
-            <p class="projectHeaderDate"><strong>MM/DD/YYYY</strong></p>
-            <p class="projectLeaderNames"><strong>Led by:</strong> Leader 1 and Leader 2</p>
-            <p class="projectMeetingSchedule"><strong>Completed:</strong> A Range of Dates</p>
-            <p class="projectDescription"><strong>Description:</strong> A Description</p>
-          </div>
-        </div>
-        <img class="projectImage" src="Graphics/acmlogo.png">
-      </li>
-    </ul>
+    <ul id="pastProjectList"></ul>
+
+    <script src="projects.js"></script>
+
   </div>
 
   <footer> 
