@@ -54,13 +54,17 @@ ul {
   font-size: 25px;
 }
 
-.eventDate {
+.eventHeaderDate {
   display: inline-block;
   margin-left: 50px;
   font-size: 25px;
 }
 
 .eventHosts {
+  font-size: 20px;
+}
+
+.eventDate {
   font-size: 20px;
 }
 
