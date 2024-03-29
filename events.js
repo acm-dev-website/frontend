@@ -1,3 +1,10 @@
+// Get the respective ul elements to append event elements to
+const ucEventList = document.getElementById("ucEventList");
+fetchAndDisplay(ucEventList, 'testEventList.json');
+
+const pastEventList = document.getElementById("pastEventList");
+fetchAndDisplay(pastEventList, 'testEventList.json');
+
 // Function to create HTML elements for each event
 function createEventElement(event) {
     // Create list element and assign eventElement class to it
@@ -44,20 +51,17 @@ function createEventElement(event) {
     return li;
 }
 
-// Get the ul element to append event elements
-const ucEventList = document.getElementById("ucEventList");
-const pastEventList = document.getElementById("pastEventList");
-
-// Fetch JSON data from the external file
-fetch('testEventList.json')
-    .then(response => response.json())
-    .then(jsonData => {
-        // Loop through each event in the JSON data and append to the ul element
-        jsonData.message.forEach(event => {
-            const eventElement1 = createEventElement(event);
-            const eventElement2 = createEventElement(event);
-            ucEventList.appendChild(eventElement1);
-            pastEventList.appendChild(eventElement2);
-        });
-    })
-    .catch(error => console.error('Error fetching JSON:', error));
+// Parses event information from JSON file and displays it on page
+function fetchAndDisplay(eventList, filename) {
+    // Fetch JSON data from the external file
+    fetch(filename)
+        .then(response => response.json())
+        .then(jsonData => {
+            // Loop through each event in the JSON data and append to the ul element
+            jsonData.message.forEach(event => {
+                const eventElement = createEventElement(event);
+                eventList.appendChild(eventElement);
+            });
+        })
+        .catch(error => console.error('Error fetching JSON:', error));
+}
