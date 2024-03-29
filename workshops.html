@@ -4,7 +4,7 @@
   <link rel="styleSheet" href="workshops.css"/>
   <link rel="styleSheet" href="style.css"/>
   <link rel="preconnect" href="https://rsms.me/">
-  <link rel="stylesheet" href="https://rsms.me/inter/inter.css">   
+  <link rel="stylesheet" href="https://rsms.me/inter/inter.css">     
 </head>
 <body>
   <div class="main" >
@@ -21,7 +21,7 @@
                      <button class = "btn leadershipbtn">Leadership</button>
                   </a>
                   <a href="projects.html" >
-                     <button class = "btn projectsbtn">Projects</button>
+                     <button class = "btn projectssbtn">Projects</button>
                   </a>
                   <a href="workshops.html" >
                      <button class = "btn workshopsbtn">Workshops</button>
@@ -41,90 +41,21 @@
               </div>
   </div>
   <div class="workshops">
+
     <h1 class="mainHeader">Upcoming Workshops</h1>
-    <ul>
-      <li class="workshopElement">
-        <div class="workshopInfoBox">
-          <div class="workshopDetails">
-            <p class="workshopName"><strong>A Current Workshop</strong></p>
-            <p class="workshopDate"><strong>MM/DD/YYYY</strong></p>
-            <p class="workshopLeaderNames"><strong>Led by:</strong> Leader 1 and Leader 2</p>
-            <p class="workshopDescription"><strong>Description:</strong> A Description</p>
-          </div>
-        </div>
-        <img class="workshopImage" src="Graphics/acmlogo.png">
-      </li>
-      <li class="workshopElement">
-        <div class="workshopInfoBox">
-          <div class="workshopDetails">
-            <p class="workshopName"><strong>A Current Workshop</strong></p>
-            <p class="workshopDate"><strong>MM/DD/YYYY</strong></p>
-            <p class="workshopLeaderNames"><strong>Led by:</strong> Leader 1 and Leader 2</p>
-            <p class="workshopDescription"><strong>Description:</strong> A Description</p>
-          </div>
-        </div>
-        <img class="workshopImage" src="Graphics/acmlogo.png">
-      </li>
-      <li class="workshopElement">
-        <div class="workshopInfoBox">
-          <div class="workshopDetails">
-            <p class="workshopName"><strong>A Current Workshop</strong></p>
-            <p class="workshopDate"><strong>MM/DD/YYYY</strong></p>
-            <p class="workshopLeaderNames"><strong>Led by:</strong> Leader 1 and Leader 2</p>
-            <p class="workshopDescription"><strong>Description:</strong> A Description</p>
-          </div>
-        </div>
-        <img class="workshopImage" src="Graphics/acmlogo.png">
-      </li>
-    </ul>
+    <ul id="ucWorkshopList"></ul>
     
     <h1 class="mainHeader">Past Workshops</h1>
-    <ul>
-      <li class="workshopElement">
-        <div class="workshopInfoBox">
-          <div class="workshopDetails">
-            <p class="workshopName"><strong>A Past Workshop</strong></p>
-            <p class="workshopDate"><strong>MM/DD/YYYY</strong></p>
-            <p class="workshopLeaderNames"><strong>Led by:</strong> Leader 1 and Leader 2</p>
-            <p class="workshopDescription"><strong>Description:</strong> A Description</p>
-          </div>
-        </div>
-        <img class="workshopImage" src="Graphics/acmlogo.png">
-      </li>
-      <li class="workshopElement">
-        <div class="workshopInfoBox">
-          <div class="workshopDetails">
-            <p class="workshopName"><strong>A Past Workshop</strong></p>
-            <p class="workshopDate"><strong>MM/DD/YYYY</strong></p>
-            <p class="workshopLeaderNames"><strong>Led by:</strong> Leader 1 and Leader 2</p>
-            <p class="workshopDescription"><strong>Description:</strong> A Description</p>
-          </div>
-        </div>
-        <img class="workshopImage" src="Graphics/acmlogo.png">
-      </li>
-      <li class="workshopElement">
-        <div class="workshopInfoBox">
-          <div class="workshopDetails">
-            <p class="workshopName"><strong>A Past Workshop</strong></p>
-            <p class="workshopDate"><strong>MM/DD/YYYY</strong></p>
-            <p class="workshopLeaderNames"><strong>Led by:</strong> Leader 1 and Leader 2</p>
-            <p class="workshopDescription"><strong>Description:</strong> A Description</p>
-          </div>
-        </div>
-        <img class="workshopImage" src="Graphics/acmlogo.png">
-      </li>
-    </ul>
+    <ul id="pastWorkshopList"></ul>
+
+    <script src="workshops.js"></script>
+
   </div>
 
-  <footer class="footer"> 
+  <footer> 
     <div class="logoContainer">
      <a href="https://www.instagram.com/ucfacm/"> <img class="insta" src ="Graphics/instagramlogo.png"/></a>
      <a href="https://discord.gg/v5MGt27PsV" > <img class="discord" src="Graphics/discordlogo.png"/></a>
-     <img src= "Graphics/Meta-Logo.png" alt="Meta Logo" width=80px height=60px>
-    </div>
-
-    <div class="footer_buttons">
-      <p <strong>Home</strong> </p>
     </div>
    </footer>
 

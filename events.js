@@ -62,6 +62,6 @@ function createEventElement(event) {
         li.appendChild(img);
     }
             
-    // Return completed li element
+    // Return completed list element
     return li;
 }

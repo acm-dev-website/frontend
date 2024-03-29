@@ -31,6 +31,27 @@ ul {
   border-radius: 15px;
   border: 2px solid rgba(255, 255, 255, 0.20);
   background: rgba(51, 51, 51, 0.70);
+
+  text-align: left;
+  display: block;
+}
+
+.workshopName {
+  margin-left: 10px;  /* Adds whitespace to the left of the details for spacing */
+  display: inline-block;
+  font-size: 25px;
+}
+
+.workshopDate {
+  display: inline-block;
+  margin-left: 25px;
+  font-size: 25px;
+}
+
+.workshopLeaders, .workshopDescription, .workshopType {
+  display: block;
+  margin-left: 10px;  /* Adds whitespace to the left of the details for spacing */
+  font-size: 20px;
 }
 
 .workshopImage {
@@ -43,37 +64,11 @@ ul {
   background: url(<path-to-image>), lightgray 0px -335.426px / 100% 391.622% no-repeat;
 }
 
-.workshopDetails {
-  text-align: left;
-  margin-left: 10px;  /* Adds whitespace to the left of the details for spacing */
-  display: block;
-}
-
-.workshopName {
-  display: inline-block;
-  font-size: 25px;
-}
-
-.workshopDate {
-  display: inline-block;
-  margin-left: 50px;
-  font-size: 25px;
-}
-
-.workshopLeaderNames {
-  font-size: 20px;
-}
-
-.workshopDescription {
-  font-size: 20px;
-}
-
 /* rotates acm logo on hover*/
-.Acm_Logo:hover
-{
-    cursor: default;
-    transform: rotate(360deg);
-    transition: transform 0.9s ease-in-out;
+.Acm_Logo:hover {
+  cursor: default;
+  transform: rotate(360deg);
+  transition: transform 0.9s ease-in-out;
 }
 
 /* Scroll fade effect made by Chat-GPT */
@@ -90,20 +85,10 @@ ul {
   bottom: 0;
 }
 .logoContainer a .insta {
-   width: 40px;
-   height: 40px;
+  width: 40px;
+  height: 40px;
 }
 .logoContainer a .discord {
-   width: 50px;
-   height: 40px;
-}
-
-.footer {
-  padding-top: 300px;
-  background-color: rgb(100, 100, 100);
-}
-
-.footer_buttons { 
-  text-align: left;
-  color: white;
+  width: 50px;
+  height: 40px;
 }

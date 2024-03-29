@@ -1,0 +1,48 @@
+{
+    "message": [
+        {
+            "name": "173837782882",
+            "date": "2123-12-03",
+            "leaders": "Person, Person, and Person",
+            "description": "1231234",
+            "img": "acmlogo.png"
+        },
+        {
+            "name": "video test",
+            "date": "2341-12-31",
+            "leaders": "Person, Person, Person, and Person",
+            "description": "1asdfsdf",
+            "img": null
+        },
+        {
+            "name": "Test Event",
+            "date": "2024-02-09",
+            "leaders": "Person and Person",
+            "description": "It has an event type!",
+            "type": "gbm",
+            "img": "acmlogo.png"
+        },
+        {
+            "name": "asdasd",
+            "date": "3423-12-03",
+            "leaders": "Person, Person, Person, Person, and Person",
+            "description": "sdfsdf",
+            "img": null
+        },
+        {
+            "name": "test",
+            "date": "2024-02-13",
+            "leaders": "Person",
+            "description": "Peubeubebufuefub",
+            "img": null
+        },
+        {
+            "name": "First Test",
+            "date": "2024-12-01",
+            "leaders": "Person and Person",
+            "description": "lol",
+            "type": "project",
+            "img": null
+        } 
+    ]
+}
