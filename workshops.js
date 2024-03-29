@@ -1,9 +1,9 @@
 // Get the respective ul elements to append workshop elements to
 const ucWorkshopList = document.getElementById("ucWorkshopList");
-fetchAndDisplay(ucWorkshopList, 'testWsList.json');
+fetchAndDisplay(ucWorkshopList, 'testInfoList.json');
 
 const pastWorkshopList = document.getElementById("pastWorkshopList");
-fetchAndDisplay(pastWorkshopList, 'testWsList.json');
+fetchAndDisplay(pastWorkshopList, 'testInfoList.json');
 
 // Parses workshop information from JSON file and displays it on page
 function fetchAndDisplay(workshopList, filename) {

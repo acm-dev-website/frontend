@@ -1,9 +1,9 @@
 // Get the respective ul elements to append project elements to
 const curProjectList = document.getElementById("curProjectList");
-fetchAndDisplay(curProjectList, 'testProjList.json');
+fetchAndDisplay(curProjectList, 'testInfoList.json');
 
 const pastProjectList = document.getElementById("pastProjectList");
-fetchAndDisplay(pastProjectList, 'testProjList.json');
+fetchAndDisplay(pastProjectList, 'testInfoList.json');
 
 // Parses project information from JSON file and displays it on page
 function fetchAndDisplay(projectList, filename) {
