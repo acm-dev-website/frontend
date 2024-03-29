@@ -45,7 +45,8 @@ function createEventElement(event) {
 }
 
 // Get the ul element to append event elements
-const eventList = document.getElementById("eventList");
+const ucEventList = document.getElementById("ucEventList");
+const pastEventList = document.getElementById("pastEventList");
 
 // Fetch JSON data from the external file
 fetch('testEventList.json')
@@ -53,8 +54,10 @@ fetch('testEventList.json')
     .then(jsonData => {
         // Loop through each event in the JSON data and append to the ul element
         jsonData.message.forEach(event => {
-            const eventElement = createEventElement(event);
-            eventList.appendChild(eventElement);
+            const eventElement1 = createEventElement(event);
+            const eventElement2 = createEventElement(event);
+            ucEventList.appendChild(eventElement1);
+            pastEventList.appendChild(eventElement2);
         });
     })
     .catch(error => console.error('Error fetching JSON:', error));
