@@ -5,6 +5,21 @@ fetchAndDisplay(ucEventList, 'testEventList.json');
 const pastEventList = document.getElementById("pastEventList");
 fetchAndDisplay(pastEventList, 'testEventList.json');
 
+// Parses event information from JSON file and displays it on page
+function fetchAndDisplay(eventList, filename) {
+    // Fetch JSON data from the external file
+    fetch(filename)
+        .then(response => response.json())
+        .then(jsonData => {
+            // Loop through each event in the JSON data and append to the ul element
+            jsonData.message.forEach(event => {
+                const eventElement = createEventElement(event);
+                eventList.appendChild(eventElement);
+            });
+        })
+        .catch(error => console.error('Error fetching JSON:', error));
+}
+
 // Function to create HTML elements for each event
 function createEventElement(event) {
     // Create list element and assign eventElement class to it
@@ -49,19 +64,4 @@ function createEventElement(event) {
             
     // Return completed li element
     return li;
-}
-
-// Parses event information from JSON file and displays it on page
-function fetchAndDisplay(eventList, filename) {
-    // Fetch JSON data from the external file
-    fetch(filename)
-        .then(response => response.json())
-        .then(jsonData => {
-            // Loop through each event in the JSON data and append to the ul element
-            jsonData.message.forEach(event => {
-                const eventElement = createEventElement(event);
-                eventList.appendChild(eventElement);
-            });
-        })
-        .catch(error => console.error('Error fetching JSON:', error));
 }
