@@ -61,10 +61,10 @@ function createProjectElement(project) {
     li.appendChild(divInfoBox);
             
     // Identify if an image was provided and append it to the projectElement
-    if (project.img) {
+    if (project.imageName) {
         const img = document.createElement("img");
         img.classList.add("projectImage");
-        img.src = `Graphics/${project.img}`;
+        img.src = `Graphics/${project.imageName}`;
         li.appendChild(img);
     }
             

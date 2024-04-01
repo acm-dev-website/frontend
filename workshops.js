@@ -61,10 +61,10 @@ function createWorkshopElement(workshop) {
     li.appendChild(divInfoBox);
             
     // Identify if an image was provided and append it to the workshopElement
-    if (workshop.img) {
+    if (workshop.imageName) {
         const img = document.createElement("img");
         img.classList.add("workshopImage");
-        img.src = `Graphics/${workshop.img}`;
+        img.src = `Graphics/${workshop.imageName}`;
         li.appendChild(img);
     }
             

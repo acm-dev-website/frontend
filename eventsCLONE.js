@@ -1,14 +1,14 @@
 // Get the respective ul elements to append event elements to
 const ucEventList = document.getElementById("ucEventList");
-fetchAndDisplay(ucEventList, 'testInfoList.json');
+fetchAndDisplay(ucEventList);
 
 const pastEventList = document.getElementById("pastEventList");
-fetchAndDisplay(pastEventList, 'testInfoList.json');
+fetchAndDisplay(pastEventList);
 
 // Parses event information from JSON file and displays it on page
-function fetchAndDisplay(eventList, filename) {
+function fetchAndDisplay(eventList) {
     // Fetch JSON data from the external file
-    fetch(filename)
+    fetch('http://localhost:3000/api/fetch/events')
         .then(response => response.json())
         .then(jsonData => {
             // Loop through each event in the JSON data and append to the ul element
