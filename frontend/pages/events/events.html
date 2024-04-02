@@ -10,32 +10,32 @@
   <div class="main" >
               <div class="background_n_logo">
                 <div class = "spin2">
-                  <img class="Acm_Logo" src="../../Graphics/acmlogo.png">
+                  <img class="Acm_Logo" src="../Graphics/acmlogo.png">
                   </div>
               </div>
               <div class="btn_n_background">
-                <a href="../index/index.html" >
+                <a href="/" >
                     <button class = "btn homebtn">Home</button>
                  </a>
-                 <a href="../leadership/leadership.html" >
+                 <a href="/leadership" >
                     <button class = "btn leadershipbtn">Leadership</button>
                  </a>
-                 <a href="../projects/projects.html" >
+                 <a href="/projects" >
                     <button class = "btn projectsbtn">Projects</button>
                  </a>
-                 <a href="../workshops/workshops.html" >
+                 <a href="/workshops" >
                     <button class = "btn workshopsbtn">Workshops</button>
                  </a>
-                 <a href="../events/events.html" >
+                 <a href="/events" >
                     <button class = "btn eventsbtn">Events</button>
                  </a>
               <div class="dropdown">
                 <button class="dropdown-button morebtn">More</button>
                 <div class="dropdown-content">
-                  <a href="sponsorships.html" class="btn_dropdown sponsorshipsbtn">Sponsorships</a>
-                  <a href="../merchandise/merchandise.html" class="btn_dropdown merchandisebtn">Merchandise</a>
-                  <a href="../calender/calendar.html" class="btn_dropdown calendarbtn">Calendar</a>
-                  <a href="../important-links/important-links.html" class="btn_dropdown importantlinksbtn">Important Links</a>
+                  <a href="/sponsorships" class="btn_dropdown sponsorshipsbtn">Sponsorships</a>
+                  <a href="/merchandise" class="btn_dropdown merchandisebtn">Merchandise</a>
+                  <a href="/calendar" class="btn_dropdown calendarbtn">Calendar</a>
+                  <a href="/important-links" class="btn_dropdown importantlinksbtn">Important Links</a>
                 </div>
               </div>
             </div>
@@ -47,17 +47,23 @@
     
     <h1 class="mainHeader">Past Events</h1>
     <ul id="pastEventList"></ul>
+    
+    <script type="module">
+        import {apiFetch} from '../apiParser.js';
+        // Get the respective ul elements to append event elements to
+        const ucEventList = document.getElementById("ucEventList"); //could be null if page loads weird (use window.onload())
+        apiFetch(ucEventList, "events");
 
-    <script src="events.js"></script>
-
+        const pastEventList = document.getElementById("pastEventList");
+         apiFetch(pastEventList, "events");
+    </script>
   </div>
 
   <footer> 
     <div class="logoContainer">
-     <a href="https://www.instagram.com/ucfacm/"> <img class="insta" src ="../../Graphics/instagramlogo.png"/></a>
-     <a href="https://discord.gg/v5MGt27PsV" > <img class="discord" src="../../Graphics/discordlogo.png"/></a>
+     <a href="https://www.instagram.com/ucfacm/"> <img class="insta" src ="../Graphics/instagramlogo.png"/></a>
+     <a href="https://discord.gg/v5MGt27PsV" > <img class="discord" src="../Graphics/discordlogo.png"/></a>
     </div>
    </footer>
-
 </body>
 </html>
