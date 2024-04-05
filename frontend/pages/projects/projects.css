@@ -1,4 +1,4 @@
-.workshops {
+.projects {
   background: #282828;
   font-family: inter, sans-serif;
 }
@@ -10,7 +10,7 @@
   font-size: 55px;
 }
 
-.workshopElement {
+.projectElement {
   margin-bottom: auto;
   list-style-type: none; /* Gets rid of the bullet point that is normally present in a list element */
   display: flex;
@@ -23,7 +23,7 @@ ul {
   padding-left: 0;
 }
 
-.workshopInfoBox {
+.projectInfoBox {
   margin-bottom: 5%;
   width: 686px;
   height: 360px;
@@ -31,9 +31,30 @@ ul {
   border-radius: 15px;
   border: 2px solid rgba(255, 255, 255, 0.20);
   background: rgba(51, 51, 51, 0.70);
+
+  text-align: left;
+  display: block;
 }
 
-.workshopImage {
+.projectName {
+  margin-left: 10px;  /* Adds whitespace to the left of the details for spacing */
+  display: inline-block;
+  font-size: 25px;
+}
+
+.projectDate {
+  display: inline-block;
+  margin-left: 25px;
+  font-size: 25px;
+}
+
+.projectLeaders, .projectSchedule, .projectDescription {
+  display: block;
+  margin-left: 10px;  /* Adds whitespace to the left of the details for spacing */
+  font-size: 20px;
+}
+
+.projectImage {
   margin-left: 10px;
   border-radius: 15px;
   border: 2px solid rgba(0, 0, 0, 1);
@@ -43,37 +64,11 @@ ul {
   background: url(<path-to-image>), lightgray 0px -335.426px / 100% 391.622% no-repeat;
 }
 
-.workshopDetails {
-  text-align: left;
-  margin-left: 10px;  /* Adds whitespace to the left of the details for spacing */
-  display: block;
-}
-
-.workshopName {
-  display: inline-block;
-  font-size: 25px;
-}
-
-.workshopDate {
-  display: inline-block;
-  margin-left: 50px;
-  font-size: 25px;
-}
-
-.workshopLeaderNames {
-  font-size: 20px;
-}
-
-.workshopDescription {
-  font-size: 20px;
-}
-
 /* rotates acm logo on hover*/
-.Acm_Logo:hover
-{
-    cursor: default;
-    transform: rotate(360deg);
-    transition: transform 0.9s ease-in-out;
+.Acm_Logo:hover {
+  cursor: default;
+  transform: rotate(360deg);
+  transition: transform 0.9s ease-in-out;
 }
 
 /* Scroll fade effect made by Chat-GPT */
@@ -90,28 +85,10 @@ ul {
   bottom: 0;
 }
 .logoContainer a .insta {
-   width: 40px;
-   height: 40px;
+  width: 40px;
+  height: 40px;
 }
 .logoContainer a .discord {
-   width: 50px;
-   height: 40px;
-}
-
-.footer {
-  padding-top: 300px;
-  background-color: rgb(100, 100, 100);
-}
-
-.footer_buttons { 
-  font-family: inter, sans-serif;
-  text-align: left;
-  padding-left: 200px;
-  color: white;
-}
-
-.copyright {
-  font-family: inter, sans-serif;
-  text-align: bottom;
-  color: white;
+  width: 50px;
+  height: 40px;
 }

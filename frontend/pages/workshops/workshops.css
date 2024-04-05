@@ -1,6 +1,86 @@
-.projects {
+.workshops {
   background: #282828;
   font-family: inter, sans-serif;
+}
+
+.mainHeader {
+  color: rgba(255, 255, 255);
+  text-align: center;
+  font-weight: 600;
+  font-size: 55px;
+}
+
+.workshopElement {
+  margin-bottom: auto;
+  list-style-type: none; /* Gets rid of the bullet point that is normally present in a list element */
+  display: flex;
+  justify-content: center;
+  color: white;
+} 
+
+/* Additional rule to remove default left-padding on <ul> */
+ul {
+  padding-left: 0;
+}
+
+.workshopInfoBox {
+  margin-bottom: 5%;
+  width: 686px;
+  height: 360px;
+  flex-shrink: 0;
+  border-radius: 15px;
+  border: 2px solid rgba(255, 255, 255, 0.20);
+  background: rgba(51, 51, 51, 0.70);
+}
+
+.workshopImage {
+  margin-left: 10px;
+  border-radius: 15px;
+  border: 2px solid rgba(0, 0, 0, 1);
+  height: 360px;
+  display: block;
+  width: 400px;
+  background: url(<path-to-image>), lightgray 0px -335.426px / 100% 391.622% no-repeat;
+}
+
+.workshopDetails {
+  text-align: left;
+  margin-left: 10px;  /* Adds whitespace to the left of the details for spacing */
+  display: block;
+}
+
+.workshopName {
+  display: inline-block;
+  font-size: 25px;
+}
+
+.workshopDate {
+  display: inline-block;
+  margin-left: 50px;
+  font-size: 25px;
+}
+
+.workshopLeaderNames {
+  font-size: 20px;
+}
+
+.workshopDescription {
+  font-size: 20px;
+}
+
+/* rotates acm logo on hover*/
+.Acm_Logo:hover
+{
+    cursor: default;
+    transform: rotate(360deg);
+    transition: transform 0.9s ease-in-out;
+}
+
+/* Scroll fade effect made by Chat-GPT */
+.fade-in {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.8s ease-in-out, transform 0.8s ease-in-out;
 }
 
 .logoContainer {
@@ -18,86 +98,12 @@
    height: 40px;
 }
 
-.mainHeader {
-  color: rgba(255, 255, 255);
-  text-align: center;
-  font-weight: 600;
-  font-size: 55px;
+.footer {
+  padding-top: 300px;
+  background-color: rgb(100, 100, 100);
 }
 
-.projectElement {
-  margin-bottom: auto;
-  list-style-type: none; /* Gets rid of the bullet point that is normally present in a list element */
-  display: flex;
-  justify-content: center;
-  color: white;
-} 
-
-/* Additional rule to remove default left-padding on <ul> */
-ul {
-  padding-left: 0;
-}
-
-.projectInfoBox {
-  margin-bottom: 5%;
-  width: 686px;
-  height: 360px;
-  flex-shrink: 0;
-  border-radius: 15px;
-  border: 2px solid rgba(255, 255, 255, 0.20);
-  background: rgba(51, 51, 51, 0.70);
-}
-
-.projectImage {
-  margin-left: 10px;
-  border-radius: 15px;
-  border: 2px solid rgba(0, 0, 0, 1);
-  height: 360px;
-  display: block;
-  width: 400px;
-  background: url(<path-to-image>), lightgray 0px -335.426px / 100% 391.622% no-repeat;
-}
-
-.projectDetails {
+.footer_buttons { 
   text-align: left;
-  margin-left: 10px;  /* Adds whitespace to the left of the details for spacing */
-  display: block;
-}
-
-.projectName {
-  display: inline-block;
-  font-size: 25px;
-}
-
-.projectHeaderDate {
-  display: inline-block;
-  margin-left: 50px;
-  font-size: 25px;
-}
-
-.projectLeaderNames {
-  font-size: 20px;
-}
-
-.projectMeetingSchedule {
-  font-size: 20px;
-}
-
-.projectDescription {
-  font-size: 20px;
-}
-
-/* rotates acm logo on hover*/
-.Acm_Logo:hover
-{
-    cursor: default;
-    transform: rotate(360deg);
-    transition: transform 0.9s ease-in-out;
-}
-
-/* Scroll fade effect made by Chat-GPT */
-.fade-in {
-  opacity: 0;
-  transform: translateY(20px);
-  transition: opacity 0.8s ease-in-out, transform 0.8s ease-in-out;
+  color: white;
 }
