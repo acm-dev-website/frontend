@@ -997,6 +997,8 @@
         overflow: hidden;
         background-color: #333;
         z-index: 2;
+        font-family: inter, sans-serif;
+        font-size: 15px;
     }
     .navbar .image{
         float:left;
