@@ -2,517 +2,7 @@
 
 
 /* Medium devices (landscape tablets, 768px and up) */
-@media only screen and (max-width: 768px) {
-    body{
-        position:absolute;
-    }
-    .navbar {
-        position: absolute;
-        display:flex;
-        top: 0;
-        width: 100%;
-        flex-direction: column-reverse;
-        overflow: hidden;
-        background-color: #333;
-        z-index: 2;
-        font-size:10px;
-    }
-    .navbar .image{
-        display:none;
-        float:left;
-        padding-left: 16px;
-        height:39.2px;
-    }
-    
-    .navbar a {
-        float: right;
-        display: block;
-        color: white;
-        text-align: center;
-        padding: 14px 16px;
-        text-decoration: none;
 
-    }
-    
-    .navbar a:hover {
-        border-bottom: 2px solid gold;
-    }
-    .logoContainer {
-        position: relative;
-        display:inline-flex;
-        justify-content:center;
-        bottom: 0;
-    }
-    
-    .logoContainer a .insta {
-        display:inline-flex;
-        width: 40px;
-        height: 40px;
-    }
-    .logoContainer a .discord {
-        display:inline-flex;
-        width: 50px;
-        height: 40px;
-    }
-    
-    .titleSection{
-        margin-top: 50px;
-        height: 650px;
-        margin-bottom: 10px;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-    .titleSection .background{
-        display:flex;
-        flex-wrap: wrap;  
-        position: absolute;
-        top: 0;
-        left: 0;
-        z-index: -100;
-        width: 100%;
-        height:100%;
-        max-height:600px;
-        
-        overflow: hidden;
-
-    }
-    
-    
-    .titleSection .title {
-        padding-top:50px;
-        vertical-align: top;
-        display:inline-block;
-        text-align: center;
-        color: #FFFFFF;
-        margin: auto;
-        margin-top:200px;
-        margin-bottom:0px;
-        width: 60%;
-    
-    }
-    
-    .titleSection .titlefont {
-        position: relative;
-        font-family: inter, sans-serif;
-        font-weight: 600;
-        font-size: 16px;
-        
-    
-    }
-    
-    .titleSection .subffont{
-        position: relative;
-        font-family: inter, sans-serif;
-        font-size: 10px;
-        font-weight: 300;
-    }
-    
-    .titleSection .image{
-        display:flexbox;
-        vertical-align: top;
-        width:25%;
-        border-radius: 150px;
-        height:auto;
-        max-height: 100%;
-    }
-    
-    
-    
-    .aboutSection{
-        display: flex;
-        height: 20%;
-        width: auto;
-        margin-top: 10px;
-        margin-bottom: 10px;
-        flex-direction: column-reverse;
-        align-items: right;
-        
-    }
-    
-    .aboutSection .text {
-        justify-self: center;
-        text-align: left;
-        color: #FFFFFF;
-        width: 80%;
-        padding-left:25px;
-    
-    }
-    .aboutSection .rainbowLine{
-        width:80%;
-        height: 1px;
-    }
-    
-    .aboutSection .titlefont {
-        position: relative;
-        font-family: inter;
-        font-weight:600;
-        font-size: 34px;
-        margin-bottom: 0;
-        
-    
-    }
-    
-    .aboutSection .subtextfont{
-        position: relative;
-        font-family: inter, sans-serif;
-        font-size: 12px;
-        font-weight: 200;
-        margin-top: 5px;
-        line-height: 35px;
-    }
-    
-    .aboutSection .image{
-        
-        display: flex;
-        margin-top:40px;
-        width:100%;
-        height:auto;
-        max-height:100%;
-    
-    }
-    
-    
-    
-    
-    
-    
-    .anotherSection{
-        display: flex;
-        height: 20%;
-        width: auto;
-        margin-top: 100px;
-        margin-bottom: 10px;
-        flex-direction: column;
-        align-items: left;
-        
-    }
-    
-    .anotherSection .text {
-        justify-self: center;
-        text-align: left;
-        color: #FFFFFF;
-        width: 80%;
-        padding-left:25px;
-    
-    }
-    
-    .anotherSection .titlefont {
-        
-        position: relative;
-        font-family: inter;
-        font-weight:600;
-        font-size: 32px;
-        margin-bottom: 0;
-        width:100%;
-        
-    
-    }
-    
-    .anotherSection .subtextfont{
-        position: relative;
-        font-family: inter, sans-serif;
-        font-size: 12px;
-        font-weight: 200;
-        padding-top: 5px;
-        width: 100%;
-        line-height: 35px;
-    }
-    
-    .anotherSection .image{
-        margin-top:40px;
-        vertical-align: top;
-        width:100%;
-        height:auto;
-        max-height:100%;
-    
-    }
-    .anotherSection .orangeLine{
-        width:65%;
-        height: 2px;
-    
-    }
-    
-    .space{
-        height: 50px;
-        margin-top: 50px;
-        margin-bottom: 50px;
-    }
-    .space .divideLine{
-        height:auto;
-        width: 95%;
-        margin-top:auto;
-    }
-    
-    .divideLine{
-        width: 95%;
-    }
-    
-    
-    
-    
-    
-    
-    .UpcomingSection{
-        margin-top:10%;
-        height: 10%;
-        border-color:blueviolet;
-    }
-    
-    
-    .UpcomingSection .boxes{
-        display: inline-flex;
-        width: 60%;
-        height: 80%;
-        flex-direction: column;
-        align-items: center;
-    }
-    .UpcomingSection .box1{
-        
-        border-radius: 15px;
-        border: 2px solid rgba(255, 255, 255, 0.20);
-        background: rgba(51, 51, 51, 0.70);
-        height:80%;
-        width:90%;
-        flex-shrink: 0;
-    }
-    
-    .UpcomingSection .box2{
-        margin-top:20px;
-        border-radius: 15px;
-        border: 2px solid rgba(255, 255, 255, 0.20);
-        background: rgba(51, 51, 51, 0.70);
-        height:80%;
-        width:90%;
-        margin-left:30px;
-        margin-right:30px;
-        flex-shrink: 0;
-    }
-    .UpcomingSection .box3{
-        margin-top:20px;
-        border-radius: 15px;
-        border: 2px solid rgba(255, 255, 255, 0.20);
-        background: rgba(51, 51, 51, 0.70);
-        height:80%;
-        width:90%;
-        flex-shrink: 0;
-    }
-    
-    .UpcomingSection .titlefont{
-        margin-top:20px;
-        margin-bottom:10px;
-        color: #FFF;
-        text-align: center;
-        font-family: Inter;
-        font-size: 24px;
-        font-style: normal;
-        font-weight: 700;
-        line-height: normal;
-    }
-    .UpcomingSection .greyline{
-        margin-top:0px;
-        width:90%;
-    }
-    .UpcomingSection .subtitlefont{
-        color: #FFC904;
-        text-align: center;
-        font-family: Inter;
-        font-size: 20px;
-        font-style: normal;
-        font-weight: 700;
-        line-height: normal;
-    }
-    .UpcomingSection .subtextfont{
-        padding-right:5%;
-        padding-left:5%;
-        padding-bottom: 5%;
-        width: fit-content;
-        flex-shrink: 0;
-        color: #FFF;
-        text-align: center;
-        font-family: Inter;
-        font-size: 12px;
-        font-style: normal;
-        font-weight: 300;
-        line-height: 23px;
-    }
-    .UpcomingSection .subbutton{
-        margin-bottom: 10%;
-        width: max-content;
-        height:max-content;
-        display:inline-block;
-        background-color: rgba(51, 51, 51, 0.70);; /* Green */
-        border: none;
-        color: #FFC904;
-        padding: 32px 32px;
-        text-align: center;
-        text-decoration: none;
-        display: inline-block;
-        font-size: 12px;
-        border-radius: 100px;
-        outline-width: 1px;
-        outline-style: solid;
-        outline-color: #FFC904;
-    }
-    
-    
-    
-    
-    
-    
-    
-    
-    .MerchandiseSection{
-        margin-top: 15%;
-        padding-top:15px;
-        height: 25%;
-        border-color:blueviolet;
-    }
-    .MerchandiseSection .sectionTitle{
-        margin-bottom:100px ;
-        color: #FFF;
-        text-align: center;
-        font-family: Inter;
-        font-size: 36px;
-        font-style: normal;
-        font-weight: 600;
-        line-height: 48px;
-    }
-    .MerchandiseSection .merch{
-        padding-top:10px;
-        height:70%;
-        width:80%;
-    }
-    .MerchandiseSection .titlefont{
-        margin-top:0%;
-    }
-    
-    .MerchandiseSection .boxes{
-        padding-bottom:100px;
-        display:inline-flex;
-        width:75%;
-        height:100%;
-        align-self: center;
-        justify-content:center;
-    }
-    .MerchandiseSection .box1{
-        border-radius: 15px;
-        border: 2px solid rgba(255, 255, 255, 0.20);
-        background: rgba(51, 51, 51, 0.70);
-        height: max-content;
-        width:40%;
-        flex-shrink: 0;
-    }
-    
-    .MerchandiseSection .box2{
-        border-radius: 15px;
-        border: 2px solid rgba(255, 255, 255, 0.20);
-        background: rgba(51, 51, 51, 0.70);
-        height: max-content;
-        width:40%;
-        margin-left:10px;
-        margin-right:10px;
-        flex-shrink: 0;
-    }
-    .MerchandiseSection .box3{
-        border-radius: 15px;
-        border: 2px solid rgba(255, 255, 255, 0.20);
-        background: rgba(51, 51, 51, 0.70);
-        height: max-content;
-        width:40%;
-        flex-shrink: 0;
-    }
-    
-    .MerchandiseSection .titlefont{
-        margin-top:0px;
-        margin-bottom:10px;
-        color: #FFF;
-        text-align: center;
-        font-family: Inter;
-        font-size: 15px;
-        font-style: normal;
-        font-weight: 700;
-        line-height: normal;
-    }
-    .MerchandiseSection .greyline{
-        margin-top:0px;
-        width:90%;
-    }
-    .MerchandiseSection .bottomSectionOfBox{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .MerchandiseSection .subtitlefont{
-        height:max-content;
-        color: #FFC904;
-        font-family: Inter;
-        font-size: 20px;
-        font-style: normal;
-        font-weight: 700;
-        line-height: normal;
-        margin : 0;
-        display:flex;
-        padding-bottom:5px;
-    }
-    .MerchandiseSection .subbutton{
-        width: max-content;
-        height:max-content;
-        display:flexbox;
-        background-color: rgba(51, 51, 51, 0.70);; /* Green */
-        border: none;
-        color: white;
-        padding: 7.5px 25px;
-        text-align: center;
-        text-decoration: none;
-        font-size: 12px;
-        border-radius: 100px;
-        outline-width: 1px;
-        outline-style: solid;
-        outline-color: white;
-        margin-bottom:5%;
-        vertical-align: middle;
-    }
-    .MerchandiseSection .subtextfont{
-        padding-right:15px;
-        height:fit-content;
-        width: fit-content;
-        flex-shrink: 0;
-        color: #FFF;
-        text-align: center;
-        font-family: Inter;
-        font-size: 16px;
-        font-style: normal;
-        font-weight: 300;
-        line-height: 23px;
-    }
-    
-    
-    /*About UCF ACM with rainbow line under and picture to the right */
-    /* Description under*/
-    
-    /*More Text for about section with a picture to the right*/
-    
-    
-    /*Divider Line */
-    
-    
-    /*Boxes for upcoming events workshops and projects*/
-    
-    /*Each box will include a title, text, and a description*/
-    
-    
-    
-    /*Divider Line */
-    /*Merch boxes */
-    /*Within each box there should be a picture spot, title of the product, price, and link to the merch page */
-    
-    
-    /* These are the links */
-
-
-}
 
 
 /* Extra small devices (phones, 600px and down) */
@@ -521,21 +11,22 @@
         position:absolute;
     }
     .navbar {
+        display: flex;
+        justify-content: center;
+        flex-direction: row-reverse;
         position: absolute;
-        display:flex;
         top: 0;
         width: 100%;
-        flex-direction: column-reverse;
         overflow: hidden;
         background-color: #333;
         z-index: 2;
-        font-size:10px;
+        font-family: inter, sans-serif;
+        font-size: 8px;
     }
     .navbar .image{
         display:none;
-        float:left;
         padding-left: 16px;
-        height:39.2px;
+        height:40px;
     }
     
     .navbar a {
@@ -543,9 +34,8 @@
         display: block;
         color: white;
         text-align: center;
-        padding: 14px 16px;
+        padding: 7.5px 9px;
         text-decoration: none;
-
     }
     
     .navbar a:hover {
@@ -594,13 +84,12 @@
     
     
     .titleSection .title {
-        padding-top:50px;
         vertical-align: top;
         display:inline-block;
         text-align: center;
         color: #FFFFFF;
         margin: auto;
-        margin-top:200px;
+        margin-top:100px;
         margin-bottom:0px;
         width: 60%;
     
@@ -615,7 +104,7 @@
     
     }
     
-    .titleSection .subffont{
+    .titleSection .subtextfont{
         position: relative;
         font-family: inter, sans-serif;
         font-size: 10px;
@@ -999,27 +488,31 @@
 
 
 }
+
+
+
 
 @media only screen and (min-width: 600px) {
     body{
         position:absolute;
     }
     .navbar {
+        display: flex;
+        justify-content: center;
+        flex-direction: row-reverse;
         position: absolute;
-        display:flex;
         top: 0;
         width: 100%;
-        flex-direction: column-reverse;
         overflow: hidden;
         background-color: #333;
         z-index: 2;
-        font-size:10px;
+        font-family: inter, sans-serif;
+        font-size: 12px;
     }
     .navbar .image{
         display:none;
-        float:left;
         padding-left: 16px;
-        height:39.2px;
+        height:40px;
     }
     
     .navbar a {
@@ -1029,7 +522,6 @@
         text-align: center;
         padding: 14px 16px;
         text-decoration: none;
-
     }
     
     .navbar a:hover {
@@ -1056,7 +548,7 @@
     .titleSection{
         margin-top: 50px;
         height: 650px;
-        margin-bottom: 10px;
+        margin-bottom: 150px;
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -1065,7 +557,7 @@
         display:flex;
         flex-wrap: wrap;  
         position: absolute;
-        top: 0;
+        top: 175px;
         left: 0;
         z-index: -100;
         width: 100%;
@@ -1084,7 +576,7 @@
         text-align: center;
         color: #FFFFFF;
         margin: auto;
-        margin-top:200px;
+        margin-top:100px;
         margin-bottom:0px;
         width: 60%;
     
@@ -1094,15 +586,15 @@
         position: relative;
         font-family: inter, sans-serif;
         font-weight: 600;
-        font-size: 16px;
+        font-size: 30px;
         
     
     }
     
-    .titleSection .subffont{
+    .titleSection .subtextfont{
         position: relative;
         font-family: inter, sans-serif;
-        font-size: 10px;
+        font-size: 25px;
         font-weight: 300;
     }
     
@@ -1113,6 +605,7 @@
         border-radius: 150px;
         height:auto;
         max-height: 100%;
+        padding-top:50px
     }
     
     
@@ -1120,11 +613,12 @@
     .aboutSection{
         display: flex;
         height: 20%;
-        width: auto;
+        width: 70%;
         margin-top: 10px;
         margin-bottom: 10px;
         flex-direction: column-reverse;
         align-items: right;
+        justify-content: center;
         
     }
     
@@ -1154,7 +648,7 @@
     .aboutSection .subtextfont{
         position: relative;
         font-family: inter, sans-serif;
-        font-size: 12px;
+        font-size: 18px;
         font-weight: 200;
         margin-top: 5px;
         line-height: 35px;
@@ -1342,7 +836,7 @@
         background-color: rgba(51, 51, 51, 0.70);; /* Green */
         border: none;
         color: #FFC904;
-        padding: 7.5px 25px;
+        padding: 16px 32px;
         text-align: center;
         text-decoration: none;
         display: inline-block;
@@ -1483,7 +977,6 @@
 
 
 }
-
 
 
 @media only screen and (min-width: 768px) {
@@ -1498,7 +991,7 @@
         background-color: #333;
         z-index: 2;
         font-family: inter, sans-serif;
-        font-size: 10px;
+        font-size: 15px;
     }
     .navbar .image{
         float:left;
@@ -1541,7 +1034,7 @@
         height: 500px;
         margin-bottom: 250px;
         display: flex;
-        flex-direction: row;
+        flex-direction: column;
     }
     .titleSection .background{
         display:flex;
@@ -1560,10 +1053,10 @@
     
     
     .titleSection .title {
-        padding-top:200px;
+        padding-top:100px;
         vertical-align: top;
         display:inline-block;
-        text-align: left;
+        text-align: center;
         color: #FFFFFF;
         margin: auto;
         width: 50%;
@@ -1584,11 +1077,11 @@
         font-family: inter, sans-serif;
         font-size: 24px;
         font-weight: 300;
-        padding-top: 80px;
+        padding-top: 20px;
     }
     
     .titleSection .image{
-        padding-top:200px;
+        padding-top:50px;
         display:flexbox;
         vertical-align: top;
         width:30%;
@@ -1605,7 +1098,7 @@
         width: auto;
         margin-top: 100px;
         margin-bottom: 10px;
-        flex-direction: row;
+        flex-direction: column-reverse;
         justify-content: center;
         align-items: center;
         
@@ -1614,14 +1107,16 @@
     .aboutSection .text {
         display: flex;
         vertical-align: top;
-        text-align: left;
+        text-align: center;
         color: #FFFFFF;
-        margin-left: 4%;
-        width: 40%;
+        width: 60%;
+        padding-left: 0;
         flex-wrap: wrap;
+        justify-content: center;
     
     }
     .aboutSection .rainbowLine{
+        align-self: center;
         width:80%;
         height: 1%;
     }
@@ -1639,7 +1134,7 @@
     .aboutSection .subtextfont{
         position: relative;
         font-family: inter, sans-serif;
-        font-size: 15px;
+        font-size: 22px;
         font-weight: 200;
         margin-top: 5px;
         line-height: 35px;
@@ -1650,7 +1145,7 @@
         display: flex;
         margin-top:40px;
         vertical-align: top;
-        width:35%;
+        width:65%;
         height:auto;
         max-height:100%;
     
@@ -1667,7 +1162,7 @@
         width: auto;
         margin-top: 100px;
         margin-bottom: 10px;
-        flex-direction: row;
+        flex-direction: column;
         justify-content: center;
         align-items: center;
         
@@ -1676,13 +1171,13 @@
     .anotherSection .text {
         display: flex;
         vertical-align: top;
-        text-align: left;
+        text-align: center;
         color: #FFFFFF;
-        padding-left:0;
-        margin-left:0;
-        margin-right: 4%;
-        width: 40%;
+        padding-left: 0;
+        margin-left: 0;
+        width: 65%;
         flex-wrap: wrap;
+        justify-content: center;
     
     }
     
@@ -1701,7 +1196,7 @@
     .anotherSection .subtextfont{
         position: relative;
         font-family: inter, sans-serif;
-        font-size: 15px;
+        font-size: 22px;
         font-weight: 200;
         padding-top: 5px;
         width: 100%;
@@ -1712,15 +1207,15 @@
         display: flex;
         margin-top: 40px;
         vertical-align: top;
-        width: 35%;
+        width: 65%;
         height: auto;
         max-height: 100%;
         margin-left:0;
     
     }
     .anotherSection .orangeLine{
-        width:65%;
-        height: 2px;
+        width:50%;
+        height: 5px;
     
     }
     .space{
@@ -1741,7 +1236,21 @@
     
     
     
-    
+    .UpcomingSection{
+        display:flex;
+        margin-top:10%;
+        height: 10%;
+        border-color:blueviolet;
+        justify-content: center;
+    }
+    .UpcomingSection .boxes{
+        display:flex;
+        width:70%;
+        height:80%;
+        align-self: center;
+        justify-content:center;
+        flex-direction:column;
+    }
     
     .UpcomingSection .titlefont{
         margin-top:20px;
@@ -1762,7 +1271,7 @@
         color: #FFC904;
         text-align: center;
         font-family: Inter;
-        font-size: 20px;
+        font-size: 28px;
         font-style: normal;
         font-weight: 700;
         line-height: normal;
@@ -1776,10 +1285,10 @@
         color: #FFF;
         text-align: center;
         font-family: Inter;
-        font-size: 16px;
+        font-size: 25px;
         font-style: normal;
         font-weight: 300;
-        line-height: 23px;
+        line-height: 35px;
     }
     .UpcomingSection .subbutton{
         margin-bottom: 10%;
@@ -1789,11 +1298,11 @@
         background-color: rgba(51, 51, 51, 0.70);; /* Green */
         border: none;
         color: #FFC904;
-        padding: 15px 32px;
+        padding: 24px 45px;
         text-align: center;
         text-decoration: none;
         display: inline-block;
-        font-size: 16px;
+        font-size: 32px;
         border-radius: 100px;
         outline-width: 1px;
         outline-style: solid;
@@ -1808,10 +1317,12 @@
     
     
     .MerchandiseSection{
+        display: flex;
         margin-top: 15%;
-        padding-top:15px;
+        padding-top: 15px;
         height: 25%;
-        border-color:blueviolet;
+        border-color: blueviolet;
+        flex-direction: column;
     }
     .MerchandiseSection .sectionTitle{
         margin-bottom:100px ;
@@ -1834,7 +1345,7 @@
     
     .MerchandiseSection .boxes{
         padding-bottom:100px;
-        display:inline-flex;
+        display:flex;
         width:75%;
         height:100%;
         align-self: center;
@@ -1874,7 +1385,7 @@
         color: #FFF;
         text-align: center;
         font-family: Inter;
-        font-size: 15px;
+        font-size: 28px;
         font-style: normal;
         font-weight: 700;
         line-height: normal;
@@ -1885,18 +1396,18 @@
     }
     .MerchandiseSection .bottomSectionOfBox{
         display: flex;
-        flex-direction: row;
+        flex-direction: column;
         align-items: center;
         justify-content: space-evenly;
         padding-left: 10%;
-        padding-right:10%;
+        padding-right: 10%;
     }
 
     .MerchandiseSection .subtitlefont{
         height:max-content;
         color: #FFC904;
         font-family: Inter;
-        font-size: 20px;
+        font-size: 32px;
         font-style: normal;
         font-weight: 700;
         line-height: normal;
@@ -1911,10 +1422,10 @@
         background-color: rgba(51, 51, 51, 0.70);; /* Green */
         border: none;
         color: white;
-        padding: 7.5px 25px;
+        padding: 20px 45px;
         text-align: center;
         text-decoration: none;
-        font-size: 12px;
+        font-size: 23px;
         border-radius: 100px;
         outline-width: 1px;
         outline-style: solid;
@@ -1930,7 +1441,7 @@
         color: #FFF;
         text-align: center;
         font-family: Inter;
-        font-size: 16px;
+        font-size: 23px;
         font-style: normal;
         font-weight: 300;
         line-height: 23px;
@@ -2477,7 +1988,7 @@
     }
     
     /* Extra large devices (large laptops and desktops, 1200px and up) */
-    @media only screen and (min-width: 1200px) {
+@media only screen and (min-width: 1200px) {
         .body{
             height:auto;
         }
@@ -2977,8 +2488,106 @@
         
         
         /* These are the links */
+
+        
               
     
     
     }
     
+
+    html, body {
+        font-family: Arial, sans-serif; /* Use a modern sans-serif font */
+    }
+    
+    #footer {
+        background-color: rgb(94, 94, 94);
+        height: 8%;
+        width: 100%;
+        color: white;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        position: absolute;
+        
+    }
+    
+    #footer-image {
+        height: 80px; /* Adjust this value as needed */
+        align-self: flex-start; /* Align the image to the top */
+        margin-top: 10px; /* Push the image down */
+    }
+    
+    #footer-links {
+        display: flex;
+        flex-direction: column; /* Change from column to row */
+        text-align: left;
+        align-items: center; /* Align items to the center */
+        padding-right: 70%; /* Add some padding to the left of the text */
+        margin-top: -10%;
+    }
+    
+    #more-text {
+        font-weight: bold;
+        font-size: 1.1em; /* Increase the font size */
+        margin-right: 20px; /* Add some margin to the right of the text */
+        margin-top: 10%;
+    }
+    
+    #link-columns {
+        display: flex;
+        /* margin-top: 10px; Remove this line */
+    }
+    
+    #link-columns ul {
+        list-style-type: none;
+        margin-right: 20px; /* Add space between the columns */
+    }
+    
+    #link-columns ul li {
+        margin-bottom: 10px; /* Add space between the rows */
+        font-size: 1.0em; /* Increase the font size */
+    }
+    
+    #touch-txt {
+        font-weight: bold;
+        font-size: 1.1em; /* Increase the font size */
+        margin-left: 45%; /* Add some margin to the right of the text */
+        margin-top: -3%;
+    }
+    
+    #footer-hr {
+        border: none;
+        height: 2px; /* Adjust thickness here */
+        background-color: white; /* Adjust color here */
+        width: 80%; /* Set the width to 80% */
+        align-self: center; /* Center the line */
+        left: 10%; /* Add this line */
+    }
+    
+    #img_wrap {
+        margin-left: 45%; /* Adjust this value as needed */
+    }
+    
+    #discord_img, #ig_img, #twitter_img {
+        height: 80px;
+    }
+    #link-columns ul li a {
+        color: white; /* Change the color of the links to white */
+        text-decoration: none; /* Remove the default underline */
+    }
+    
+    #link-columns ul li a:hover {
+        text-decoration: underline; /* Add an underline when hovered */
+        text-decoration-color: yellow; /* Change the color of the underline to yellow */
+    }
+    
+    #img_wrap a {
+        outline: none;
+    }
+    
+    #img_wrap a img:hover {
+        background-color: yellow;
+        border-radius: 10px;
+    }
