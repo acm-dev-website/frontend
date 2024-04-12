@@ -1,0 +1,76 @@
+:root {
+    --scren-width: 1200px;
+    --screenScale: 1;
+}
+
+@media only screen and (max-width: 991px) {
+
+    .altNavbar {
+      position: fixed;
+      display:flex;
+      top: 0;
+      width: 100%;
+      flex-direction: column-reverse;
+      overflow: hidden;
+      background-color: #333;
+      z-index: 2;
+      font-size: 10px;
+      font-family: inter, sans-serif;
+    }
+    
+    .altNavbar .image{
+        display:none;
+        float:left;
+        padding-left: 16px;
+        height:39.2px;
+    }
+  
+    .altNavbar a {
+        float: right;
+        display: block;
+        color: white;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+  
+    }
+  
+    .altNavbar a:hover {
+        border-bottom: 2px solid gold;
+    }
+}
+
+@media only screen and (min-width: 992px) {
+    .altNavbar {
+      position: fixed;
+      top: 0;
+      width: 100%;
+      overflow: hidden;
+      background-color: #333;
+      z-index: 2;
+      font-family: inter, sans-serif;
+    }
+    .altNavbar .image{
+      float:left;
+      padding-left: calc(var(--screenScale)*16px);
+      height: calc(var(--screenScale)*40px);
+    }
+    .altNavbar a {
+      float: right;
+      display: block;
+      color: white;
+      text-align: center;
+      padding: calc(var(--screenScale)*14px) calc(var(--screenScale)*16px);
+      text-decoration: none;
+    }
+    .altNavbar a:hover {
+      border-bottom: calc(var(--screenScale)*2px) solid gold;
+    }
+    
+    .events {
+      margin-top: calc( (2 - var(--screenScale) ) *40px);
+      background: #282828;
+      font-family: inter, sans-serif;
+    }
+}
+  

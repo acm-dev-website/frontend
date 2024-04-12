@@ -2,7 +2,7 @@
 <html>
 <head>
   <link rel="styleSheet" href="../style.css"/>
-  <link rel="stylesheet" href="/index/index.css"/>
+  <link rel="styleSheet" href="../altNavbar.css"/>
   <link rel="styleSheet" href="projects.css"/>
   <link rel="preconnect" href="https://rsms.me/">
   <link rel="stylesheet" href="https://rsms.me/inter/inter.css">     
@@ -10,7 +10,7 @@
 <body>
 
   <div class="main" >
-    <div class="navbar">
+    <div class="altNavbar">
       <img class="image" src="/Graphics/TACMLogo.png">
       <a href="/projects">Projects</a>
       <a href="/events">Events</a>
@@ -35,8 +35,10 @@
         apiFetch(ucEventList, "project");
 
         const pastEventList = document.getElementById("pastProjectList");
-         apiFetch(pastEventList, "project");
+        apiFetch(pastEventList, "project");
     </script>
+    
+    <script src="../widthScript.js"></script>
 
   </div>
 
