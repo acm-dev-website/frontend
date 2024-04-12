@@ -48,6 +48,7 @@
       overflow: hidden;
       background-color: #333;
       z-index: 2;
+      font-size: calc(var(--screenScale)*10px);
       font-family: inter, sans-serif;
     }
     .altNavbar .image{
@@ -66,11 +67,6 @@
     .altNavbar a:hover {
       border-bottom: calc(var(--screenScale)*2px) solid gold;
     }
-    
-    .events {
-      margin-top: calc( (2 - var(--screenScale) ) *40px);
-      background: #282828;
-      font-family: inter, sans-serif;
-    }
+
 }
   

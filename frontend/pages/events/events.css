@@ -206,12 +206,12 @@
     bottom: 0;
   }
   .logoContainer a .insta {
-    width: 40px;
-    height: 40px;
+    width: calc(var(--screenScale)*40px);
+    height: calc(var(--screenScale)*40px);
   }
   .logoContainer a .discord {
-    width: 50px;
-    height: 40px;
+    width: calc(var(--screenScale)*50px);
+    height: calc(var(--screenScale)*40px);
   }
 
   .footer {
