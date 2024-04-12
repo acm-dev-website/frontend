@@ -229,6 +229,7 @@
     font-family: inter, sans-serif;
     color: white;
     text-align: left;
+    font-size: calc(var(--screenScale)*16px);
   }
 
 }
