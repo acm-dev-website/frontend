@@ -2530,9 +2530,8 @@
     
     #more-text {
         font-weight: bold;
+        margin-right:145px;
         font-size: 1.1em; /* Increase the font size */
-        margin-right: 20px; /* Add some margin to the right of the text */
-        margin-top: 10%;
     }
     
     #link-columns {
