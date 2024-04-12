@@ -3,9 +3,9 @@
   --screenScale: 1;
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 991px) {
 
-  .enavbar {
+  .znavbar {
     position: fixed;
     display:flex;
     top: 0;
@@ -18,14 +18,14 @@
     font-family: inter, sans-serif;
   }
   
-  .enavbar .image{
+  .znavbar .image{
       display:none;
       float:left;
       padding-left: 16px;
       height:39.2px;
   }
 
-  .enavbar a {
+  .znavbar a {
       float: right;
       display: block;
       color: white;
@@ -35,7 +35,7 @@
 
   }
 
-  .enavbar a:hover {
+  .znavbar a:hover {
       border-bottom: 2px solid gold;
   }
   
@@ -155,9 +155,9 @@
 
 }
 
-@media only screen and (min-width: 601px) {
+@media only screen and (min-width: 992px) {
 
-.enavbar {
+.znavbar {
   position: fixed;
   top: 0;
   width: 100%;
@@ -166,13 +166,13 @@
   z-index: 2;
   font-family: inter, sans-serif;
 }
-.enavbar .image{
+.znavbar .image{
   float:left;
   padding-left: calc(var(--screenScale)*16px);
   height: calc(var(--screenScale)*40px);
 }
 
-.enavbar a {
+.znavbar a {
   float: right;
   display: block;
   color: white;
@@ -181,7 +181,7 @@
   text-decoration: none;
 }
 
-.enavbar a:hover {
+.znavbar a:hover {
   border-bottom: calc(var(--screenScale)*2px) solid gold;
 }
 

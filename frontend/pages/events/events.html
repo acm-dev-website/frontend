@@ -2,7 +2,6 @@
 <html>
 <head>
   <link rel="styleSheet" href="../style.css"/>
-  <link rel="stylesheet" href="/index/index.css"/>
   <link rel="styleSheet" href="events.css"/>
   <link rel="preconnect" href="https://rsms.me/">
   <link rel="stylesheet" href="https://rsms.me/inter/inter.css">     
@@ -10,7 +9,7 @@
 <body>
 
   <div class="main">
-    <div class="enavbar">
+    <div class="znavbar">
       <img class="image" src="/Graphics/TACMLogo.png">
       <a href="/projects">Projects</a>
       <a href="/events">Events</a>
@@ -32,10 +31,10 @@
         import {apiFetch} from '../apiParser.js';
         // Get the respective ul elements to append event elements to
         const ucEventList = document.getElementById("ucEventList"); //could be null if page loads weird (use window.onload())
-        apiFetch(ucEventList, "events");
+        apiFetch(ucEventList, "event");
 
         const pastEventList = document.getElementById("pastEventList");
-         apiFetch(pastEventList, "events");
+         apiFetch(pastEventList, "event");
     </script>
 
     <script src="widthScript.js"></script>

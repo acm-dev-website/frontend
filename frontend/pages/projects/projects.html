@@ -32,10 +32,10 @@
         import {apiFetch} from '../apiParser.js';
         // Get the respective ul elements to append event elements to
         const ucEventList = document.getElementById("curProjectList"); //could be null if page loads weird (use window.onload())
-        apiFetch(ucEventList, "projects");
+        apiFetch(ucEventList, "project");
 
         const pastEventList = document.getElementById("pastProjectList");
-         apiFetch(pastEventList, "projects");
+         apiFetch(pastEventList, "project");
     </script>
 
   </div>
