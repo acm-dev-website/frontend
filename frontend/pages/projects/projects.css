@@ -1,94 +1,234 @@
-.projects {
-  background: #282828;
-  font-family: inter, sans-serif;
+@media only screen and (max-width: 991px) {
+
+  .projects {
+    margin-top: calc( (2 - var(--screenScale) ) *60px);
+    background: #282828;
+    font-family: inter, sans-serif;
+    margin-top: 200px;
+  }
+  
+  .mainHeader {
+    color: rgba(255, 255, 255);
+    text-align: center;
+    font-weight: 600;
+    font-size: calc(var(--screenScale)*55px);
+  }
+  
+  .projectElement {
+    margin-bottom: auto;
+    list-style-type: none; /* Gets rid of the bullet point that is normally present in a list element */
+    display: flex;
+    justify-content: center;
+    color: white;
+  } 
+  
+  /* Additional rule to remove default left-padding on <ul> */
+  ul {
+    padding-left: 0;
+  }
+  
+  .projectInfoBox {
+    margin-bottom: 5%;
+    width: calc(var(--screenScale)*686px);
+    height: calc(var(--screenScale)*360px);
+    flex-shrink: 0;
+    border-radius: calc(var(--screenScale)*15px);
+    border: calc(var(--screenScale)*2px) solid rgba(255, 255, 255, 0.20);
+    background: rgba(51, 51, 51, 0.70);
+  
+    text-align: left;
+    display: block;
+  }
+  
+  .projectName {
+    margin-left: calc(var(--screenScale)*10px);  /* Adds whitespace to the left of the details for spacing */
+    display: inline-block;
+    font-size: calc(var(--screenScale)*25px);
+  }
+  
+  .projectDate {
+    display: inline-block;
+    margin-left: calc(var(--screenScale)*25px);
+    font-size: calc(var(--screenScale)*25px);
+  }
+  
+  .projectHosts, .projectDescription, .projectType {
+    display: block;
+    margin-left: calc(var(--screenScale)*10px);  /* Adds whitespace to the left of the details for spacing */
+    font-size: calc(var(--screenScale)*20px);
+  }
+  
+  .projectImage {
+    margin-left: calc(var(--screenScale)*10px);
+    border-radius: calc(var(--screenScale)*15px);
+    border: calc(var(--screenScale)*2px) solid rgba(0, 0, 0, 1);
+    height: calc(var(--screenScale)*360px);
+    display: block;
+    width: calc(var(--screenScale)*400px);
+    background: url(<path-to-image>), lightgray 0px -335.426px / 100% 391.622% no-repeat;
+  }
+  
+  /* rotates acm logo on hover*/
+  .Acm_Logo:hover {
+    cursor: default;
+    transform: rotate(360deg);
+    transition: transform 0.9s ease-in-out;
+  }
+  
+  /* Scroll fade effect made by Chat-GPT */
+  .fade-in {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.8s ease-in-out, transform 0.8s ease-in-out;
+  }
+  
+  .logoContainer {
+    display: inline-flex;
+    justify-content: center;
+    position: relative;
+    bottom: 0;
+  }
+  .logoContainer a .insta {
+    width: 40px;
+    height: 40px;
+  }
+  .logoContainer a .discord {
+    width: 50px;
+    height: 40px;
+  }
+  
+  .footer {
+      position: fixed;
+      align-items: center;
+      width: calc(var(--screenScale)*600px);
+      height: calc(var(--screenScale)*50px);
+      background-color: #6e6e6e ;
+  }
+  
+  
+  .footer_btns {
+    margin-right: calc(var(--screenScale)*20px);
+    display: inline-block;
+    font-family: inter, sans-serif;
+    color: white;
+    text-align: left;
+  }
+
 }
 
-.mainHeader {
-  color: rgba(255, 255, 255);
-  text-align: center;
-  font-weight: 600;
-  font-size: 55px;
-}
+@media only screen and (min-width: 992px) {
+    
+  .projects {
+    margin-top: calc( (2 - var(--screenScale) ) *60px);
+    background: #282828;
+    font-family: inter, sans-serif;
+  }
 
-.projectElement {
-  margin-bottom: auto;
-  list-style-type: none; /* Gets rid of the bullet point that is normally present in a list element */
-  display: flex;
-  justify-content: center;
-  color: white;
-} 
+  .mainHeader {
+    color: rgba(255, 255, 255);
+    text-align: center;
+    font-weight: 600;
+    font-size: calc(var(--screenScale)*55px);
+  }
 
-/* Additional rule to remove default left-padding on <ul> */
-ul {
-  padding-left: 0;
-}
+  .projectElement {
+    margin-bottom: auto;
+    list-style-type: none; /* Gets rid of the bullet point that is normally present in a list element */
+    display: flex;
+    justify-content: center;
+    color: white;
+  } 
 
-.projectInfoBox {
-  margin-bottom: 5%;
-  width: 686px;
-  height: 360px;
-  flex-shrink: 0;
-  border-radius: 15px;
-  border: 2px solid rgba(255, 255, 255, 0.20);
-  background: rgba(51, 51, 51, 0.70);
+  /* Additional rule to remove default left-padding on <ul> */
+  ul {
+    padding-left: 0;
+  }
 
-  text-align: left;
-  display: block;
-}
+  .projectInfoBox {
+    margin-bottom: 5%;
+    width: calc(var(--screenScale)*686px);
+    height: calc(var(--screenScale)*360px);
+    flex-shrink: 0;
+    border-radius: calc(var(--screenScale)*15px);
+    border: calc(var(--screenScale)*2px) solid rgba(255, 255, 255, 0.20);
+    background: rgba(51, 51, 51, 0.70);
 
-.projectName {
-  margin-left: 10px;  /* Adds whitespace to the left of the details for spacing */
-  display: inline-block;
-  font-size: 25px;
-}
+    text-align: left;
+    display: block;
+  }
 
-.projectDate {
-  display: inline-block;
-  margin-left: 25px;
-  font-size: 25px;
-}
+  .projectName {
+    margin-left: calc(var(--screenScale)*10px);  /* Adds whitespace to the left of the details for spacing */
+    display: inline-block;
+    font-size: calc(var(--screenScale)*25px);
+  }
 
-.projectLeaders, .projectSchedule, .projectDescription {
-  display: block;
-  margin-left: 10px;  /* Adds whitespace to the left of the details for spacing */
-  font-size: 20px;
-}
+  .projectDate {
+    display: inline-block;
+    margin-left: calc(var(--screenScale)*25px);
+    font-size: calc(var(--screenScale)*25px);
+  }
 
-.projectImage {
-  margin-left: 10px;
-  border-radius: 15px;
-  border: 2px solid rgba(0, 0, 0, 1);
-  height: 360px;
-  display: block;
-  width: 400px;
-  background: url(<path-to-image>), lightgray 0px -335.426px / 100% 391.622% no-repeat;
-}
+  .projectHosts, .projectDescription, .projectType {
+    display: block;
+    margin-left: calc(var(--screenScale)*10px);  /* Adds whitespace to the left of the details for spacing */
+    font-size: calc(var(--screenScale)*20px);
+  }
 
-/* rotates acm logo on hover*/
-.Acm_Logo:hover {
-  cursor: default;
-  transform: rotate(360deg);
-  transition: transform 0.9s ease-in-out;
-}
+  .projectImage {
+    margin-left: calc(var(--screenScale)*10px);
+    border-radius: calc(var(--screenScale)*15px);
+    border: calc(var(--screenScale)*2px) solid rgba(0, 0, 0, 1);
+    height: calc(var(--screenScale)*360px);
+    display: block;
+    width: calc(var(--screenScale)*400px);
+    background: url(<path-to-image>), lightgray 0px -335.426px / 100% 391.622% no-repeat;
+  }
 
-/* Scroll fade effect made by Chat-GPT */
-.fade-in {
-  opacity: 0;
-  transform: translateY(20px);
-  transition: opacity 0.8s ease-in-out, transform 0.8s ease-in-out;
-}
+  /* rotates acm logo on hover*/
+  .Acm_Logo:hover {
+    cursor: default;
+    transform: rotate(360deg);
+    transition: transform 0.9s ease-in-out;
+  }
 
-.logoContainer {
-  display: inline-flex;
-  justify-content: center;
-  position: relative;
-  bottom: 0;
-}
-.logoContainer a .insta {
-  width: 40px;
-  height: 40px;
-}
-.logoContainer a .discord {
-  width: 50px;
-  height: 40px;
+  /* Scroll fade effect made by Chat-GPT */
+  .fade-in {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.8s ease-in-out, transform 0.8s ease-in-out;
+  }
+
+  .logoContainer {
+    display: inline-flex;
+    justify-content: center;
+    position: relative;
+    bottom: 0;
+  }
+  .logoContainer a .insta {
+    width: calc(var(--screenScale)*40px);
+    height: calc(var(--screenScale)*40px);
+  }
+  .logoContainer a .discord {
+    width: calc(var(--screenScale)*50px);
+    height: calc(var(--screenScale)*40px);
+  }
+
+  .footer {
+      position: fixed;
+      align-items: center;
+      width: calc(var(--screenScale)*600px);
+      height: calc(var(--screenScale)*50px);
+      background-color: #6e6e6e ;
+  }
+
+
+  .footer_btns {
+    margin-right: calc(var(--screenScale)*20px);
+    display: inline-block;
+    font-family: inter, sans-serif;
+    color: white;
+    text-align: left;
+  }
+
 }
