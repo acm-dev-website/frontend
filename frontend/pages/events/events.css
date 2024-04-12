@@ -1,4 +1,192 @@
+:root {
+  --scren-width: 1200px;
+  --screenScale: 1;
+}
+
+@media only screen and (max-width: 600px) {
+
+  .enavbar {
+    position: fixed;
+    display:flex;
+    top: 0;
+    width: 100%;
+    flex-direction: column-reverse;
+    overflow: hidden;
+    background-color: #333;
+    z-index: 2;
+    font-size: 10px;
+    font-family: inter, sans-serif;
+  }
+  
+  .enavbar .image{
+      display:none;
+      float:left;
+      padding-left: 16px;
+      height:39.2px;
+  }
+
+  .enavbar a {
+      float: right;
+      display: block;
+      color: white;
+      text-align: center;
+      padding: 14px 16px;
+      text-decoration: none;
+
+  }
+
+  .enavbar a:hover {
+      border-bottom: 2px solid gold;
+  }
+  
+  .events {
+    margin-top: calc( (2 - var(--screenScale) ) *40px);
+    background: #282828;
+    font-family: inter, sans-serif;
+    margin-top: 200px;
+  }
+  
+  .mainHeader {
+    color: rgba(255, 255, 255);
+    text-align: center;
+    font-weight: 600;
+    font-size: calc(var(--screenScale)*55px);
+  }
+  
+  .eventElement {
+    margin-bottom: auto;
+    list-style-type: none; /* Gets rid of the bullet point that is normally present in a list element */
+    display: flex;
+    justify-content: center;
+    color: white;
+  } 
+  
+  /* Additional rule to remove default left-padding on <ul> */
+  ul {
+    padding-left: 0;
+  }
+  
+  .eventInfoBox {
+    margin-bottom: 5%;
+    width: calc(var(--screenScale)*686px);
+    height: calc(var(--screenScale)*360px);
+    flex-shrink: 0;
+    border-radius: calc(var(--screenScale)*15px);
+    border: calc(var(--screenScale)*2px) solid rgba(255, 255, 255, 0.20);
+    background: rgba(51, 51, 51, 0.70);
+  
+    text-align: left;
+    display: block;
+  }
+  
+  .eventName {
+    margin-left: calc(var(--screenScale)*10px);  /* Adds whitespace to the left of the details for spacing */
+    display: inline-block;
+    font-size: calc(var(--screenScale)*25px);
+  }
+  
+  .eventDate {
+    display: inline-block;
+    margin-left: calc(var(--screenScale)*25px);
+    font-size: calc(var(--screenScale)*25px);
+  }
+  
+  .eventHosts, .eventDescription, .eventType {
+    display: block;
+    margin-left: calc(var(--screenScale)*10px);  /* Adds whitespace to the left of the details for spacing */
+    font-size: calc(var(--screenScale)*20px);
+  }
+  
+  .eventImage {
+    margin-left: calc(var(--screenScale)*10px);
+    border-radius: calc(var(--screenScale)*15px);
+    border: calc(var(--screenScale)*2px) solid rgba(0, 0, 0, 1);
+    height: calc(var(--screenScale)*360px);
+    display: block;
+    width: calc(var(--screenScale)*400px);
+    background: url(<path-to-image>), lightgray 0px -335.426px / 100% 391.622% no-repeat;
+  }
+  
+  /* rotates acm logo on hover*/
+  .Acm_Logo:hover {
+    cursor: default;
+    transform: rotate(360deg);
+    transition: transform 0.9s ease-in-out;
+  }
+  
+  /* Scroll fade effect made by Chat-GPT */
+  .fade-in {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.8s ease-in-out, transform 0.8s ease-in-out;
+  }
+  
+  .logoContainer {
+    display: inline-flex;
+    justify-content: center;
+    position: relative;
+    bottom: 0;
+  }
+  .logoContainer a .insta {
+    width: 40px;
+    height: 40px;
+  }
+  .logoContainer a .discord {
+    width: 50px;
+    height: 40px;
+  }
+  
+  .footer {
+      position: fixed;
+      align-items: center;
+      width: calc(var(--screenScale)*600px);
+      height: calc(var(--screenScale)*50px);
+      background-color: #6e6e6e ;
+  }
+  
+  
+  .footer_btns {
+    margin-right: calc(var(--screenScale)*20px);
+    display: inline-block;
+    font-family: inter, sans-serif;
+    color: white;
+    text-align: left;
+  }
+
+}
+
+@media only screen and (min-width: 601px) {
+
+.enavbar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  overflow: hidden;
+  background-color: #333;
+  z-index: 2;
+  font-family: inter, sans-serif;
+}
+.enavbar .image{
+  float:left;
+  padding-left: calc(var(--screenScale)*16px);
+  height: calc(var(--screenScale)*40px);
+}
+
+.enavbar a {
+  float: right;
+  display: block;
+  color: white;
+  text-align: center;
+  padding: calc(var(--screenScale)*14px) calc(var(--screenScale)*16px);
+  text-decoration: none;
+}
+
+.enavbar a:hover {
+  border-bottom: calc(var(--screenScale)*2px) solid gold;
+}
+
 .events {
+  margin-top: calc( (2 - var(--screenScale) ) *40px);
   background: #282828;
   font-family: inter, sans-serif;
 }
@@ -7,7 +195,7 @@
   color: rgba(255, 255, 255);
   text-align: center;
   font-weight: 600;
-  font-size: 55px;
+  font-size: calc(var(--screenScale)*55px);
 }
 
 .eventElement {
@@ -25,11 +213,11 @@ ul {
 
 .eventInfoBox {
   margin-bottom: 5%;
-  width: 686px;
-  height: 360px;
+  width: calc(var(--screenScale)*686px);
+  height: calc(var(--screenScale)*360px);
   flex-shrink: 0;
-  border-radius: 15px;
-  border: 2px solid rgba(255, 255, 255, 0.20);
+  border-radius: calc(var(--screenScale)*15px);
+  border: calc(var(--screenScale)*2px) solid rgba(255, 255, 255, 0.20);
   background: rgba(51, 51, 51, 0.70);
 
   text-align: left;
@@ -37,30 +225,30 @@ ul {
 }
 
 .eventName {
-  margin-left: 10px;  /* Adds whitespace to the left of the details for spacing */
+  margin-left: calc(var(--screenScale)*10px);  /* Adds whitespace to the left of the details for spacing */
   display: inline-block;
-  font-size: 25px;
+  font-size: calc(var(--screenScale)*25px);
 }
 
 .eventDate {
   display: inline-block;
-  margin-left: 25px;
-  font-size: 25px;
+  margin-left: calc(var(--screenScale)*25px);
+  font-size: calc(var(--screenScale)*25px);
 }
 
 .eventHosts, .eventDescription, .eventType {
   display: block;
-  margin-left: 10px;  /* Adds whitespace to the left of the details for spacing */
-  font-size: 20px;
+  margin-left: calc(var(--screenScale)*10px);  /* Adds whitespace to the left of the details for spacing */
+  font-size: calc(var(--screenScale)*20px);
 }
 
 .eventImage {
-  margin-left: 10px;
-  border-radius: 15px;
-  border: 2px solid rgba(0, 0, 0, 1);
-  height: 360px;
+  margin-left: calc(var(--screenScale)*10px);
+  border-radius: calc(var(--screenScale)*15px);
+  border: calc(var(--screenScale)*2px) solid rgba(0, 0, 0, 1);
+  height: calc(var(--screenScale)*360px);
   display: block;
-  width: 400px;
+  width: calc(var(--screenScale)*400px);
   background: url(<path-to-image>), lightgray 0px -335.426px / 100% 391.622% no-repeat;
 }
 
@@ -96,14 +284,18 @@ ul {
 .footer {
     position: fixed;
     align-items: center;
-    width: 600px ;
-    height: 50px ;
+    width: calc(var(--screenScale)*600px);
+    height: calc(var(--screenScale)*50px);
     background-color: #6e6e6e ;
 }
 
 
 .footer_btns {
+  margin-right: calc(var(--screenScale)*20px);
+  display: inline-block;
   font-family: inter, sans-serif;
   color: white;
   text-align: left;
+}
+
 }
