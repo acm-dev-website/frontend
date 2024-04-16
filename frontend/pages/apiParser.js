@@ -21,7 +21,7 @@ export function apiFetch (eventList, type){
                         </p>
                         <p class="${type}Description">
                             <strong>Description:</strong>
-                            "${event.description}"
+                            ${event.description}
                         </p>
                     </div>
                     <img class="${type}Image" src="http://localhost:3000/api/fetch/images/${event.imageName}">
