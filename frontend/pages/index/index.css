@@ -1,32 +1,26 @@
 
 
-
-/* Medium devices (landscape tablets, 768px and up) */
-
-
-
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
-    body{
-        position:absolute;
+    .body{
+        height:auto;
     }
     .navbar {
-        display: flex;
-        justify-content: center;
-        flex-direction: row-reverse;
         position: absolute;
+        display:flex;
         top: 0;
         width: 100%;
+        flex-direction: column-reverse;
         overflow: hidden;
         background-color: #333;
         z-index: 2;
-        font-family: inter, sans-serif;
-        font-size: 8px;
+        font-size:10px;
     }
     .navbar .image{
         display:none;
+        float:left;
         padding-left: 16px;
-        height:40px;
+        height:39.2px;
     }
     
     .navbar a {
@@ -34,8 +28,9 @@
         display: block;
         color: white;
         text-align: center;
-        padding: 7.5px 9px;
+        padding: 14px 16px;
         text-decoration: none;
+
     }
     
     .navbar a:hover {
@@ -84,12 +79,13 @@
     
     
     .titleSection .title {
+        padding-top:50px;
         vertical-align: top;
         display:inline-block;
         text-align: center;
         color: #FFFFFF;
         margin: auto;
-        margin-top:100px;
+        margin-top:200px;
         margin-bottom:0px;
         width: 60%;
     
@@ -104,7 +100,7 @@
     
     }
     
-    .titleSection .subtextfont{
+    .titleSection .subffont{
         position: relative;
         font-family: inter, sans-serif;
         font-size: 10px;
@@ -265,7 +261,7 @@
     
     .UpcomingSection .boxes{
         display: inline-flex;
-        width: 60%;
+        width: 100%;
         height: 80%;
         flex-direction: column;
         align-items: center;
@@ -444,12 +440,13 @@
     .MerchandiseSection .subtitlefont{
         height:max-content;
         color: #FFC904;
-        text-align: center;
+        text-align: left;
         font-family: Inter;
         font-size: 20px;
         font-style: normal;
         font-weight: 700;
         line-height: normal;
+        width:30%;
         margin : 0;
         display:inline-block;
         padding-bottom:5px;
@@ -461,7 +458,7 @@
         background-color: rgba(51, 51, 51, 0.70);; /* Green */
         border: none;
         color: white;
-        padding: 4px 12px;
+        padding: 7.5px 25px;
         text-align: center;
         text-decoration: none;
         font-size: 12px;
@@ -489,30 +486,24 @@
 
 }
 
-
-
-
+/* Small devices (portrait tablets and large phones, 600px and up) */
 @media only screen and (min-width: 600px) {
-    body{
-        position:absolute;
+    .body{
+        height:auto;
     }
     .navbar {
-        display: flex;
-        justify-content: center;
-        flex-direction: row-reverse;
-        position: absolute;
+        position: fixed;
         top: 0;
         width: 100%;
         overflow: hidden;
         background-color: #333;
         z-index: 2;
-        font-family: inter, sans-serif;
-        font-size: 12px;
+        font-size:10px;
     }
     .navbar .image{
-        display:none;
+        float:left;
         padding-left: 16px;
-        height:40px;
+        height:39.2px;
     }
     
     .navbar a {
@@ -522,6 +513,7 @@
         text-align: center;
         padding: 14px 16px;
         text-decoration: none;
+
     }
     
     .navbar a:hover {
@@ -546,23 +538,20 @@
     }
     
     .titleSection{
-        margin-top: 50px;
-        height: 650px;
-        margin-bottom: 150px;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
+        margin-top:50px;
+        height: 800px;
+        margin-bottom:10px;
     }
     .titleSection .background{
         display:flex;
         flex-wrap: wrap;  
         position: absolute;
-        top: 175px;
+        top: 0;
         left: 0;
         z-index: -100;
         width: 100%;
         height:100%;
-        max-height:600px;
+        max-height:800px;
         
         overflow: hidden;
 
@@ -570,14 +559,12 @@
     
     
     .titleSection .title {
-        padding-top:50px;
+        padding-top:200px;
         vertical-align: top;
         display:inline-block;
-        text-align: center;
+        text-align: left;
         color: #FFFFFF;
         margin: auto;
-        margin-top:100px;
-        margin-bottom:0px;
         width: 60%;
     
     }
@@ -586,7 +573,7 @@
         position: relative;
         font-family: inter, sans-serif;
         font-weight: 600;
-        font-size: 30px;
+        font-size: 36px;
         
     
     }
@@ -594,18 +581,19 @@
     .titleSection .subtextfont{
         position: relative;
         font-family: inter, sans-serif;
-        font-size: 25px;
+        font-size: 24px;
         font-weight: 300;
+        padding-top: 80px;
     }
     
     .titleSection .image{
+        padding-top:250px;
         display:flexbox;
         vertical-align: top;
         width:25%;
         border-radius: 150px;
         height:auto;
         max-height: 100%;
-        padding-top:50px
     }
     
     
@@ -613,12 +601,11 @@
     .aboutSection{
         display: flex;
         height: 20%;
-        width: 70%;
+        width: auto;
         margin-top: 10px;
         margin-bottom: 10px;
         flex-direction: column-reverse;
         align-items: right;
-        justify-content: center;
         
     }
     
@@ -648,7 +635,7 @@
     .aboutSection .subtextfont{
         position: relative;
         font-family: inter, sans-serif;
-        font-size: 18px;
+        font-size: 12px;
         font-weight: 200;
         margin-top: 5px;
         line-height: 35px;
@@ -753,40 +740,37 @@
     
     
     .UpcomingSection .boxes{
-        display: inline-flex;
-        width: 60%;
-        height: 80%;
-        flex-direction: column;
-        align-items: center;
+        display:inline-flex;
+        width:70%;
+        height:80%;
+        align-self: center;
+        justify-content:center;
     }
     .UpcomingSection .box1{
-        
         border-radius: 15px;
         border: 2px solid rgba(255, 255, 255, 0.20);
         background: rgba(51, 51, 51, 0.70);
         height:80%;
-        width:90%;
+        width:35%;
         flex-shrink: 0;
     }
     
     .UpcomingSection .box2{
-        margin-top:20px;
         border-radius: 15px;
         border: 2px solid rgba(255, 255, 255, 0.20);
         background: rgba(51, 51, 51, 0.70);
         height:80%;
-        width:90%;
+        width:35%;
         margin-left:30px;
         margin-right:30px;
         flex-shrink: 0;
     }
     .UpcomingSection .box3{
-        margin-top:20px;
         border-radius: 15px;
         border: 2px solid rgba(255, 255, 255, 0.20);
         background: rgba(51, 51, 51, 0.70);
         height:80%;
-        width:90%;
+        width:35%;
         flex-shrink: 0;
     }
     
@@ -796,7 +780,7 @@
         color: #FFF;
         text-align: center;
         font-family: Inter;
-        font-size: 24px;
+        font-size: 16px;
         font-style: normal;
         font-weight: 700;
         line-height: normal;
@@ -809,7 +793,7 @@
         color: #FFC904;
         text-align: center;
         font-family: Inter;
-        font-size: 20px;
+        font-size: 15px;
         font-style: normal;
         font-weight: 700;
         line-height: normal;
@@ -836,7 +820,7 @@
         background-color: rgba(51, 51, 51, 0.70);; /* Green */
         border: none;
         color: #FFC904;
-        padding: 16px 32px;
+        padding: 7.5px 25px;
         text-align: center;
         text-decoration: none;
         display: inline-block;
@@ -902,8 +886,8 @@
         background: rgba(51, 51, 51, 0.70);
         height: max-content;
         width:40%;
-        margin-left:10px;
-        margin-right:10px;
+        margin-left:30px;
+        margin-right:30px;
         flex-shrink: 0;
     }
     .MerchandiseSection .box3{
@@ -921,7 +905,7 @@
         color: #FFF;
         text-align: center;
         font-family: Inter;
-        font-size: 15px;
+        font-size: 20px;
         font-style: normal;
         font-weight: 700;
         line-height: normal;
@@ -933,15 +917,15 @@
     .MerchandiseSection .subtitlefont{
         height:max-content;
         color: #FFC904;
-        text-align: center;
+        text-align: left;
         font-family: Inter;
-        font-size: 20px;
+        font-size: 25px;
         font-style: normal;
         font-weight: 700;
         line-height: normal;
+        width:30%;
         margin : 0;
         display:inline-block;
-        padding-bottom:5px;
     }
     .MerchandiseSection .subbutton{
         width: max-content;
@@ -950,7 +934,7 @@
         background-color: rgba(51, 51, 51, 0.70);; /* Green */
         border: none;
         color: white;
-        padding: 4px 12px;
+        padding: 7.5px 25px;
         text-align: center;
         text-decoration: none;
         font-size: 12px;
@@ -974,17 +958,40 @@
         font-weight: 300;
         line-height: 23px;
     }
-
+    
+    
+    
+    /*About UCF ACM with rainbow line under and picture to the right */
+    /* Description under*/
+    
+    /*More Text for about section with a picture to the right*/
+    
+    
+    /*Divider Line */
+    
+    
+    /*Boxes for upcoming events workshops and projects*/
+    
+    /*Each box will include a title, text, and a description*/
+    
+    
+    
+    /*Divider Line */
+    /*Merch boxes */
+    /*Within each box there should be a picture spot, title of the product, price, and link to the merch page */
+    
+    
+    /* These are the links */
 
 }
 
-
+/* Medium devices (landscape tablets, 768px and up) */
 @media only screen and (min-width: 768px) {
     .body{
         height:auto;
     }
     .navbar {
-        position: absolute;
+        position: fixed;
         top: 0;
         width: 100%;
         overflow: hidden;
@@ -1030,11 +1037,9 @@
     }
     
     .titleSection{
-        margin-top: 50px;
-        height: 500px;
-        margin-bottom: 250px;
-        display: flex;
-        flex-direction: column;
+        margin-top:50px;
+        height: 800px;
+        margin-bottom:100px;
     }
     .titleSection .background{
         display:flex;
@@ -1053,13 +1058,13 @@
     
     
     .titleSection .title {
-        padding-top:100px;
+        padding-top:200px;
         vertical-align: top;
         display:inline-block;
-        text-align: center;
+        text-align: left;
         color: #FFFFFF;
         margin: auto;
-        width: 50%;
+        width: 60%;
     
     }
     
@@ -1077,14 +1082,14 @@
         font-family: inter, sans-serif;
         font-size: 24px;
         font-weight: 300;
-        padding-top: 20px;
+        padding-top: 80px;
     }
     
     .titleSection .image{
-        padding-top:50px;
+        padding-top:200px;
         display:flexbox;
         vertical-align: top;
-        width:30%;
+        width:25%;
         border-radius: 150px;
         height:auto;
         max-height: 100%;
@@ -1098,7 +1103,7 @@
         width: auto;
         margin-top: 100px;
         margin-bottom: 10px;
-        flex-direction: column-reverse;
+        flex-direction: row;
         justify-content: center;
         align-items: center;
         
@@ -1107,16 +1112,14 @@
     .aboutSection .text {
         display: flex;
         vertical-align: top;
-        text-align: center;
+        text-align: left;
         color: #FFFFFF;
-        width: 60%;
-        padding-left: 0;
+        margin-left: 2%;
+        width: 40%;
         flex-wrap: wrap;
-        justify-content: center;
     
     }
     .aboutSection .rainbowLine{
-        align-self: center;
         width:80%;
         height: 1%;
     }
@@ -1134,7 +1137,7 @@
     .aboutSection .subtextfont{
         position: relative;
         font-family: inter, sans-serif;
-        font-size: 22px;
+        font-size: 15px;
         font-weight: 200;
         margin-top: 5px;
         line-height: 35px;
@@ -1145,7 +1148,7 @@
         display: flex;
         margin-top:40px;
         vertical-align: top;
-        width:65%;
+        width:35%;
         height:auto;
         max-height:100%;
     
@@ -1162,7 +1165,7 @@
         width: auto;
         margin-top: 100px;
         margin-bottom: 10px;
-        flex-direction: column;
+        flex-direction: row;
         justify-content: center;
         align-items: center;
         
@@ -1171,13 +1174,14 @@
     .anotherSection .text {
         display: flex;
         vertical-align: top;
-        text-align: center;
+        text-align: left;
         color: #FFFFFF;
-        padding-left: 0;
-        margin-left: 0;
-        width: 65%;
+        padding-left:0;
+        margin-left:0;
+        margin-right:2%;
+        padding-right:2%;
+        width: 40%;
         flex-wrap: wrap;
-        justify-content: center;
     
     }
     
@@ -1196,7 +1200,7 @@
     .anotherSection .subtextfont{
         position: relative;
         font-family: inter, sans-serif;
-        font-size: 22px;
+        font-size: 15px;
         font-weight: 200;
         padding-top: 5px;
         width: 100%;
@@ -1207,15 +1211,15 @@
         display: flex;
         margin-top: 40px;
         vertical-align: top;
-        width: 65%;
+        width: 35%;
         height: auto;
         max-height: 100%;
         margin-left:0;
     
     }
     .anotherSection .orangeLine{
-        width:50%;
-        height: 5px;
+        width:65%;
+        height: 2px;
     
     }
     .space{
@@ -1236,20 +1240,48 @@
     
     
     
+    
+    
     .UpcomingSection{
-        display:flex;
         margin-top:10%;
         height: 10%;
         border-color:blueviolet;
-        justify-content: center;
     }
+    
+    
     .UpcomingSection .boxes{
-        display:flex;
+        display:inline-flex;
         width:70%;
         height:80%;
         align-self: center;
         justify-content:center;
-        flex-direction:column;
+    }
+    .UpcomingSection .box1{
+        border-radius: 15px;
+        border: 2px solid rgba(255, 255, 255, 0.20);
+        background: rgba(51, 51, 51, 0.70);
+        height:80%;
+        width:35%;
+        flex-shrink: 0;
+    }
+    
+    .UpcomingSection .box2{
+        border-radius: 15px;
+        border: 2px solid rgba(255, 255, 255, 0.20);
+        background: rgba(51, 51, 51, 0.70);
+        height:80%;
+        width:35%;
+        margin-left:30px;
+        margin-right:30px;
+        flex-shrink: 0;
+    }
+    .UpcomingSection .box3{
+        border-radius: 15px;
+        border: 2px solid rgba(255, 255, 255, 0.20);
+        background: rgba(51, 51, 51, 0.70);
+        height:80%;
+        width:35%;
+        flex-shrink: 0;
     }
     
     .UpcomingSection .titlefont{
@@ -1258,7 +1290,7 @@
         color: #FFF;
         text-align: center;
         font-family: Inter;
-        font-size: 30px;
+        font-size: 16px;
         font-style: normal;
         font-weight: 700;
         line-height: normal;
@@ -1271,7 +1303,7 @@
         color: #FFC904;
         text-align: center;
         font-family: Inter;
-        font-size: 28px;
+        font-size: 15px;
         font-style: normal;
         font-weight: 700;
         line-height: normal;
@@ -1285,10 +1317,10 @@
         color: #FFF;
         text-align: center;
         font-family: Inter;
-        font-size: 25px;
+        font-size: 12px;
         font-style: normal;
         font-weight: 300;
-        line-height: 35px;
+        line-height: 23px;
     }
     .UpcomingSection .subbutton{
         margin-bottom: 10%;
@@ -1298,11 +1330,11 @@
         background-color: rgba(51, 51, 51, 0.70);; /* Green */
         border: none;
         color: #FFC904;
-        padding: 24px 45px;
+        padding: 7.5px 25px;
         text-align: center;
         text-decoration: none;
         display: inline-block;
-        font-size: 32px;
+        font-size: 12px;
         border-radius: 100px;
         outline-width: 1px;
         outline-style: solid;
@@ -1317,12 +1349,10 @@
     
     
     .MerchandiseSection{
-        display: flex;
         margin-top: 15%;
-        padding-top: 15px;
+        padding-top:15px;
         height: 25%;
-        border-color: blueviolet;
-        flex-direction: column;
+        border-color:blueviolet;
     }
     .MerchandiseSection .sectionTitle{
         margin-bottom:100px ;
@@ -1345,7 +1375,7 @@
     
     .MerchandiseSection .boxes{
         padding-bottom:100px;
-        display:flex;
+        display:inline-flex;
         width:75%;
         height:100%;
         align-self: center;
@@ -1366,8 +1396,8 @@
         background: rgba(51, 51, 51, 0.70);
         height: max-content;
         width:40%;
-        margin-left:10px;
-        margin-right:10px;
+        margin-left:30px;
+        margin-right:30px;
         flex-shrink: 0;
     }
     .MerchandiseSection .box3{
@@ -1385,7 +1415,7 @@
         color: #FFF;
         text-align: center;
         font-family: Inter;
-        font-size: 28px;
+        font-size: 20px;
         font-style: normal;
         font-weight: 700;
         line-height: normal;
@@ -1394,26 +1424,18 @@
         margin-top:0px;
         width:90%;
     }
-    .MerchandiseSection .bottomSectionOfBox{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: space-evenly;
-        padding-left: 10%;
-        padding-right: 10%;
-    }
-
     .MerchandiseSection .subtitlefont{
         height:max-content;
         color: #FFC904;
+        text-align: left;
         font-family: Inter;
-        font-size: 32px;
+        font-size: 25px;
         font-style: normal;
         font-weight: 700;
         line-height: normal;
+        width:30%;
         margin : 0;
-        display:flex;
-        padding-bottom:5px;
+        display:inline-block;
     }
     .MerchandiseSection .subbutton{
         width: max-content;
@@ -1422,10 +1444,10 @@
         background-color: rgba(51, 51, 51, 0.70);; /* Green */
         border: none;
         color: white;
-        padding: 20px 45px;
+        padding: 7.5px 25px;
         text-align: center;
         text-decoration: none;
-        font-size: 23px;
+        font-size: 12px;
         border-radius: 100px;
         outline-width: 1px;
         outline-style: solid;
@@ -1441,7 +1463,7 @@
         color: #FFF;
         text-align: center;
         font-family: Inter;
-        font-size: 23px;
+        font-size: 16px;
         font-style: normal;
         font-weight: 300;
         line-height: 23px;
@@ -1480,21 +1502,17 @@
             height:auto;
         }
         .navbar {
-            display: block;
             position: fixed;
             top: 0;
             width: 100%;
-            flex-direction:none;
             overflow: hidden;
             background-color: #333;
             z-index: 2;
-            font-size:10px;
         }
         .navbar .image{
-            display:block;
             float:left;
             padding-left: 16px;
-            height:39.2px;
+            height:40px;
         }
         
         .navbar a {
@@ -1504,7 +1522,6 @@
             text-align: center;
             padding: 14px 16px;
             text-decoration: none;
-    
         }
         
         .navbar a:hover {
@@ -1532,8 +1549,6 @@
             margin-top:50px;
             height: 800px;
             margin-bottom:100px;
-            display: block;
-            flex-direction: row;
         }
         .titleSection .background{
             display:flex;
@@ -1580,10 +1595,10 @@
         }
         
         .titleSection .image{
-            padding-top:200px;
+            padding-top:250px;
             display:flexbox;
             vertical-align: top;
-            width:30%;
+            width:25%;
             border-radius: 150px;
             height:auto;
             max-height: 100%;
@@ -1607,7 +1622,7 @@
             vertical-align: top;
             text-align: left;
             color: #FFFFFF;
-            margin-left: 4%;
+            margin-left: 2%;
             width: 40%;
             flex-wrap: wrap;
         
@@ -1670,7 +1685,8 @@
             color: #FFFFFF;
             padding-left:0;
             margin-left:0;
-            margin-right: 4%;
+            margin-right:2%;
+            padding-right:2%;
             width: 40%;
             flex-wrap: wrap;
         
@@ -1746,7 +1762,6 @@
             height:80%;
             align-self: center;
             justify-content:center;
-            flex-direction:unset;
         }
         .UpcomingSection .box1{
             border-radius: 15px;
@@ -1911,14 +1926,6 @@
             margin-top:0px;
             width:90%;
         }
-        .MerchandiseSection .bottomSectionOfBox{
-            display: flex;
-            flex-direction: row;
-            align-items: center;
-            justify-content: center;
-            padding-left:0;
-            padding-right:0;
-        }
         .MerchandiseSection .subtitlefont{
             color: #FFC904;
             text-align: left;
@@ -1988,26 +1995,22 @@
     }
     
     /* Extra large devices (large laptops and desktops, 1200px and up) */
-@media only screen and (min-width: 1200px) {
+    @media only screen and (min-width: 1200px) {
         .body{
             height:auto;
         }
         .navbar {
-            display: block;
             position: fixed;
             top: 0;
             width: 100%;
-            flex-direction:none;
             overflow: hidden;
             background-color: #333;
             z-index: 2;
-            font-size:10px;
         }
         .navbar .image{
-            display:block;
             float:left;
             padding-left: 16px;
-            height:39.2px;
+            height:40px;
         }
         
         .navbar a {
@@ -2017,7 +2020,6 @@
             text-align: center;
             padding: 14px 16px;
             text-decoration: none;
-    
         }
         
         .navbar a:hover {
@@ -2118,7 +2120,7 @@
             vertical-align: top;
             text-align: left;
             color: #FFFFFF;
-            margin-left: 4%;
+            margin-left: 2%;
             width: 40%;
             flex-wrap: wrap;
         
@@ -2181,7 +2183,8 @@
             color: #FFFFFF;
             padding-left:0;
             margin-left:0;
-            margin-right: 4%;
+            margin-right:2%;
+            padding-right:2%;
             width: 40%;
             flex-wrap: wrap;
         
@@ -2488,105 +2491,8 @@
         
         
         /* These are the links */
-
-        
               
     
     
     }
     
-
-    html, body {
-        font-family: Arial, sans-serif; /* Use a modern sans-serif font */
-    }
-    
-    #footer {
-        background-color: rgb(94, 94, 94);
-        height: 8%;
-        width: 100%;
-        color: white;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: space-between;
-        position: absolute;
-        
-    }
-    
-    #footer-image {
-        height: 80px; /* Adjust this value as needed */
-        align-self: flex-start; /* Align the image to the top */
-        margin-top: 10px; /* Push the image down */
-    }
-    
-    #footer-links {
-        display: flex;
-        flex-direction: column; /* Change from column to row */
-        text-align: left;
-        align-items: center; /* Align items to the center */
-        padding-right: 70%; /* Add some padding to the left of the text */
-        margin-top: -10%;
-    }
-    
-    #more-text {
-        font-weight: bold;
-        margin-right:145px;
-        font-size: 1.1em; /* Increase the font size */
-    }
-    
-    #link-columns {
-        display: flex;
-        /* margin-top: 10px; Remove this line */
-    }
-    
-    #link-columns ul {
-        list-style-type: none;
-        margin-right: 20px; /* Add space between the columns */
-    }
-    
-    #link-columns ul li {
-        margin-bottom: 10px; /* Add space between the rows */
-        font-size: 1.0em; /* Increase the font size */
-    }
-    
-    #touch-txt {
-        font-weight: bold;
-        font-size: 1.1em; /* Increase the font size */
-        margin-left: 45%; /* Add some margin to the right of the text */
-        margin-top: -3%;
-    }
-    
-    #footer-hr {
-        border: none;
-        height: 2px; /* Adjust thickness here */
-        background-color: white; /* Adjust color here */
-        width: 80%; /* Set the width to 80% */
-        align-self: center; /* Center the line */
-        left: 10%; /* Add this line */
-    }
-    
-    #img_wrap {
-        margin-left: 45%; /* Adjust this value as needed */
-    }
-    
-    #discord_img, #ig_img, #twitter_img {
-        height: 80px;
-    }
-    #link-columns ul li a {
-        color: white; /* Change the color of the links to white */
-        text-decoration: none; /* Remove the default underline */
-    }
-    
-    #link-columns ul li a:hover {
-        text-decoration: underline; /* Add an underline when hovered */
-        text-decoration-color: yellow; /* Change the color of the underline to yellow */
-    }
-    
-    #img_wrap a {
-        outline: none;
-    }
-    
-    #img_wrap a img:hover {
-        background-color: yellow;
-        border-radius: 10px;
-    }

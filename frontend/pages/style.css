@@ -178,21 +178,5 @@ body {
     transition: transform 0.9s ease-in-out;
 }
 
-.footer {
-  position: fixed;
-  align-items: center;
-  width: calc(var(--screenScale)*600px);
-  height: calc(var(--screenScale)*50px);
-  background-color: #6e6e6e ;
-}
-
-
-.footer_btns {
-margin-right: calc(var(--screenScale)*20px);
-display: inline-block;
-font-family: inter, sans-serif;
-color: white;
-text-align: left;
-}
 
 

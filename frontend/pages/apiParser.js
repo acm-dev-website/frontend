@@ -3,28 +3,33 @@
 export function apiFetch (eventList, type){
     //index --> value
     //key  --> value
-    const template = `http://localhost:3000/api/fetch/events` // ?type=${type}
-    fetch(template)
+    const template = `http://localhost:3000/api/fetch/`
+    const urls = new Map([
+        ['events',template+'events'],
+        ['projects',template+'projects'],
+        ['workshops',template+'workshops']
+    ]);
+    fetch(urls.get(type))
         .then(response => response.json())
         .then(jsonData => {
             // Loop through each event in the JSON data and append to the ul element
             console.log(jsonData);
             jsonData.message.forEach(event => {
                 const template = `
-                <li class="${type}Element">
-                    <div class="${type}InfoBox">
-                        <p class="${type}Name">
+                <li class="eventElement">
+                    <div class="eventInfoBox">
+                        <p class="eventName">
                             <strong>${event.name}</strong>
                         </p>
-                        <p class="${type}Date">
+                        <p class="eventDate">
                             <strong>${event.date}</strong>
                         </p>
-                        <p class="${type}Description">
+                        <p class="eventDescription">
                             <strong>Description:</strong>
-                            ${event.description}
+                            "${event.description}"
                         </p>
                     </div>
-                    <img class="${type}Image" src="http://localhost:3000/api/fetch/images/${event.imageName}">
+                    <img class="eventImage" src="http://localhost:3000/api/fetch/images/${event.imageName}">
                 </li>`;
                 eventList.insertAdjacentHTML("beforeend",template);
             });
