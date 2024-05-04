@@ -1,109 +1,385 @@
-.workshops {
-  background: #282828;
-  font-family: inter, sans-serif;
-}
+@media only screen and (max-width: 991px) {
 
-.mainHeader {
-  color: rgba(255, 255, 255);
-  text-align: center;
-  font-weight: 600;
-  font-size: 55px;
-}
-
-.workshopElement {
-  margin-bottom: auto;
-  list-style-type: none; /* Gets rid of the bullet point that is normally present in a list element */
-  display: flex;
-  justify-content: center;
-  color: white;
-} 
-
-/* Additional rule to remove default left-padding on <ul> */
-ul {
-  padding-left: 0;
-}
-
-.workshopInfoBox {
-  margin-bottom: 5%;
-  width: 686px;
-  height: 360px;
-  flex-shrink: 0;
-  border-radius: 15px;
-  border: 2px solid rgba(255, 255, 255, 0.20);
-  background: rgba(51, 51, 51, 0.70);
-}
-
-.workshopImage {
-  margin-left: 10px;
-  border-radius: 15px;
-  border: 2px solid rgba(0, 0, 0, 1);
-  height: 360px;
-  display: block;
-  width: 400px;
-  background: url(<path-to-image>), lightgray 0px -335.426px / 100% 391.622% no-repeat;
-}
-
-.workshopDetails {
-  text-align: left;
-  margin-left: 10px;  /* Adds whitespace to the left of the details for spacing */
-  display: block;
-}
-
-.workshopName {
-  display: inline-block;
-  font-size: 25px;
-}
-
-.workshopDate {
-  display: inline-block;
-  margin-left: 50px;
-  font-size: 25px;
-}
-
-.workshopLeaderNames {
-  font-size: 20px;
-}
-
-.workshopDescription {
-  font-size: 20px;
-}
-
-/* rotates acm logo on hover*/
-.Acm_Logo:hover
-{
+  .workshops {
+    margin-top: calc( (2 - var(--screenScale) ) *60px);
+    background: #282828;
+    font-family: inter, sans-serif;
+    margin-top: 200px;
+  }
+  
+  .mainHeader {
+    color: rgba(255, 255, 255);
+    text-align: center;
+    font-weight: 600;
+    font-size: calc(var(--screenScale)*55px);
+  }
+  
+  .workshopElement {
+    margin-bottom: auto;
+    list-style-type: none; /* Gets rid of the bullet point that is normally present in a list element */
+    display: flex;
+    justify-content: center;
+    color: white;
+  } 
+  
+  /* Additional rule to remove default left-padding on <ul> */
+  ul {
+    padding-left: 0;
+  }
+  
+  .workshopInfoBox {
+    margin-bottom: 5%;
+    width: calc(var(--screenScale)*686px);
+    height: calc(var(--screenScale)*360px);
+    flex-shrink: 0;
+    border-radius: calc(var(--screenScale)*15px);
+    border: calc(var(--screenScale)*2px) solid rgba(255, 255, 255, 0.20);
+    background: rgba(51, 51, 51, 0.70);
+  
+    text-align: left;
+    display: block;
+  }
+  
+  .workshopName {
+    margin-left: calc(var(--screenScale)*10px);  /* Adds whitespace to the left of the details for spacing */
+    display: inline-block;
+    font-size: calc(var(--screenScale)*25px);
+  }
+  
+  .workshopDate {
+    display: inline-block;
+    margin-left: calc(var(--screenScale)*25px);
+    font-size: calc(var(--screenScale)*25px);
+  }
+  
+  .workshopHosts, .workshopDescription, .workshopType {
+    display: block;
+    margin-left: calc(var(--screenScale)*10px);  /* Adds whitespace to the left of the details for spacing */
+    font-size: calc(var(--screenScale)*20px);
+  }
+  
+  .workshopImage {
+    margin-left: calc(var(--screenScale)*10px);
+    border-radius: calc(var(--screenScale)*15px);
+    border: calc(var(--screenScale)*2px) solid rgba(0, 0, 0, 1);
+    height: calc(var(--screenScale)*360px);
+    display: block;
+    width: calc(var(--screenScale)*400px);
+    background: url(<path-to-image>), lightgray 0px -335.426px / 100% 391.622% no-repeat;
+  }
+  
+  /* rotates acm logo on hover*/
+  .Acm_Logo:hover {
     cursor: default;
     transform: rotate(360deg);
     transition: transform 0.9s ease-in-out;
+  }
+  
+  /* Scroll fade effect made by Chat-GPT */
+  .fade-in {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.8s ease-in-out, transform 0.8s ease-in-out;
+  }
+  
+  .logoContainer {
+    display: inline-flex;
+    justify-content: center;
+    position: relative;
+    bottom: 0;
+  }
+  .logoContainer a .insta {
+    width: 40px;
+    height: 40px;
+  }
+  .logoContainer a .discord {
+    width: 50px;
+    height: 40px;
+  }
+  
+  #footer {
+    background-color: rgb(94, 94, 94);
+    height: 250.7416px;
+    width: 100%;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    position: absolute;
+    font-family: Arial, sans-serif;
+    
 }
 
-/* Scroll fade effect made by Chat-GPT */
-.fade-in {
-  opacity: 0;
-  transform: translateY(20px);
-  transition: opacity 0.8s ease-in-out, transform 0.8s ease-in-out;
+#footer-image {
+    height: 80px; /* Adjust this value as needed */
+    align-self: flex-start; /* Align the image to the top */
+    margin-top: 10px; /* Push the image down */
 }
 
-.logoContainer {
-  display: inline-flex;
-  justify-content: center;
-  position: relative;
-  bottom: 0;
-}
-.logoContainer a .insta {
-   width: 40px;
-   height: 40px;
-}
-.logoContainer a .discord {
-   width: 50px;
-   height: 40px;
+#footer-links {
+    display: flex;
+    flex-direction: column; /* Change from column to row */
+    text-align: left;
+    align-items: center; /* Align items to the center */
+    padding-right: 70%; /* Add some padding to the left of the text */
+    margin-top: -10%;
 }
 
-.footer {
-  padding-top: 300px;
-  background-color: rgb(100, 100, 100);
+#more-text {
+    font-weight: bold;
+    font-size: 1.1em; /* Increase the font size */
+    margin-right: 20px; /* Add some margin to the right of the text */
+    margin-top: 10%;
 }
 
-.footer_buttons { 
-  text-align: left;
-  color: white;
+#link-columns {
+    display: flex;
+    /* margin-top: 10px; Remove this line */
+}
+
+#link-columns ul {
+    list-style-type: none;
+    margin-right: 20px; /* Add space between the columns */
+}
+
+#link-columns ul li {
+    margin-bottom: 10px; /* Add space between the rows */
+    font-size: 1.0em; /* Increase the font size */
+}
+
+#touch-txt {
+    font-weight: bold;
+    font-size: 1.1em; /* Increase the font size */
+    margin-left: 45%; /* Add some margin to the right of the text */
+    margin-top: -3%;
+}
+
+#footer-hr {
+    border: none;
+    height: 2px; /* Adjust thickness here */
+    background-color: white; /* Adjust color here */
+    width: 80%; /* Set the width to 80% */
+    align-self: center; /* Center the line */
+    left: 10%; /* Add this line */
+}
+
+#img_wrap {
+    margin-left: 45%; /* Adjust this value as needed */
+}
+
+#discord_img, #ig_img, #twitter_img {
+    height: 80px;
+}
+#link-columns ul li a {
+    color: white; /* Change the color of the links to white */
+    text-decoration: none; /* Remove the default underline */
+}
+
+#link-columns ul li a:hover {
+    text-decoration: underline; /* Add an underline when hovered */
+    text-decoration-color: yellow; /* Change the color of the underline to yellow */
+}
+
+#img_wrap a {
+    outline: none;
+}
+
+#img_wrap a img:hover {
+    background-color: yellow;
+    border-radius: 10px;
+}
+}
+
+@media only screen and (min-width: 992px) {
+    
+  .workshops {
+    margin-top: calc( (2 - var(--screenScale) ) *60px);
+    background: #282828;
+    font-family: inter, sans-serif;
+  }
+
+  .mainHeader {
+    color: rgba(255, 255, 255);
+    text-align: center;
+    font-weight: 600;
+    font-size: calc(var(--screenScale)*55px);
+  }
+
+  .workshopElement {
+    margin-bottom: auto;
+    list-style-type: none; /* Gets rid of the bullet point that is normally present in a list element */
+    display: flex;
+    justify-content: center;
+    color: white;
+  } 
+
+  /* Additional rule to remove default left-padding on <ul> */
+  ul {
+    padding-left: 0;
+  }
+
+  .workshopInfoBox {
+    margin-bottom: 5%;
+    width: calc(var(--screenScale)*686px);
+    height: calc(var(--screenScale)*360px);
+    flex-shrink: 0;
+    border-radius: calc(var(--screenScale)*15px);
+    border: calc(var(--screenScale)*2px) solid rgba(255, 255, 255, 0.20);
+    background: rgba(51, 51, 51, 0.70);
+
+    text-align: left;
+    display: block;
+  }
+
+  .workshopName {
+    margin-left: calc(var(--screenScale)*10px);  /* Adds whitespace to the left of the details for spacing */
+    display: inline-block;
+    font-size: calc(var(--screenScale)*25px);
+  }
+
+  .workshopDate {
+    display: inline-block;
+    margin-left: calc(var(--screenScale)*25px);
+    font-size: calc(var(--screenScale)*25px);
+  }
+
+  .workshopHosts, .workshopDescription, .workshopType {
+    display: block;
+    margin-left: calc(var(--screenScale)*10px);  /* Adds whitespace to the left of the details for spacing */
+    font-size: calc(var(--screenScale)*20px);
+  }
+
+  .workshopImage {
+    margin-left: calc(var(--screenScale)*10px);
+    border-radius: calc(var(--screenScale)*15px);
+    border: calc(var(--screenScale)*2px) solid rgba(0, 0, 0, 1);
+    height: calc(var(--screenScale)*360px);
+    display: block;
+    width: calc(var(--screenScale)*400px);
+    background: url(<path-to-image>), lightgray 0px -335.426px / 100% 391.622% no-repeat;
+  }
+
+  /* rotates acm logo on hover*/
+  .Acm_Logo:hover {
+    cursor: default;
+    transform: rotate(360deg);
+    transition: transform 0.9s ease-in-out;
+  }
+
+  /* Scroll fade effect made by Chat-GPT */
+  .fade-in {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.8s ease-in-out, transform 0.8s ease-in-out;
+  }
+
+  .logoContainer {
+    display: inline-flex;
+    justify-content: center;
+    position: relative;
+    bottom: 0;
+  }
+  .logoContainer a .insta {
+    width: calc(var(--screenScale)*40px);
+    height: calc(var(--screenScale)*40px);
+  }
+  .logoContainer a .discord {
+    width: calc(var(--screenScale)*50px);
+    height: calc(var(--screenScale)*40px);
+  }
+
+  #footer {
+    background-color: rgb(94, 94, 94);
+    height: 250.7416px;
+    width: 100%;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    position: absolute;
+    font-family: Arial, sans-serif;
+    
+}
+
+#footer-image {
+    height: 80px; /* Adjust this value as needed */
+    align-self: flex-start; /* Align the image to the top */
+    margin-top: 10px; /* Push the image down */
+}
+
+#footer-links {
+    display: flex;
+    flex-direction: column; /* Change from column to row */
+    text-align: left;
+    align-items: center; /* Align items to the center */
+    padding-right: 70%; /* Add some padding to the left of the text */
+    margin-top: -10%;
+}
+
+#more-text {
+    font-weight: bold;
+    font-size: 1.1em; /* Increase the font size */
+    margin-right: 20px; /* Add some margin to the right of the text */
+    margin-top: 10%;
+}
+
+#link-columns {
+    display: flex;
+    /* margin-top: 10px; Remove this line */
+}
+
+#link-columns ul {
+    list-style-type: none;
+    margin-right: 20px; /* Add space between the columns */
+}
+
+#link-columns ul li {
+    margin-bottom: 10px; /* Add space between the rows */
+    font-size: 1.0em; /* Increase the font size */
+}
+
+#touch-txt {
+    font-weight: bold;
+    font-size: 1.1em; /* Increase the font size */
+    margin-left: 45%; /* Add some margin to the right of the text */
+    margin-top: -3%;
+}
+
+#footer-hr {
+    border: none;
+    height: 2px; /* Adjust thickness here */
+    background-color: white; /* Adjust color here */
+    width: 80%; /* Set the width to 80% */
+    align-self: center; /* Center the line */
+    left: 10%; /* Add this line */
+}
+
+#img_wrap {
+    margin-left: 45%; /* Adjust this value as needed */
+}
+
+#discord_img, #ig_img, #twitter_img {
+    height: 80px;
+}
+#link-columns ul li a {
+    color: white; /* Change the color of the links to white */
+    text-decoration: none; /* Remove the default underline */
+}
+
+#link-columns ul li a:hover {
+    text-decoration: underline; /* Add an underline when hovered */
+    text-decoration-color: yellow; /* Change the color of the underline to yellow */
+}
+
+#img_wrap a {
+    outline: none;
+}
+
+#img_wrap a img:hover {
+    background-color: yellow;
+    border-radius: 10px;
+}
+
 }

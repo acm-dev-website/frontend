@@ -5,47 +5,53 @@
   
   <head>
   <link rel="styleSheet" href="../style.css" />
+  <link rel="styleSheet" href="../altNavbar.css"/>
   </head>
   
   <body>
-    <div class="main" >
-        <div class="background_n_logo">
-         <div class = "spin2">
-            <img class="Acm_Logo" src="../Graphics/acmlogo.png">
-            </div>
-        </div>
-        <div class="btn_n_background">
-            <a href="/" >
-                <button class = "btn homebtn">Home</button>
-             </a>
-             <a href="/leadership" >
-                <button class = "btn leadershipbtn">Leadership</button>
-             </a>
-             <a href="/projects" >
-                <button class = "btn projectsbtn">Projects</button>
-             </a>
-             <a href="/workshops" >
-                <button class = "btn workshopsbtn">Workshops</button>
-             </a>
-             <a href="/events" >
-                <button class = "btn eventsbtn">Events</button>
-             </a>
-          <div class="dropdown">
-            <button class="dropdown-button morebtn">More</button>
-            <div class="dropdown-content">
-              <a href="/sponsorships" class="btn_dropdown sponsorshipsbtn">Sponsorships</a>
-              <a href="/merchandise" class="btn_dropdown merchandisebtn">Merchandise</a>
-              <a href="/calendar" class="btn_dropdown calendarbtn">Calendar</a>
-              <a href="/important-links" class="btn_dropdown importantlinksbtn">Important Links</a>
-            </div>
-          </div>
-        </div>
+   <div class="main">
+      <div class="altNavbar">
+        <img class="image" src="/Graphics/TACMLogo.png">
+        <a href="/calendar">Calendar</a>
+        <a href="/projects">Projects</a>
+        <a href="/events">Events</a>
+        <a href="/workshops">Workshops</a>
+        <a href="/leadership">Leadership</a>
+        <a href="/">Home</a>
+      </div>
     </div>
     <div style="padding: 5rem; display: flex; align-items: center; justify-content: center;">
       <div style="width: 80%; align-items: center; justify-content: center;">
          <iframe src="https://embed.styledcalendar.com/#GBcjIcN0Tn91Y4xtjs31" title="Styled Calendar" class="styled-calendar-container" style="width: 100%; border: none;" data-cy="calendar-embed-iframe"></iframe>
          <script async type="module" src="https://embed.styledcalendar.com/assets/parent-window.js"></script>
       </div>
+      <script src="../widthScript.js"></script>
     </div>
+    <footer id="footer">
+      <img id="footer-image" src="../Graphics/acmlogo.png" alt="Footer Image">
+      <div id="touch-txt">Get In Touch</div>
+      <div id="img_wrap">
+          <a href="https://www.google.com"><img id="discord_img" src="../Graphics/acmlogo.png" alt="discord"></a>
+          <a href="https://www.google.com"><img id="ig_img" src="../Graphics/acmlogo.png" alt="ig"></a>
+          <a href="https://www.google.com"><img id="twitter_img" src="../Graphics/acmlogo.png" alt="twitter"></a>
+      </div>
+      <div id="footer-links">
+        <div id="more-text">More</div>
+        <div id="link-columns">
+          <ul>
+            <li><a href="home.html">Home</a></li>
+            <li><a href="leadership.html">Leadership</a></li>
+            <li><a href="workshops.html">Workshops</a></li>
+          </ul>
+          <ul>
+              <li><a href="events.html">Events</a></li>
+            <li><a href="projects.html">Projects</a></li>
+            <li><a href="calendar.html">Calendar</a></li>
+          </ul>
+        </div>
+      </div>
+      <hr id="footer-hr">
+      <div id="copyright">Copyright 2024 UCF ACM</div>
+    </footer>
   </body>
 </html>
