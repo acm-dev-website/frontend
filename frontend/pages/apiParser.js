@@ -3,7 +3,7 @@
 export function apiFetch (eventList, type){
     //index --> value
     //key  --> value
-    const template = `http://localhost:3000/api/fetch/events` // ?type=${type}
+    const template = `http://localhost:3000/api/fetch/events?type=${type}`
     fetch(template)
         .then(response => response.json())
         .then(jsonData => {
