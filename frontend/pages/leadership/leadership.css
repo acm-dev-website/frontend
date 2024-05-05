@@ -256,15 +256,15 @@
 
 
 .leadershipRolesRow1 .leaderPicture {
-  width: 60%;
+  width: 220px;
   height: 220px;
   border-radius: 100%;
   align-self: center;
   overflow:hidden;
 }
 .leaderPicture {
-  width: 80%;
-  height: 90px;
+  width: 120px;
+  height: 120px;
   border-radius: 100%;
   align-self: center;
   overflow:hidden;
@@ -273,7 +273,7 @@
 @media(max-width: 600px)
 {
   .leadershipRolesRow1 .leaderPicture {
-    width: 60%;
+    width: 40px;
     height: 40px;
     border-radius: 100%;
     align-self: center;
@@ -284,8 +284,8 @@
 @media(max-width: 600px)
 {
   .leaderPicture {
-    width: 80%;
-    height: 30px;
+    width: 40px;
+    height: 40px;
     border-radius: 100%;
     align-self: center;
     overflow:hidden;
