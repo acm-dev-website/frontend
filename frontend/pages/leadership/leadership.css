@@ -1,186 +1,331 @@
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  background-image: url(../Graphics/background_img.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
 
-/* Responisve checkpoints : <600px, 601px, 768px, 992px, 1200px */
+.leadershipRolesRow1, .leadershipRolesRow2, .leadershipRolesRow3, .leadershipRolesRow4 {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: stretch;
+}
 
-/* container is meant to be the entire screen below nav bar */
+@keyframes slideInFromRight {
+  0% {
+    transform: translateX(150%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes slideInFromLeft {
+  0% {
+    transform: translateX(-150%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+.leadershipRolesRow1 .leaderProfile {
+  opacity: 0;
+  animation: slideInFromRight 2s ease-out forwards;
+}
+
+.leadershipRolesRow2 .leaderProfile {
+  opacity: 0;
+  animation: slideInFromLeft 2s ease-out forwards;
+}
+
+.leadershipRolesRow3 .leaderProfile {
+  opacity: 0;
+  animation: slideInFromRight 2s ease-out forwards;
+}
+
+.leadershipRolesRow1 .leaderProfile:nth-child(1) {
+  animation-delay: 0.25s;
+}
+
+.leadershipRolesRow1 .leaderProfile:nth-child(2) {
+  animation-delay: 0.5s;
+}
+
+.leadershipRolesRow1 .leaderProfile:nth-child(3) {
+  animation-delay: 0.75s;
+}
+
+.leadershipRolesRow1 .leaderProfile:nth-child(4) {
+  animation-delay: 1s;
+}
+
+.leadershipRolesRow1 .leaderProfile:nth-child(5) {
+  animation-delay: 1.25s;
+}
+
+.leadershipRolesRow2 .leaderProfile:nth-child(1) {
+  animation-delay: 1.25s;
+}
+
+.leadershipRolesRow2 .leaderProfile:nth-child(2) {
+  animation-delay: 1s;
+}
+
+.leadershipRolesRow2 .leaderProfile:nth-child(3) {
+  animation-delay: 0.75s;
+}
+
+.leadershipRolesRow2 .leaderProfile:nth-child(4) {
+  animation-delay: 0.5s;
+}
+
+.leadershipRolesRow2 .leaderProfile:nth-child(5) {
+  animation-delay: 0.25s;
+}
+
+.leadershipRolesRow3 .leaderProfile:nth-child(1) {
+  animation-delay: 0.25s;
+}
+
+.leadershipRolesRow3 .leaderProfile:nth-child(2) {
+  animation-delay: 0.5s;
+}
+
+.leadershipRolesRow3 .leaderProfile:nth-child(3) {
+  animation-delay: 0.75s;
+}
+
+.leadershipRolesRow3 .leaderProfile:nth-child(4) {
+  animation-delay: 1s;
+}
+
+.leadershipRolesRow3 .leaderProfile:nth-child(5) {
+  animation-delay: 1.25s;
+}
+
+@media (max-width: 600px) 
+{
   .container
   {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    /* background-color: blue; */
-    height: 100%; /* Take up full viewport height */
-    /* Take up full viewport width */
-    background: url(Graphics/backGrad.svg);
-    background-size:cover;
-    background-repeat: no-repeat;
-
+    justify-content: center;
+    height: 100%;
+    width: 100%;
   }
+}
 
-  @media (max-width: 600px) 
-  {
-    .container
-    {
-      height: 100%;
-      width: 100%;
-    }
-  }
-
+.sides {
+  width: 10%;
+  box-sizing: border-box;
+}
+@media (max-width: 600px) 
+{
   .sides
   {
-    width: 17.5%; /* Set a height or adjust as needed */
-    /* border: 1px solid #000; Optional: Add borders for visualization */
-    box-sizing: border-box;
-    /* background-color: lightblue; Side divs background color */
+    width: 0%;
   }
+}
 
-  .large 
+.large {
+  width: 80%;
+}
+@media (max-width: 600px) 
+{
+  .large
   {
-    width: 65%;
+    width: 100%;
   }
+}
+.mainHeader {
+  font-family:inter, sans-serif;
+  font-size: 8vw;
+  font-weight: 200;
+  color: black;
+  margin-bottom: 5%;
+  margin-top: 10%;
+}
 
-/*Title for the leadership page*/
-  .mainHeader 
+@media(max-width: 600px) {
+  .mainHeader
   {
-    text-align: center;
-    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    font-size: 4vw;
-    font-weight: 100;
-    color: rgb(255, 255, 255);
-    display: inline-block;
-    margin-bottom: 5%
+    font-size: 50px;
   }
+}
 
-  @media(max-width: 600px)
-  {
-    .mainHeader
-    {
-      font-size: 50px;
-    }
-  }
+.leadershipRolesRow1 {
+  margin-bottom: 5%;
+  display: flex;
+  align-items: stretch;
+  justify-content: space-between;
+  margin-top: 50px;
+}
 
-  
-
-/*Leadership roles*/
+@media(max-width: 600px)
+{
   .leadershipRolesRow1
   {
-     position: relative;
-    height: auto;
-    /* background-color: grey; */
+    flex-direction: row;
+    align-items: center;
     margin-bottom: 5%;
-    display: flex;
-    justify-content: space-evenly;
+    justify-content: center;
   }
+}
 
-  @media(max-width: 600px)
-  {
-    .leadershipRolesRow1
-    {
-      flex-direction: column;
-      align-items: center;
-      margin-bottom: 0%;
-    }
-  }
+.leadershipRolesRow2
+{
+  margin-bottom: 5%;
+  display: flex;
+  justify-content: space-evenly;
+}
 
+@media(max-width: 600px)
+{
   .leadershipRolesRow2
   {
-    position: relative;
-    height: auto;
-    /* background-color: grey; */
-    margin-bottom: 5%;
-    display: flex;
     flex-direction: row;
-    justify-content: space-evenly;
+    align-items: center;
+    margin-bottom: 0%;
+    justify-content: center;
   }
+}
 
-  @media(max-width: 600px)
+.leadershipRolesRow3 {
+  margin-bottom: 5%;
+  display: flex;
+  align-items: stretch;
+  justify-content: space-between;
+  margin-top: 50px;
+}
+
+@media(max-width: 600px)
+{
+  .leadershipRolesRow3
   {
-    .leadershipRolesRow2
-    {
-      flex-direction: column;
-      align-items: center;
-      margin-bottom: 0%;
-    }
+    flex-direction: row;
+    align-items: center;
+    margin-bottom: 0%;
+    justify-content: center;
   }
+}
 
-  .leaderProfile
-  {
-    position: relative;
-    height: 50%;
-    width: 30%;
-    /* background-color: blanchedalmond; */
-    /* border: 1px solid black; */
-  }
+.leaderProfile {
+  position: relative;
+  width: 30%;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  transition: 0.3s;
+  border-radius: 25px;
+  padding: 20px;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  height: 400px;
+  margin: 10px;
+  justify-content: center;
+  align-items: center;
+}
 
-  @media(max-width: 600px)
-  {
-    .leaderProfile
-    {
+.leaderName, .leaderRole, .leaderLinks {
+  flex-grow: 1;
+}
+
+@media(max-width: 600px) {
+  .leaderProfile {
+      height:130px;
       margin-bottom: 5%;
-      width: 100%
-    }
+      width: 60px;
+      box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+      transition: 0.3s;
+      border-radius: 5px;
+      padding: 5px;
+      background-color: #fff;
+      justify-content: unset;
+      margin:5px;
+      
   }
-
-  /* 13vw for height*/
-  .leaderPicture
-  {
-    width: 70%;
-    border-radius: 100%;
   
-  }
+}
 
-  @media(max-width: 600px)
-  {
-    .leaderPicture
-    {
-      width: 60%;
-    }
-  }
+.leaderProfile:hover {
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
 
+
+.leadershipRolesRow1 .leaderPicture {
+  width: 60%;
+  height: 220px;
+  border-radius: 100%;
+  align-self: center;
+  overflow:hidden;
+}
+.leaderPicture {
+  width: 80%;
+  height: 90px;
+  border-radius: 100%;
+  align-self: center;
+  overflow:hidden;
+}
+
+@media(max-width: 600px)
+{
+  .leadershipRolesRow1 .leaderPicture {
+    width: 60%;
+    height: 40px;
+    border-radius: 100%;
+    align-self: center;
+    overflow:hidden;
+  }
+}
+
+@media(max-width: 600px)
+{
+  .leaderPicture {
+    width: 80%;
+    height: 30px;
+    border-radius: 100%;
+    align-self: center;
+    overflow:hidden;
+  }
+}
+
+
+.leaderName
+{
+  font-size: 2vw;
+  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  color: black;
+}
+
+@media(max-width: 850px)
+{
   .leaderName
   {
-    font-size: 2vw;
-    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    color: rgb(255, 255, 255);
-    /* border: 1px solid; */
+    font-size: 22px;
   }
- 
-  @media(max-width: 850px)
+}
+
+
+@media(max-width: 600px)
+{
+  .leaderName
   {
-    .leaderName
-    {
-      font-size: 22px;
-      /* border: 1px solid; */
-    }
+    font-size: 3vw;
   }
+}
 
+.leaderRole
+{
+  font-size: 1vw;
+  font-weight:100;
+  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  color: black;
+}
 
-  @media(max-width: 600px)
-  {
-    .leaderName
-    {
-      font-size: 5vw;
-      /* border: 1px solid red; */
-    }
-  }
-
-  .leaderRole
-  {
-    font-size: 1vw;
-    font-weight:100;
-    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    color: rgb(255, 255, 255);
-    /* border: 1px solid;   */
-  }
-
-  @media(max-width: 600px)
-  {
-    .leaderRole
-    {
-      font-size: 3vw;
-    }
-  }
-
-@media(min-width: 601px)
+@media(max-width: 600px)
 {
   .leaderRole
   {
@@ -188,26 +333,68 @@
   }
 }
 
-/* rotates acm logo on hover*/
-.spin2 {
-  animation:spin 1s linear infinite;
-  transition-property: transform;
-   
+@media(min-width: 601px)
+{
+.leaderRole
+{
+  font-size: 1.5vw;
+}
 }
 
-.logoContainer {
-  display: inline-flex;
-  justify-content: center;
-  position: relative;
-  bottom: 0;
-}
-.logoContainer a .insta {
-   width: 40px;
-   height: 40px;
-}
-.logoContainer a .discord {
-   width: 50px;
-   height: 40px;
+.leaderProfile {
+    position: relative;
 }
 
+.leaderLinks {
+  display:flex;
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  top: 90%;
+  text-align: center;
+  opacity: 0;
+  transition: opacity 0.5s ease-in-out;
+}
+
+@media(max-width: 600px)
+{
+  .leaderLinks {
+    top: unset;
+    bottom: 2%;
+    width: 80%;
+    height: 15%;
+    justify-content: space-evenly;
+    opacity: 1;
+  }
+}
+
+.leaderLinks img {
+  width: 30px;
+  height: 30px;
+}
+
+.leaderProfile:hover .leaderLinks {
+  opacity: 1;
+}
+
+.leaderLinks img:last-child {
+  margin-right: 2px;
+  margin-left: 2px;
+}
+
+
+@media(max-width: 600px)
+{
+  .leaderLinks img {
+    width: 100%;
+    height: 100%;
+  }
+}
+@media(max-width: 600px)
+{
+  #footer{
+    display:none;
+  }
+}
 
