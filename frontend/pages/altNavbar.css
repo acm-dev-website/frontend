@@ -351,7 +351,7 @@
   }
   
   #discord_img, #ig_img, #twitter_img {
-      height: 80px;
+      height: 5em;
   }
   #link-columns ul li a {
       color: white; /* Change the color of the links to white */
