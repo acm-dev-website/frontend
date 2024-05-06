@@ -7,11 +7,9 @@ function updateScreenWidth() {
 
     // Set the screen width as a CSS variable
     document.documentElement.style.setProperty('--screen-width', `${screenWidth}px`);
-    console.log("Width is %d", screenWidth);
 
     const screenScale = screenWidth/1200;
     document.documentElement.style.setProperty('--screenScale', `${screenScale}`);
-    console.log("Scale is %f", screenScale);
 
     //const marginScale = screenScale;
 }

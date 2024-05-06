@@ -6,7 +6,7 @@
 
 
 /* Extra small devices (phones, 600px and down) */
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 630px) {
     body{
         position:absolute;
     }
@@ -486,13 +486,15 @@
         line-height: 23px;
     }
 
-
+    #footer {
+        display: none;
+    }
 }
 
 
 
 
-@media only screen and (min-width: 600px) {
+@media only screen and (min-width: 630px) {
     body{
         position:absolute;
     }
@@ -2499,7 +2501,9 @@
     html, body {
         font-family: Arial, sans-serif; /* Use a modern sans-serif font */
     }
-    
+
+    @media only screen and (min-width: 630px) 
+    {
     #footer {
         background-color: rgb(94, 94, 94);
         height: 8%;
@@ -2589,4 +2593,6 @@
     #img_wrap a img:hover {
         background-color: yellow;
         border-radius: 10px;
+    }
+
     }
