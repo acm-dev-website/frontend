@@ -35,8 +35,10 @@
         const ucEventList = document.getElementById("ucWorkshopList"); //could be null if page loads weird (use window.onload())
         apiFetch(ucEventList, "workshop");
 
-        const pastEventList = document.getElementById("pastWorkshopList");
-        apiFetch(pastEventList, "workshop");
+        // UNCOMMENT LINES 40 AND 41 TO PARSE PAST WORKSHOPS
+
+        //const pastEventList = document.getElementById("pastWorkshopList");
+        //apiFetch(pastEventList, "workshop");
     </script>
 
     <script src="../widthScript.js"></script>
