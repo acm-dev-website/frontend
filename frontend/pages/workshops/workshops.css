@@ -2,7 +2,7 @@
 
   .workshops {
     margin-top: calc( (2 - var(--screenScale) ) *60px);
-    background-image: url(../Graphics/background_img.png);
+    background: #282828;
     font-family: inter, sans-serif;
     margin-top: 200px;
   }
