@@ -222,8 +222,8 @@
 
   .projectInfoBox {
     margin-bottom: 5%;
-    width: calc(var(--screenScale)*686px);
-    height: calc(var(--screenScale)*360px);
+    width: calc(var(--screenScale)*550px);
+    height: calc(var(--screenScale)*270px);
     flex-shrink: 0;
     border-radius: calc(var(--screenScale)*15px);
     border: calc(var(--screenScale)*2px) solid rgba(255, 255, 255, 0.20);
@@ -236,28 +236,28 @@
   .projectName {
     margin-left: calc(var(--screenScale)*10px);  /* Adds whitespace to the left of the details for spacing */
     display: inline-block;
-    font-size: calc(var(--screenScale)*25px);
+    font-size: calc(var(--screenScale)*20px);
   }
 
   .projectDate {
     display: inline-block;
     margin-left: calc(var(--screenScale)*25px);
-    font-size: calc(var(--screenScale)*25px);
+    font-size: calc(var(--screenScale)*20px);
   }
 
   .projectHosts, .projectDescription, .projectType {
     display: block;
     margin-left: calc(var(--screenScale)*10px);  /* Adds whitespace to the left of the details for spacing */
-    font-size: calc(var(--screenScale)*20px);
+    font-size: calc(var(--screenScale)*15px);
   }
 
   .projectImage {
     margin-left: calc(var(--screenScale)*10px);
     border-radius: calc(var(--screenScale)*15px);
     border: calc(var(--screenScale)*2px) solid rgba(0, 0, 0, 1);
-    height: calc(var(--screenScale)*360px);
+    height: calc(var(--screenScale)*270px);
     display: block;
-    width: calc(var(--screenScale)*400px);
+    width: calc(var(--screenScale)*300px);
     background: url(<path-to-image>), lightgray 0px -335.426px / 100% 391.622% no-repeat;
   }
 
