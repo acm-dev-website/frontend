@@ -35,8 +35,10 @@
         const ucEventList = document.getElementById("curProjectList"); //could be null if page loads weird (use window.onload())
         apiFetch(ucEventList, "project");
 
-        const pastEventList = document.getElementById("pastProjectList");
-        apiFetch(pastEventList, "project");
+        // UNCOMMENT LINES 40 AND 41 TO PARSE PAST PROJECTS
+        
+        //const pastEventList = document.getElementById("pastProjectList");
+        //apiFetch(pastEventList, "project");
     </script>
     
     <script src="../widthScript.js"></script>
